@@ -1,0 +1,1336 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Openbox Wiki website">
+      
+      
+        <meta name="author" content="Openbox Wiki Group">
+      
+      
+        <link rel="canonical" href="https://redtide.github.io/openbox-wiki/Help/Session/">
+      
+      
+        <link rel="prev" href="../DistrosAndDEsUsingOpenbox/">
+      
+      
+        <link rel="next" href="../UsingGit/">
+      
+      
+      <link rel="icon" href="../../assets/ico/favicon.ico">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.3.1">
+    
+    
+      
+        <title>Session - Openbox Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.046329b4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.85d0ee34.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/css/github.css">
+    
+      <link rel="stylesheet" href="../../assets/css/styles.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#power-management" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="/openbox-wiki/" title="Openbox Wiki" class="md-header__button md-logo" aria-label="Openbox Wiki" data-md-component="logo">
+      
+  <img src="../../assets/img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Openbox Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Session
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/redtide/openbox-wiki" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="/openbox-wiki/" title="Openbox Wiki" class="md-nav__button md-logo" aria-label="Openbox Wiki" data-md-component="logo">
+      
+  <img src="../../assets/img/logo.png" alt="logo">
+
+    </a>
+    Openbox Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/redtide/openbox-wiki" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Contribute/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contribute
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Download/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Download
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LXDE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LXDE
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PowerManagement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Power Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SuspendAndHibernate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Suspend and hibernate
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Wallpaper/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wallpaper
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Design
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Design
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Design/DocumentsActions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DocumentsActions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Design/DocumentsConfig/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DocumentsConfig
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Design/DocumentsPlacement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DocumentsPlacement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Design/DocumentsTasks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DocumentsTasks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Help
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Help
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Contents/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contents
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DistrosAndDEsUsingOpenbox/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DistrosAndDEsUsingOpenbox
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Session
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Session
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#power-management" class="md-nav__link">
+    Power management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#menu-generation" class="md-nav__link">
+    Menu Generation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#panels-widgets-desktops-pagers-etc" class="md-nav__link">
+    Panels, widgets, desktops, pagers, etc..
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-links" class="md-nav__link">
+    Other links
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UsingGit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using Git
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    ObConf
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            ObConf
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ObConf/About/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#power-management" class="md-nav__link">
+    Power management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#menu-generation" class="md-nav__link">
+    Menu Generation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#panels-widgets-desktops-pagers-etc" class="md-nav__link">
+    Panels, widgets, desktops, pagers, etc..
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-links" class="md-nav__link">
+    Other links
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/redtide/openbox-wiki/edit/master/docs/Help/Session.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/redtide/openbox-wiki/raw/master/docs/Help/Session.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5Z"/></svg>
+    </a>
+  
+
+
+  <h1>Session</h1>
+
+<p>It is entirely possible to run Openbox as a standalone window manager
+alongside modular components to completely replicate the functionality
+of more heavyweight/resource intensive Desktop Environments such as
+Gnome, KDE or XFCE. There is even a Desktop Environment
+(<a href="LXDE">LXDE</a>) built around Openbox.</p>
+<h2 id="power-management">Power management<a class="headerlink" href="#power-management" title="Permanent link">&para;</a></h2>
+<p>Tips for <a href="Power_management">Power management</a> and <a href="Suspend_and_hibernate">Suspend
+and Hibernate</a>.</p>
+<h2 id="menu-generation">Menu Generation<a class="headerlink" href="#menu-generation" title="Permanent link">&para;</a></h2>
+<p><a href="Openbox:Pipemenus">Pipe menus</a> are applications that
+dynamically generate your Openbox menu. They can provide a dynamic
+applications menu, system information, amongst other fun things. See
+<a href="Openbox:Pipemenus">here</a> for more information, and to
+download them.</p>
+<h2 id="panels-widgets-desktops-pagers-etc">Panels, widgets, desktops, pagers, etc..<a class="headerlink" href="#panels-widgets-desktops-pagers-etc" title="Permanent link">&para;</a></h2>
+<p>Besides the programs included in GNOME and KDE...</p>
+<ul>
+<li><a href="http://wiki.awn-project.org/">Avant Window Navigator</a> "(AWN/Awn) is
+    a dock-like navigation bar for the linux desktop that positions
+    itself at the bottom of the screen. It can be used to keep track of
+    open windows and behaves like a normal window list."</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://bbdock.nethence.com/">BBDock</a> "BBDock is an application
+    launcher for Blackbox (and others) that allows you to create
+    application buttons in the slit/dock. It works with PNG files rather
+    than XPM images. It supports alpha blending at 16, 24 and 32 bits
+    color-depth. Also, the raise-window function is available to window
+    managers which implement the EWMH specification." (untested. EWMH
+    capable) Tested by CrossWind, Fully operational!</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://bbtools.sourceforge.net/">bbtools</a> "BB-tools are a number of
+    simple X-Window programs to display the status of different
+    resources. The style and part of the code is copied from Blackbox a
+    small and extremely fast X11-Windowmanager."</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://code.google.com/p/bmpanel2/">bmpanel2</a> "Nice
+    NETWM-compatible panel for X11."</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://conky.sourceforge.net/">conky</a> "Conky is a free,
+    light-weight system monitor for X, that displays any information on
+    your desktop. Conky is licensed under the GPL and runs on Linux and
+    BSD."</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://fbpanel.sourceforge.net/">fbpanel</a> "fbpanel is a
+    lightweight, NETWM compliant desktop panel. It works with any NETWM
+    compliant window manager (e.g. xfwm4, sawfish, openbox, metacity,
+    kde wm)"</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://linuxbrit.co.uk/feh/">feh</a> An image viewer with many
+    features.</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://sourceforge.net/projects/flauncher/">flauncher</a> "The project
+    is intendent to replace the common panels (top panel and bottom
+    panel in Gnome). It gives speedup of application management reducing
+    the distance of mouse movements." (An attempt to get the panel
+    functionality into a separate window.)</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://gdesklets.de/">gDesklets</a> "gDesklets is a system for
+    bringing mini programs (desklets), such as weather forecasts, news
+    tickers, system information displays, or music player controls, onto
+    your desktop, where they are sitting there in a symbiotic
+    relationship of eye candy and usefulness. The possibilities are
+    really endless and they are always there to serve you whenever you
+    need them, just one key-press away. The system is not restricted to
+    one desktop environment, but currently works on most of the modern
+    Unix desktops (including GNOME, KDE, Xfce)."</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://idesk.sourceforge.net/">iDesk</a> "iDesk gives users of minimal
+    wm's (fluxbox, blackbox, openbox, windowmaker...) icons on their
+    desktop. The icon graphics are either from a png or svg (vector)
+    file and support some eyecandy effects like transparency. Each icon
+    can be confgured to run one or more shell commands and the actions
+    which run those commands are completely configurable. In a nutshell
+    if you want icons on your desktop and you don't have or dont't want
+    KDE or gnome doing it, you can use iDesk."</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://www.kde-look.org/content/show.php?content=12097">kooldock</a>
+    "A kool dock for KDE. It attemps to resemble the Mac OSX dock."</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://wiki.lxde.org/en/LXPanel">LXPanel</a></li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://projects.l3ib.org/nitrogen/">nitrogen</a> "Nitrogen is a
+    background browser and setter for X windows. It is written in C++
+    using the gtkmm toolkit. It can be used in two modes: browser and
+    recall. Nitrogen has been in development for over 2 years, due to
+    real life and laziness. For more info, check out the features
+    section."</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://code.google.com/p/oboinus/">Oboinus</a> "X11 background
+    previewer and setter."</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://obpager.sourceforge.net/">ObPager</a> "OBPager is a lightweight
+    pager designed to be used with NetWM-compliant window managers like
+    OpenBox. Unlike many other pagers out there, OBPager has very few
+    dependencies, requiring only Xlib and glibc++ (no Gnome or KDE
+    necessary)."</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://freshmeat.net/projects/perlpanel/">perlpanel</a> "PerlPanel is
+    an attempt to build a useable, lean panel program (like Gnome's
+    gnome-panel and KDE's Kicker) in Perl, using GTK 2. It has an
+    object-oriented design for easy customisation and extension, and an
+    applet architecture that means that you can create an applet in a
+    matter of minutes."</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://pypanel.sourceforge.net/">pypanel</a> "PyPanel is a lightweight
+    panel/taskbar written in Python and C for X11 window managers. It
+    can be easily customized to match any desktop theme or taste.
+    PyPanel works with EWMH compliant WMs (Openbox, PekWM, FVWM, etc.)
+    and is distributed under the GNU General Public License v2."</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://pytyle.com">PyTyle</a> "PyTyle is a manual tiling manager that
+    can slide into any EWMH compliant window manager, inspired by
+    XMonad. It will allow you to enable/disable tiling on a per screen
+    per workspace basis, and continually tile your windows."</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://rox.sourceforge.net/desktop/static.html">ROX Desktop</a> "ROX
+    is a fast, user friendly desktop which makes extensive use of
+    drag-and-drop. The interface revolves around the file manager, or
+    filer, following the traditional Unix view that `everything is a
+    file' rather than trying to hide the filesystem beneath start menus,
+    wizards, or druids. The aim is to make a system that is well
+    designed and clearly presented. The ROX style favours using several
+    small programs together instead of creating all-in-one
+    mega-applications."</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://www.screenlets.org/">Screenlets</a> "Screenlets are small
+    owner-drawn applications (written in Python) that can be described
+    as "the virtual representation of things lying/standing around on
+    your desk". Sticknotes, clocks, rulers, ... the possibilities are
+    endless."</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://ostatic.com/screenpager">Screenpager</a> "Screenpager is a
+    screenwise pager for X workstations running Xinerama. It works like
+    a desktop pager, but acts at the level of screens. Instead of paging
+    the desktop as a whole, it can page each screen independently, or
+    move pages from screen to screen."</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://icculus.org/openbox/tools/setlayout.c">Set Layout</a> A small
+    program to set your desktops into a grid if you do not use a pager.</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://stalonetray.sourceforge.net/">stalonetray</a> "Stalonetray is a
+    stand-alone freedesktop.org and KDE system tray (notification area)
+    for X Window System/X11 (e.g. X.Org or XFree86). It has full XEMBED
+    support and minimal dependencies: an X11 lib only. Stalonetray works
+    with virtually any EWMH-compliant window manager."</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://netdragon.sourceforge.net/ssuperkaramba.html">Super Karamba</a>
+    "SuperKaramba is, in simple terms, a tool that allows you to easily
+    create interactive eye-candy on your KDE desktop."</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://code.google.com/p/superswitcher/">SuperSwitcher</a>
+    "SuperSwitcher is a (more feature-ful) replacement for the Alt-Tab
+    window switching behavior and Ctrl-Alt-Left/Right/Up/Down workspace
+    switching behavior that is currently provided by Metacity."</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://code.google.com/p/tint2/">tint2 panel/taskbar</a> "tint2 is a
+    simple panel/taskbar unintrusive and light (memory / cpu /
+    aestetic)."</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://code.l3ib.org/?p=visibility-python.git;a=summary">visibility-python</a>
+    "gtk2 x11 pager / window list." (click snapshot to download a
+    .tar.gz)</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://freshmeat.net/projects/wbar/">wbar</a> "wbar is a quick launch
+    bar. It's developed with speed in mind and is highly tweakable."</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>
+<p><a href="http://tomas.styblo.name/wmctrl/">wmctrl</a> "wmctrl is a UNIX/Linux
+    command line tool to interact with an EWMH/NetWM compatible X Window
+    Manager". Example of changing number of desktops:<code>
+        wmctrl -n 4</p>
+<p></code></p>
+</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://www.xfce.org/">xfce4-panel</a> "The Xfce panel supports
+    multiple panels, with many options for their position, appearance,
+    transparency and behavior. There are many items available by default
+    to customize your panels, like application launchers with detachable
+    menus, a graphical pager, a tasklist, a clock, a system tray, a
+    show/hide desktop switcher, and even more."</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><a href="http://www.x.org/archive/X11R7.5/doc/man/man1/xprop.1.html">xprop</a>
+    is utility for displaying and changing X server window and font
+    properties. To change number of columns and rows of desktops grid
+    layout run:</li>
+</ul>
+<p><code></p>
+<div class="codehilite"><pre><span></span><code>xprop \
+  -root \
+  -format _NET_DESKTOP_LAYOUT 32c \
+  -set _NET_DESKTOP_LAYOUT &lt;orientation&gt;,&lt;columns&gt;,&lt;rows&gt;,&lt;starting_corner&gt;
+</code></pre></div>
+
+<p></code></p>
+<p>where <orientation> is «0» or «1»; <starting_corner> is «0», «1», «2» or
+«3»; <columns>, <rows> - number of columns and rows respectively
+(<a href="http://standards.freedesktop.org/wm-spec/1.3/ar01s03.html">more</a>).
+Example:</p>
+<p><code></p>
+<div class="codehilite"><pre><span></span><code>xprop \
+  -root \
+  -format _NET_DESKTOP_LAYOUT 32c \
+  -set _NET_DESKTOP_LAYOUT 0,2,2,0
+</code></pre></div>
+
+<p></code></p>
+<ul>
+<li><a href="https://github.com/hanschen/ksuperkey">ksuperkey</a> (daemon) uses
+    XTEST extension to bind the modifier key (like ctrl, alt (meta),
+    windows (super)) to any shortcut (like Alt+F1).</li>
+</ul>
+<p><code></p>
+<div class="codehilite"><pre><span></span><code>~/.config/openbox/rc.xml
+
+<span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;A-F1&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;ShowMenu&quot;</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;menu&gt;</span>root-menu<span class="nt">&lt;/menu&gt;</span>
+<span class="w">   </span><span class="nt">&lt;/action&gt;</span>
+<span class="nt">&lt;/keybind&gt;</span>
+
+~/.config/openbox/autostart
+
+ksuperkey<span class="w"> </span>-e<span class="w"> </span>&#39;Super_L=Alt_L|F1&#39;<span class="w"> </span><span class="err">&amp;</span>
+</code></pre></div>
+
+<p></code></p>
+<p>This allow you to open Openbox menu using super (windows) key.</p>
+<ul>
+<li><a href="http://www.semicomplete.com/blog/projects/xdotool">xdotool</a> "lets
+    you simulate keyboard input and mouse activity, move and resize
+    windows, etc. It does this using X11's XTEST extension and other
+    Xlib functions".</li>
+</ul>
+<p><code></p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># focus and raise xterm window</span>
+<span class="n">xdotool</span><span class="w"> </span>\
+<span class="w">   </span><span class="n">search</span><span class="w"> </span>\
+<span class="w">      </span><span class="o">--</span><span class="n">maxdepth</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span>\
+<span class="w">      </span><span class="o">--</span><span class="n">onlyvisible</span><span class="w"> </span>\
+<span class="w">      </span><span class="o">--</span><span class="n">all</span><span class="w"> </span>\
+<span class="w">      </span><span class="o">--</span><span class="n">name</span><span class="w"> </span><span class="n">xterm</span><span class="w"> </span>\
+<span class="w">   </span><span class="n">windowfocus</span><span class="w"> </span>\
+<span class="w">   </span><span class="n">windowraise</span>
+
+<span class="c1"># open Openbox menu, when mouse in top-left corner</span>
+<span class="c1"># (Alt+F1 must be bind to open root-menu)</span>
+<span class="n">xdotool</span><span class="w"> </span>\
+<span class="w">   </span><span class="n">behave_screen_edge</span><span class="w"> </span>\
+<span class="w">      </span><span class="o">--</span><span class="n">delay</span><span class="w"> </span><span class="mi">300</span><span class="w"> </span>\
+<span class="w">      </span><span class="o">--</span><span class="n">quiesce</span><span class="w"> </span><span class="mi">3000</span><span class="w"> </span>\
+<span class="w">      </span><span class="n">top</span><span class="o">-</span><span class="n">left</span><span class="w"> </span>\
+<span class="w">   </span><span class="n">key</span><span class="w"> </span><span class="s2">&quot;Alt_L+F1&quot;</span>
+</code></pre></div>
+
+<p></code></p>
+<ul>
+<li><a href="https://github.com/ierton/xkb-switch">xkb-switch</a> "is a C++ program
+    that allows to query and change the XKB layout state". Example of
+    using "Win+space" to switch keyboard layout:</li>
+</ul>
+<p><code></p>
+<div class="codehilite"><pre><span></span><code>~/.config/openbox/rc.xml
+
+<span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-space&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Execute&quot;</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;command&gt;</span>xkb-switch<span class="w"> </span>--next<span class="nt">&lt;/command&gt;</span>
+<span class="w">   </span><span class="nt">&lt;/action&gt;</span>
+<span class="nt">&lt;/keybind&gt;</span>
+</code></pre></div>
+
+<p></code></p>
+<h2 id="other-links">Other links<a class="headerlink" href="#other-links" title="Permanent link">&para;</a></h2>
+<p>You can find lots of dockapps at
+<a href="http://dockapps.windowmaker.org/">dockapps.windowmaker.org</a>. Some nice
+ones are «wmCalClock», «wmnd», «wmix» and «wmpinboard».</p>
+<p>There are other programs of interest in the <a href="Openbox:Community_portal">community
+portal</a>.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../DistrosAndDEsUsingOpenbox/" class="md-footer__link md-footer__link--prev" aria-label="Previous: DistrosAndDEsUsingOpenbox" rel="prev">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                DistrosAndDEsUsingOpenbox
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../UsingGit/" class="md-footer__link md-footer__link--next" aria-label="Next: Using Git" rel="next">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Using Git
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/redtide/openbox-wiki" target="_blank" rel="noopener" title="Openbox Wiki on GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.action.view", "content.code.copy", "header.autohide", "navigation.footer", "navigation.top"], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>
