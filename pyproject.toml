@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "openbox_wiki_website_backup"
+version = "1.0.0"
+description = "Openbox wiki website backup"
+authors = ["redtide <redtid3@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+mkdocs = ">=1.5.0"
+mkdocs-material = "^9.3.1"
+mkdocs-glightbox = "^0.3.4"
+requests = {extras = ["security"], version = "^2.31.0"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

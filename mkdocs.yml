@@ -1,0 +1,151 @@
+remote_branch:    www
+site_dir:         _site
+site_name:        Openbox Wiki
+site_description: Openbox Wiki website
+site_author:      Openbox Wiki Group"
+site_url:         https://redtide.github.io/openbox-wiki
+repo_url:         https://github.com/redtide/openbox-wiki
+repo_name:        GitHub
+copyright:        Made with Material for MkDocs
+edit_uri:         edit/master/docs/
+
+extra_css:
+- assets/css/github.css
+
+extra:
+  generator: false
+# social:
+# - icon: fontawesome/brands/github
+#   link: https://github.com/redtide/openbox-wiki
+#   name: Openbox Wiki on GitHub
+
+markdown_extensions:
+  toc:
+    permalink: 🔗
+  pymdownx.highlight:
+    linenums: true
+    anchor_linenums: true
+    code_attr_on_pre: false # TODO: required?
+  pymdownx.superfences: {}  # required by highlight
+  pymdownx.tilde: {}        # strikethrough
+
+plugins:
+- search
+- glightbox
+
+theme:
+  name: "material"
+  logo: "assets/img/ob3-logo.png"
+  favicon: "assets/ico/favicon.ico"
+  icon:
+    repo: "fontawesome/brands/github"
+    edit: "material/pencil"
+    view: "material/eye"
+  font: false
+  palette:
+  # Palette toggle for light mode
+  - media: "(prefers-color-scheme: light)"
+    scheme: "default"
+    toggle:
+      icon: "material/weather-night"
+      name: "Switch to dark mode"
+  # Palette toggle for dark mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: "slate"
+    toggle:
+      icon: "material/weather-sunny"
+      name: "Switch to light mode"
+  features:
+  - content.action.edit
+  - content.action.view
+  - content.code.copy
+  - header.autohide
+  - navigation.footer
+  - navigation.top
+
+watch:
+- docs
+
+exclude_docs: Help/RequestWriteAccess.md
+
+nav:
+- Home:                         index.md
+- About:                        About.md
+- Download:                     Download.md
+- FAQ:                          FAQ.md
+- Contribute:                   Contribute.md
+- Changelog:                    Changelog.md
+- ObConf:
+  - About:                      ObConf/About.md
+  - Changelog:                  ObConf/Changelog.md
+- Help:
+  - Getting Started:            Help/GettingStarted.md
+  - Contents:                   Help/Contents.md
+  - Actions:                    Help/Actions.md
+  - Applications:               Help/Applications.md
+  - Autostart:                  Help/Autostart.md
+  - Bindings:                   Help/Bindings.md
+  - Configuration:              Help/Configuration.md
+  - Default Configuration:      Help/DefaultConfiguration.md
+  - Features:                   Help/Features.md
+  - Installing:                 Help/Installing.md
+  - Menus:                      Help/Menus.md
+  - Menus Debian:               Help/MenusDebian.md
+  - Power Management:           Help/PowerManagement.md
+  - Suspend and hibernate:      Help/SuspendAndHibernate.md
+  - Session:                    Help/Session.md
+  - Themes:                     Help/Themes.md
+  - Themes (fr):                Help/Themes_fr.md
+  - Upgrading to 3.4:           Help/UpgradingTo3.4.md
+  - Using Git:                  Help/UsingGit.md
+  - Wallpaper:                  Help/Wallpaper.md
+  - Clay' Vim-Style bindings:   Help/ClaysViStyleSpatial.md
+  - IRSSI style focus:          Help/IrssiStyleFocus.md
+  - Mouse focus example:        Help/MouseFocusExample.md
+  - Windows keys:               Help/WindowsInteractionWithWindowsKey.md
+- Community:
+  - Portal:                     Community/Portal.md
+  - Themes:                     Community/Themes.md
+  - Screenshots:                Community/Screenshots.md
+  - Pipemenus:
+    - Main:                     Community/Pipemenus/index.md
+    - Audacious Control:        Community/Pipemenus/AudaciousControl.md
+    - Audacious Control (alt):  Community/Pipemenus/AudaciousControlAlternative.md
+    - battery:                  Community/Pipemenus/battery.md
+    - bmenu:                    Community/Pipemenus/bmenu-1.0.md
+    - Date Menu:                Community/Pipemenus/DateMenu.md
+    - Dirs Menu:                Community/Pipemenus/Dirsmenu.md
+    - feeder-python:            Community/Pipemenus/feeder-python.md
+    - gtk-bookmarks:            Community/Pipemenus/gtk-bookmarks.md
+    - mntmenu:                  Community/Pipemenus/mntmenu.md
+    - MPD Control:              Community/Pipemenus/MPDControl.md
+    - obam:                     Community/Pipemenus/obam.md
+    - obdevicemenu:
+      - obdevicemenu:           Community/Pipemenus/obdevicemenu/index.md
+      - obdevicemenu.conf:      Community/Pipemenus/obdevicemenu/obdevicemenu.conf
+    - obm-mozilla:              Community/Pipemenus/obm-mozilla.md
+    - obreboot:                 Community/Pipemenus/obreboot.md
+    - processes-python:         Community/Pipemenus/processes-python.md
+    - recentfilesxbel:          Community/Pipemenus/recentfilesxbel.md
+- Distros and DEs:
+  - Using Openbox:              Help/DistrosAndDEsUsingOpenbox.md
+  - GNOME:                      Help/UsingOpenboxInGNOME.md
+  - LXDE:                       Help/UsingOpenboxInLXDE.md
+  - KDE:                        Help/UsingOpenboxInKDE.md
+  - XFCE:                       Help/UsingOpenboxInXFCE.md
+- User:
+  - Dana Jansens:               User/DanaJansens.md
+  - Mikachu:                    User/Mikachu.md
+  - Rcbarnes:                   User/Rcbarnes.md
+  - Baavgai:                    User/Baavgai.md
+  - Dbbolton:                   User/Dbbolton.md
+  - Spoiledbroth:
+    - Spoiledbroth:             User/Spoiledbroth/index.md
+    - ob-chromium:              User/Spoiledbroth/ob-chromium.md
+    - x-tile:                   User/Spoiledbroth/x-tile.md
+    - xdotool:                  User/Spoiledbroth/xdotool.md
+- Design Documents:
+  - Actions:                    DesignDocuments/Actions.md
+  - Config:                     DesignDocuments/Config.md
+  - Placement:                  DesignDocuments/Placement.md
+  - Tasks:                      DesignDocuments/Tasks.md
