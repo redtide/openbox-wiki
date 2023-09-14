@@ -1,0 +1,4186 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Openbox Wiki website">
+      
+      
+        <meta name="author" content="Openbox Wiki Group">
+      
+      
+        <link rel="canonical" href="https://redtide.github.io/openbox-wiki/Help/Themes/">
+      
+      
+        <link rel="prev" href="../Session/">
+      
+      
+        <link rel="next" href="../UpgradingTo3.4/">
+      
+      
+      <link rel="icon" href="../../assets/ico/favicon.ico">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.3.1">
+    
+    
+      
+        <title>Themes - Openbox Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.046329b4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.85d0ee34.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/css/github.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#theme-installation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="/openbox-wiki/" title="Openbox Wiki" class="md-header__button md-logo" aria-label="Openbox Wiki" data-md-component="logo">
+      
+  <img src="../../assets/img/ob3-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Openbox Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Themes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/redtide/openbox-wiki" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="/openbox-wiki/" title="Openbox Wiki" class="md-nav__button md-logo" aria-label="Openbox Wiki" data-md-component="logo">
+      
+  <img src="../../assets/img/ob3-logo.png" alt="logo">
+
+    </a>
+    Openbox Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/redtide/openbox-wiki" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../About/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Contribute/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contribute
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CommunityPortal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Community Portal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Download/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Download
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Themes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Themes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Wallpaper/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wallpaper
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LXDE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LXDE
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PowerManagement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Power Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SuspendAndHibernate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Suspend and hibernate
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Changelog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Design Documents
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            Design Documents
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DesignDocuments/Actions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Actions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DesignDocuments/Config/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Config
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DesignDocuments/Placement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Placement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DesignDocuments/Tasks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tasks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" checked>
+        
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Help
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            Help
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Applications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Applications
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Autostart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Autostart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Bindings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bindings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Contents/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contents
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DefaultConfiguration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Default Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Features/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Features
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GettingStarted/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Installing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Session/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Session
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Themes
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UpgradingTo3.4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Upgrading to 3.4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UsingGit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using Git
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DistrosAndDEsUsingOpenbox/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using Openbox
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UsingOpenboxInGNOME/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using Openbox in GNOME
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UsingOpenboxInKDE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using Openbox in KDE
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_18" >
+        
+          <label class="md-nav__link" for="__nav_13_18" id="__nav_13_18_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    XFCE
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_18_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13_18">
+            <span class="md-nav__icon md-icon"></span>
+            XFCE
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../XFCE/Openbox/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Openbox
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+        
+          <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    ObConf
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_14">
+            <span class="md-nav__icon md-icon"></span>
+            ObConf
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ObConf/About/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ObConf/Changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Changelog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" >
+        
+          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    User
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_15">
+            <span class="md-nav__icon md-icon"></span>
+            User
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../User/DanaJansens/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dana Jansens
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../User/Mikachu/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mikachu
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../User/Rcbarnes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rcbarnes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/redtide/openbox-wiki/edit/master/docs/Help/Themes.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/redtide/openbox-wiki/raw/master/docs/Help/Themes.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5Z"/></svg>
+    </a>
+  
+
+
+<p>Openbox 3 themes are written as an X resource database, in a file named
+<code>themerc</code>. The format is quite simple to learn, but there are an
+enormous number of options available to you.</p>
+<p>Each and every option has been documented, with details such as their
+default values, and which values are or are not valid for them. But to
+try make it a little more accessible, we'll start with an example theme,
+which uses every possible option within it. Each of the options can be
+clicked to read the details about it.</p>
+<h1 id="theme-installation">Theme installation<a class="headerlink" href="#theme-installation" title="Permanent link">🔗</a></h1>
+<p>Openbox themes are stored in one of the following places:</p>
+<ul>
+<li>System-wide themes are installed in <code>/usr/share/themes</code>.</li>
+<li>User-specific themes can be installed in <code>~/.local/share/themes</code> or in
+  <code>~/.themes</code>.</li>
+</ul>
+<h1 id="theme-selection">Theme selection<a class="headerlink" href="#theme-selection" title="Permanent link">🔗</a></h1>
+<p>Choosing a theme to use is simple with the
+<a href="ObConf:About">ObConf</a> tool. Alternatively, there are a
+number of <a href="Openbox:Pipemenus">Pipe menus</a> which can perform
+this function for you.</p>
+<p>If you wish to set the theme by hand, you need to edit the <name> key in
+the <theme> section of your <code>rc.xml</code> file. The <a href="Configuration">Configuration
+guide</a> is a good place to start.</p>
+<h1 id="theme-file-structure">Theme file structure<a class="headerlink" href="#theme-file-structure" title="Permanent link">🔗</a></h1>
+<p>The file structure goes like this:</p>
+<p><code>ThemesDirectory  (such as /usr/share/themes)</code>
+<code>|</code>
+<code>+-&gt; ThemeName  (This is the name of the theme, such as Clearlooks)</code>
+<code>|</code>
+<code>+-&gt; openbox-3  (This the type of the theme - it's for Openbox 3!)</code>
+<code>|</code>
+<code>|-&gt; themerc  (This is the main theme file, documented in this page)</code>
+<code>|</code>
+<code>|-&gt; max.xbm  (These are optional xbm masks for the titlebar buttons)</code>
+<code>|-&gt; close.xbm</code>
+<code>...</code>
+<code>+-&gt; shade.xbm</code></p>
+<p><a class="glightbox" href="Important.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Image:Important.png" src="Important.png" title="Image:Important.png" /></a>
+<a href="ObConf:About">ObConf</a> can create a <code>.obt</code> Openbox Theme
+Archive file out of a theme for distribution, and can also install
+<code>.obt</code> files very easily.</p>
+<h1 id="example">Example<a class="headerlink" href="#example" title="Permanent link">🔗</a></h1>
+<p>This is not a real theme, and if you used it, there is no guarantee it
+will look good in any way. It is just meant to show all of the options
+and how they relate to eachother.</p>
+<p><code></p>
+<p><code># Window geometry</code>
+<a href="#padding.width"><code>padding.width</code></a><code>: 2</code>
+<a href="#padding.height"><code>padding.height</code></a><code>: 2</code>
+<a href="#border.width"><code>border.width</code></a><code>: 1</code>
+<a href="#window.client.padding.width"><code>window.client.padding.width</code></a><code>: 1</code>
+<a href="#window.client.padding.height"><code>window.client.padding.height</code></a><code>: 0</code>
+<a href="#window.handle.width"><code>window.handle.width</code></a><code>: 3</code></p>
+<p><code>#Menu geometry</code>
+<a href="#menu.border.width"><code>menu.border.width</code></a><code>: 1</code>
+<a href="#menu.overlap.x"><code>menu.overlap.x</code></a><code>: 0</code>
+<a href="#menu.overlap.y"><code>menu.overlap.y</code></a><code>: 0</code></p>
+<p><code># Border colors</code>
+<a href="#window.active.border.color"><code>window.active.border.color</code></a><code>: #000000</code>
+<a href="#window.inactive.border.color"><code>window.inactive.border.color</code></a><code>: #000000</code>
+<a href="#menu.border.color"><code>menu.border.color</code></a><code>: #000000</code>
+<a href="#window.active.client.color"><code>window.active.client.color</code></a><code>: #ffffff</code>
+<a href="#window.inactive.client.color"><code>window.inactive.client.color</code></a><code>: #cccccc</code></p>
+<p><code># Text shadows</code>
+<a href="#window.active.label.text.font"><code>window.active.label.text.font</code></a><code>: shadow=y:shadowtint=70:shadowoffset=1</code>
+<a href="#window.inactive.label.text.font"><code>window.inactive.label.text.font</code></a><code>: shadow=y:shadowtint=20:shadowoffset=1</code>
+<a href="#menu.items.font"><code>menu.items.font</code></a><code>: shadow=n</code>
+<a href="#menu.title.text.font"><code>menu.title.text.font</code></a><code>: shadow=y:shadowtint=70:shadowoffset=1</code></p>
+<p><code># Window title justification</code>
+<a href="#window.label.text.justify"><code>window.label.text.justify</code></a><code>: Center</code></p>
+<p><code># Active window</code>
+<a href="#window.active.title.bg"><code>window.active.title.bg</code></a><code>: Raised Gradient Vertical Interlaced</code>
+<a href="#window.active.title.bg"><code>window.active.title.bg</code></a><code>.color: #658fb5</code>
+<a href="#window.active.title.bg"><code>window.active.title.bg</code></a><code>.colorTo: #4d6982</code>
+<a href="#window.active.title.bg"><code>window.active.title.bg</code></a><code>.interlace.color: #7788cc</code></p>
+<p><a href="#window.active.label.bg"><code>window.active.label.bg</code></a><code>: Parentrelative</code>
+<a href="#window.active.label.text.color"><code>window.active.label.text.color</code></a><code>: #ffffff</code></p>
+<p><a href="#window.active.handle.bg"><code>window.active.handle.bg</code></a><code>: Raised Gradient Vertical</code>
+<a href="#window.active.handle.bg"><code>window.active.handle.bg</code></a><code>.color: #658fb5</code>
+<a href="#window.active.handle.bg"><code>window.active.handle.bg</code></a><code>.colorTo: #4d6982</code></p>
+<p><a href="#window.active.grip.bg"><code>window.active.grip.bg</code></a><code>: Raised Gradient Vertical</code>
+<a href="#window.active.grip.bg"><code>window.active.grip.bg</code></a><code>.color: #658fb5</code>
+<a href="#window.active.grip.bg"><code>window.active.grip.bg</code></a><code>.colorTo: #4d6982</code></p>
+<p><a href="#window.active.button.unpressed.bg"><code>window.active.button.unpressed.bg</code></a><code>: Flat Gradient Vertical Border</code>
+<a href="#window.active.button.unpressed.bg"><code>window.active.button.unpressed.bg</code></a><code>.color: #6993b9</code>
+<a href="#window.active.button.unpressed.bg"><code>window.active.button.unpressed.bg</code></a><code>.colorTo: #55799a</code>
+<a href="#window.active.button.unpressed.bg"><code>window.active.button.unpressed.bg</code></a><code>.border.color: #3d4c5a</code>
+<a href="#window.active.button.unpressed.image.color"><code>window.active.button.unpressed.image.color</code></a><code>: #ffffff</code></p>
+<p><a href="#window.active.button.pressed.bg"><code>window.active.button.pressed.bg</code></a><code>: Flat Gradient Vertical Border</code>
+<a href="#window.active.button.pressed.bg"><code>window.active.button.pressed.bg</code></a><code>.color: #537797</code>
+<a href="#window.active.button.pressed.bg"><code>window.active.button.pressed.bg</code></a><code>.colorTo: #50708e</code>
+<a href="#window.active.button.pressed.bg"><code>window.active.button.pressed.bg</code></a><code>.border.color: #3d4c5a</code>
+<a href="#window.active.button.pressed.image.color"><code>window.active.button.pressed.image.color</code></a><code>: #ffffff</code></p>
+<p><a href="#window.active.button.disabled.bg"><code>window.active.button.disabled.bg</code></a><code>: Flat Gradient Vertical Border</code>
+<a href="#window.active.button.disabled.bg"><code>window.active.button.disabled.bg</code></a><code>.color: #537797</code>
+<a href="#window.active.button.disabled.bg"><code>window.active.button.disabled.bg</code></a><code>.colorTo: #50708e</code>
+<a href="#window.active.button.disabled.bg"><code>window.active.button.disabled.bg</code></a><code>.border.color: #3d4c5a</code>
+<a href="#window.active.button.disabled.image.color"><code>window.active.button.disabled.image.color</code></a><code>: #3d4c5a</code></p>
+<p><a href="#window.active.button.hover.bg"><code>window.active.button.hover.bg</code></a><code>: Flat Gradient Vertical Border</code>
+<a href="#window.active.button.hover.bg"><code>window.active.button.hover.bg</code></a><code>.color: #6993b9</code>
+<a href="#window.active.button.hover.bg"><code>window.active.button.hover.bg</code></a><code>.colorTo: #55799a</code>
+<a href="#window.active.button.hover.bg"><code>window.active.button.hover.bg</code></a><code>.border.color: #3d4c5a</code>
+<a href="#window.active.button.hover.image.color"><code>window.active.button.hover.image.color</code></a><code>: #ffffff</code></p>
+<p><a href="#window.active.button.toggled.unpressed.bg"><code>window.active.button.toggled.unpressed.bg</code></a><code>: Flat Gradient Vertical Border</code>
+<a href="#window.active.button.toggled.unpressed.bg"><code>window.active.button.toggled.unpressed.bg</code></a><code>.color: #6993b9</code>
+<a href="#window.active.button.toggled.unpressed.bg"><code>window.active.button.toggled.unpressed.bg</code></a><code>.colorTo: #55799a</code>
+<a href="#window.active.button.toggled.unpressed.bg"><code>window.active.button.toggled.unpressed.bg</code></a><code>.border.color: #3d4c5a</code>
+<a href="#window.active.button.toggled.unpressed.image.color"><code>window.active.button.toggled.unpressed.image.color</code></a><code>: #cccccc</code></p>
+<p><a href="#window.active.button.toggled.pressed.bg"><code>window.active.button.toggled.pressed.bg</code></a><code>: Flat Gradient Vertical Border</code>
+<a href="#window.active.button.toggled.pressed.bg"><code>window.active.button.toggled.pressed.bg</code></a><code>.color: #537797</code>
+<a href="#window.active.button.toggled.pressed.bg"><code>window.active.button.toggled.pressed.bg</code></a><code>.colorTo: #50708e</code>
+<a href="#window.active.button.toggled.pressed.bg"><code>window.active.button.toggled.pressed.bg</code></a><code>.border.color: #3d4c5a</code>
+<a href="#window.active.button.toggled.pressed.image.color"><code>window.active.button.toggled.pressed.image.color</code></a><code>: #ffffff</code></p>
+<p><a href="#window.active.button.toggled.hover.bg"><code>window.active.button.toggled.hover.bg</code></a><code>: Flat Gradient Vertical Border</code>
+<a href="#window.active.button.toggled.hover.bg"><code>window.active.button.toggled.hover.bg</code></a><code>.color: #6993b9</code>
+<a href="#window.active.button.toggled.hover.bg"><code>window.active.button.toggled.hover.bg</code></a><code>.colorTo: #55799a</code>
+<a href="#window.active.button.toggled.hover.bg"><code>window.active.button.toggled.hover.bg</code></a><code>.border.color: #3d4c5a</code>
+<a href="#window.active.button.toggled.hover.image.color"><code>window.active.button.toggled.hover.image.color</code></a><code>: #ffffff</code></p>
+<p><code># Inactive windows</code>
+<a href="#window.inactive.title.bg"><code>window.inactive.title.bg</code></a><code>: Raised Gradient Vertical</code>
+<a href="#window.inactive.title.bg"><code>window.inactive.title.bg</code></a><code>.color: #f1eeea</code>
+<a href="#window.inactive.title.bg"><code>window.inactive.title.bg</code></a><code>.colorTo: #d8cfc7</code></p>
+<p><a href="#window.inactive.label.bg"><code>window.inactive.label.bg</code></a><code>: Parentrelative</code>
+<a href="#window.inactive.label.text.color"><code>window.inactive.label.text.color</code></a><code>: #000000</code></p>
+<p><a href="#window.inactive.handle.bg"><code>window.inactive.handle.bg</code></a><code>: Raised Gradient Vertical</code>
+<a href="#window.inactive.handle.bg"><code>window.inactive.handle.bg</code></a><code>.color: #f1eeea</code>
+<a href="#window.inactive.handle.bg"><code>window.inactive.handle.bg</code></a><code>.colorTo: #d8cfc7</code></p>
+<p><a href="#window.inactive.grip.bg"><code>window.inactive.grip.bg</code></a><code>: Raised Gradient Vertical</code>
+<a href="#window.inactive.grip.bg"><code>window.inactive.grip.bg</code></a><code>.color: #f1eeea</code>
+<a href="#window.inactive.grip.bg"><code>window.inactive.grip.bg</code></a><code>.colorTo: #d8cfc7</code></p>
+<p><a href="#window.inactive.button.unpressed.bg"><code>window.inactive.button.unpressed.bg</code></a><code>: Flat Gradient Vertical Border</code>
+<a href="#window.inactive.button.unpressed.bg"><code>window.inactive.button.unpressed.bg</code></a><code>.color: #efebe7</code>
+<a href="#window.inactive.button.unpressed.bg"><code>window.inactive.button.unpressed.bg</code></a><code>.colorTo: #ddd6ce</code>
+<a href="#window.inactive.button.unpressed.bg"><code>window.inactive.button.unpressed.bg</code></a><code>.border.color: #8f8173</code>
+<a href="#window.inactive.button.unpressed.image.color"><code>window.inactive.button.unpressed.image.color</code></a><code>: #000000</code></p>
+<p><a href="#window.inactive.button.pressed.bg"><code>window.inactive.button.pressed.bg</code></a><code>: Flat Gradient Vertical Border</code>
+<a href="#window.inactive.button.pressed.bg"><code>window.inactive.button.pressed.bg</code></a><code>.color: #efebe7</code>
+<a href="#window.inactive.button.pressed.bg"><code>window.inactive.button.pressed.bg</code></a><code>.colorTo: #ddd6ce</code>
+<a href="#window.inactive.button.pressed.bg"><code>window.inactive.button.pressed.bg</code></a><code>.border.color: #8f8173</code>
+<a href="#window.inactive.button.pressed.image.color"><code>window.inactive.button.pressed.image.color</code></a><code>: #000000</code></p>
+<p><a href="#window.inactive.button.disabled.bg"><code>window.inactive.button.disabled.bg</code></a><code>: Flat Gradient Vertical Border</code>
+<a href="#window.inactive.button.disabled.bg"><code>window.inactive.button.disabled.bg</code></a><code>.color: #efebe7</code>
+<a href="#window.inactive.button.disabled.bg"><code>window.inactive.button.disabled.bg</code></a><code>.colorTo: #ddd6ce</code>
+<a href="#window.inactive.button.disabled.bg"><code>window.inactive.button.disabled.bg</code></a><code>.border.color: #8f8173</code>
+<a href="#window.inactive.button.disabled.image.color"><code>window.inactive.button.disabled.image.color</code></a><code>: #8f8173</code></p>
+<p><a href="#window.inactive.button.toggled.bg"><code>window.inactive.button.toggled.bg</code></a><code>: Flat Gradient Vertical Border</code>
+<a href="#window.inactive.button.toggled.bg"><code>window.inactive.button.toggled.bg</code></a><code>.color: #efebe7</code>
+<a href="#window.inactive.button.toggled.bg"><code>window.inactive.button.toggled.bg</code></a><code>.colorTo: #ddd6ce</code>
+<a href="#window.inactive.button.toggled.bg"><code>window.inactive.button.toggled.bg</code></a><code>.border.color: #8f8173</code>
+<a href="#window.inactive.button.toggled.image.color"><code>window.inactive.button.toggled.image.color</code></a><code>: #000000</code></p>
+<p><a href="#window.inactive.button.hover.bg"><code>window.inactive.button.hover.bg</code></a><code>: Flat Gradient Vertical Border</code>
+<a href="#window.inactive.button.hover.bg"><code>window.inactive.button.hover.bg</code></a><code>.color: #efebe7</code>
+<a href="#window.inactive.button.hover.bg"><code>window.inactive.button.hover.bg</code></a><code>.colorTo: #ddd6ce</code>
+<a href="#window.inactive.button.hover.bg"><code>window.inactive.button.hover.bg</code></a><code>.border.color: #8f8173</code>
+<a href="#window.inactive.button.hover.image.color"><code>window.inactive.button.hover.image.color</code></a><code>: #000000</code></p>
+<p><a href="#window.inactive.button.toggled.unpressed.bg"><code>window.inactive.button.toggled.unpressed.bg</code></a><code>: Flat Gradient Vertical Border</code>
+<a href="#window.inactive.button.toggled.unpressed.bg"><code>window.inactive.button.toggled.unpressed.bg</code></a><code>.color: #efebe7</code>
+<a href="#window.inactive.button.toggled.unpressed.bg"><code>window.inactive.button.toggled.unpressed.bg</code></a><code>.colorTo: #ddd6ce</code>
+<a href="#window.inactive.button.toggled.unpressed.bg"><code>window.inactive.button.toggled.unpressed.bg</code></a><code>.border.color: #8f8173</code>
+<a href="#window.inactive.button.toggled.unpressed.image.color"><code>window.inactive.button.toggled.unpressed.image.color</code></a><code>: #000000</code></p>
+<p><a href="#window.inactive.button.toggled.pressed.bg"><code>window.inactive.button.toggled.pressed.bg</code></a><code>: Flat Gradient Vertical Border</code>
+<a href="#window.inactive.button.toggled.pressed.bg"><code>window.inactive.button.toggled.pressed.bg</code></a><code>.color: #efebe7</code>
+<a href="#window.inactive.button.toggled.pressed.bg"><code>window.inactive.button.toggled.pressed.bg</code></a><code>.colorTo: #ddd6ce</code>
+<a href="#window.inactive.button.toggled.pressed.bg"><code>window.inactive.button.toggled.pressed.bg</code></a><code>.border.color: #8f8173</code>
+<a href="#window.inactive.button.toggled.pressed.image.color"><code>window.inactive.button.pressed.toggled.image.color</code></a><code>: #000000</code></p>
+<p><a href="#window.inactive.button.toggled.hover.bg"><code>window.inactive.button.toggled.hover.bg</code></a><code>: Flat Gradient Vertical Border</code>
+<a href="#window.inactive.button.toggled.hover.bg"><code>window.inactive.button.toggled.hover.bg</code></a><code>.color: #efebe7</code>
+<a href="#window.inactive.button.toggled.hover.bg"><code>window.inactive.button.toggled.hover.bg</code></a><code>.colorTo: #ddd6ce</code>
+<a href="#window.inactive.button.toggled.hover.bg"><code>window.inactive.button.toggled.hover.bg</code></a><code>.border.color: #8f8173</code>
+<a href="#window.inactive.button.toggled.hover.image.color"><code>window.inactive.button.toggled.hover.image.color</code></a><code>: #000000</code></p>
+<p><code># Menus</code>
+<a href="#menu.title.bg"><code>menu.title.bg</code></a><code>: Raised Gradient Vertical</code>
+<a href="#menu.title.bg"><code>menu.title.bg</code></a><code>.color: #658fb5</code>
+<a href="#menu.title.bg"><code>menu.title.bg</code></a><code>.colorTo: #4d6982</code>
+<a href="#menu.title.text.color"><code>menu.title.text.color</code></a><code>: #ffffff</code>
+<a href="#menu.title.text.justify"><code>menu.title.text.justify</code></a><code>: Left</code></p>
+<p><a href="#menu.separator.color"><code>menu.separator.color</code></a><code>: #444444</code>
+<a href="#menu.separator.width"><code>menu.separator.width</code></a><code>: 1</code>
+<a href="#menu.separator.padding.width"><code>menu.separator.padding.width</code></a><code>: 6</code>
+<a href="#menu.separator.padding.height"><code>menu.separator.padding.height</code></a><code>: 3</code></p>
+<p><a href="#menu.items.bg"><code>menu.items.bg</code></a><code>: Flat Solid</code>
+<a href="#menu.items.bg"><code>menu.items.bg</code></a><code>.color: #f8f5f2</code>
+<a href="#menu.items.text.color"><code>menu.items.text.color</code></a><code>: #000000</code>
+<a href="#menu.items.disabled.text.color"><code>menu.items.disabled.text.color</code></a><code>: #aaaaaa</code></p>
+<p><a href="#menu.items.active.bg"><code>menu.items.active.bg</code></a><code>: Flat Gradient Vertical</code>
+<a href="#menu.items.active.bg"><code>menu.items.active.bg</code></a><code>.color: #628cb2</code>
+<a href="#menu.items.active.bg"><code>menu.items.active.bg</code></a><code>.colorTo: #50708d</code>
+<a href="#menu.items.active.text.color"><code>menu.items.active.text.color</code></a><code>: #ffffff</code>
+<a href="#menu.items.active.disabled.text.color"><code>menu.items.active.disabled.text.color</code></a><code>: #aaaaaa</code></p>
+<p></code></p>
+<h1 id="data-types">Data types<a class="headerlink" href="#data-types" title="Permanent link">🔗</a></h1>
+<h2 id="integers">Integers<a class="headerlink" href="#integers" title="Permanent link">🔗</a></h2>
+<p>These are simply numbers like <code>1</code> or <code>42</code>. They can be prime, composite,
+or zero.</p>
+<p>Example: <code></p>
+<div class="highlight"><pre><span></span><code>window.handle.width: 3
+</code></pre></div>
+<p></code></p>
+<h2 id="justification">Justification<a class="headerlink" href="#justification" title="Permanent link">🔗</a></h2>
+<p>These determines how to justify text. Valid options are <code>Left</code>, <code>Center</code>
+and <code>Right</code>.</p>
+<p>Example: <code></p>
+<div class="highlight"><pre><span></span><code>menu.title.text.justify: Left
+</code></pre></div>
+<p></code></p>
+<h2 id="textures">Textures<a class="headerlink" href="#textures" title="Permanent link">🔗</a></h2>
+<p>These determine the visual look of an element. They are the most
+complicated part of a theme file, but they are still not too tricky.</p>
+<p>Textures are specified through a text string with a number of fields.
+Capitalization is not significant. The format is as follows (<code>|</code> stands
+for "or" and <code>[]</code> surround optional fields):</p>
+<div class="highlight"><pre><span></span><code>parentrelative | ((solid | gradient gradient-type) [border] [interlaced])
+</code></pre></div>
+<p>We'll dissect what that means exactly.</p>
+<h3 id="parentrelative">Parentrelative<a class="headerlink" href="#parentrelative" title="Permanent link">🔗</a></h3>
+<p>Parentrelative means that the element inherits its colors from the
+textures behind it. It is, in essence, completely transparent . Some
+theme elements can be parentrelative, and some can not. The
+documentation for each one will tell you if you can use parentrelative
+for it or not.</p>
+<p>Example: <code></p>
+<div class="highlight"><pre><span></span><code>window.active.label.bg: Parentrelative
+window.inactive.label.bg: Parentrelative Raised
+</code></pre></div>
+<p></code></p>
+<h3 id="solid">Solid<a class="headerlink" href="#solid" title="Permanent link">🔗</a></h3>
+<p>Solid means that the background of the texture is filled with a single
+color. The texture <em>must</em> be accompanied by a single <a href="#Colors">color
+field</a>.</p>
+<p>Example: <code></p>
+<div class="highlight"><pre><span></span><code>menu.items.bg:       Solid Flat
+menu.items.bg.color: #f8f5f2
+</code></pre></div>
+<p></code></p>
+<h3 id="gradients">Gradients<a class="headerlink" href="#gradients" title="Permanent link">🔗</a></h3>
+<p>When a gradient is specified, it must be followed by the gradient's
+type. Gradients all use two <a href="#Colors">color fields</a>: <code>color</code>
+and <code>colorTo</code> and must also be accompanied by these.</p>
+<p>Valid gradient types are:</p>
+<ul>
+<li>Diagonal - A gradient from the top left corner to the bottom right
+  corner</li>
+<li>CrossDiagonal - A gradient from the top right corner to the bottom
+  left corner</li>
+<li>Pyramid - A gradient that starts in all four corners and smooths to
+  the center of the texture</li>
+<li>Horizontal - A gradient from the left edge to the right</li>
+<li>MirrorHorizontal - A gradient from the left edge to the middle, and
+  then reversed to the right edge</li>
+<li>Vertical - A gradient from the top edge to the bottom</li>
+<li>SplitVertical - A gradient split in the middle that goes out toward
+  the top and bottom edges</li>
+</ul>
+<p>Example: <code></p>
+<div class="highlight"><pre><span></span><code>menu.title.bg:         Gradient Vertical Raised
+menu.title.bg.color:   #658fb5
+menu.title.bg.colorTo: #4d6982
+</code></pre></div>
+<p></code></p>
+<h4 id="splitvertical-gradients">SplitVertical gradients<a class="headerlink" href="#splitvertical-gradients" title="Permanent link">🔗</a></h4>
+<p>SplitVertical gradients have 2 optional, addition <a href="#Colors">color
+fields</a>: <code>color.splitTo</code> and <code>colorTo.splitTo</code>.
+These colors are the light colors used on the far top and bottom of the
+SplitVertical gradient. When these are omitted, then the default values
+for these are <code>color</code> * 5/4, and <code>colorTo</code> * 17/16.</p>
+<p>Example: <code></p>
+<div class="highlight"><pre><span></span><code>menu.title.bg:                 Gradient SplitVertical Raised
+menu.title.bg.color:           #658fb5
+menu.title.bg.color.splitTo:   #7595b9
+menu.title.bg.colorTo:         #4d6982
+menu.title.bg.colorTo.splitTo: #557485
+</code></pre></div>
+<p></code></p>
+<h3 id="border">Border<a class="headerlink" href="#border" title="Permanent link">🔗</a></h3>
+<p>Borders can be used on both solid and gradient textures. Valid options
+for the border are <code>Flat</code>, <code>Raised</code> and <code>Sunken</code>. When a border is not
+specified, <code>Raised</code> is assumed.</p>
+<p>Flat, by default, means no border at all. To add a flat solid border,
+use <code>Flat Border</code>. When using a flat border, the texture <em>must</em> be
+accompanied by a <a href="#Colors">border color</a>.</p>
+<p>Example: <code></p>
+<div class="highlight"><pre><span></span><code>window.active.button.unpressed.bg:              Gradient Vertical Flat Border
+window.active.button.unpressed.bg.border.color: #3d4c5a
+</code></pre></div>
+<p></code></p>
+<p>Raised and Sunken have two bevel options available to them. By default,
+a bevel is drawn around the very outside of the texture. If <code>Bevel2</code> is
+specified, then the bevel is drawn slightly in from the edge. This can
+be used to animate button presses/toggled states.</p>
+<p>The strength of the bevel highlights can also be determined by the
+theme, by using the <code>highlight</code> and <code>shadow</code> fields:</p>
+<p>The <code>highlight</code> field specifies the strength of the light bevel. It is a
+value above or equal to 0, where 0 makes no highlight at all, 256 makes
+the highlight color 100% brighter, 512 makes the highlight color 200%
+brighter, and so on. The default <code>highlight</code> is 128 (which is a 50%
+increase in brightness).</p>
+<p>The <code>shadow</code> field specifies the strength of the dark bevel. It is a
+value between 0 and 256, where 0 makes no shadow at all, and 256 makes a
+completely black shadow (100% decreased brightness). The default
+<code>shadow</code> is 64 (which is a 25% decrease in brightness).</p>
+<p>Example: <code></p>
+<div class="highlight"><pre><span></span><code>window.inactive.button.disabled.bg:           Gradient Diagonal Raised
+window.inactive.button.disabled.bg.color:     rgb:50/54/58
+window.inactive.button.disabled.bg.colorTo:   black
+window.inactive.button.disabled.bg.highlight: 128
+window.inactive.button.disabled.bg.shadow:    64
+
+window.inactive.button.toggled.pressed.bg:          Gradient Diagonal Raised Bevel2
+window.inactive.button.toggled.pressed.bg.color:    rgb:50/54/58
+window.inactive.button.toggled.pressed.bg.colorTo:  black
+</code></pre></div>
+<p></code></p>
+<h3 id="interlaced">Interlaced<a class="headerlink" href="#interlaced" title="Permanent link">🔗</a></h3>
+<p>Interlaced textures have a solid line drawn horizontally every second
+row. When you specify <code>interlaced</code>, the texture <em>must</em> be accompanied by
+an <a href="#Colors">interlaced color</a>.</p>
+<p>Example: <code></p>
+<div class="highlight"><pre><span></span><code>window.inactive.title.bg: Solid Flat Interlaced
+window.inactive.title.bg.color: #f5f5f5
+window.inactive.title.bg.interlace.color: #f6f6f6
+</code></pre></div>
+<p></code></p>
+<h2 id="colors">Colors<a class="headerlink" href="#colors" title="Permanent link">🔗</a></h2>
+<p>Colors can be specified by name or by their hexadecimal RGB value.</p>
+<h3 id="color-names">Color names<a class="headerlink" href="#color-names" title="Permanent link">🔗</a></h3>
+<p>Wikipedia has a <a href="http://en.wikipedia.org/wiki/Web_colors#X11_color_names">list of X11 color
+names</a>, and
+further <a href="http://en.wikipedia.org/wiki/X11_color_names">details here</a>.</p>
+<p>Example: <code></p>
+<div class="highlight"><pre><span></span><code>menu.items.active.text.color: white
+window.active.grip.bg.color: grey40
+</code></pre></div>
+<p></code></p>
+<h3 id="rgb-values">RGB values<a class="headerlink" href="#rgb-values" title="Permanent link">🔗</a></h3>
+<p>Colors can be specified by hexadecimal RGB values in two ways. The most
+familiar is through syntax similar to HTML, <code>#rrggbb</code>. However you may
+also use the format <code>rgb:rr/bb/gg</code>. What goes inside them for the <code>rr</code>,
+<code>gg</code> and <code>bb</code> values is identical.</p>
+<p>Example: <code></p>
+<div class="highlight"><pre><span></span><code>window.active.grip.bg.color: #658fb5
+window.active.label.text.color: #fff
+menu.items.active.bg.color: rgb:90/94/98
+window.active.title.bg.color: rgb:6/9/c
+</code></pre></div>
+<p></code></p>
+<p>Note that <code>#fff</code> is equivalent to <code>#f0f0f0</code>, <em>not</em> to <code>#ffffff</code>.</p>
+<h2 id="text-shadow-strings">Text shadow strings<a class="headerlink" href="#text-shadow-strings" title="Permanent link">🔗</a></h2>
+<p>Text shadows are specified through a specially formatted text string.</p>
+<p>There are three properties that can be placed in the string: <code>shadow</code>,
+<code>shadowtint</code> and <code>shadowoffset</code>.</p>
+<p>Shadow is a boolean value. It defaults to no. You can enable a shadow
+for text by using <code>shadow=y</code>.</p>
+<p>Shadowtint specifies the alpha value for the shadow as well as its color
+(black or white). It defaults to black and 50% opacity. You can specify
+the shadowtint by using <code>shadowtint=70</code>. The tint can be any integer
+between -100 and 100. 0 means 0% opacity (invisible), 100 means 100%
+opacity and black, -100 means 100% opacity and white.</p>
+<p>Shadowoffset specifies how far the shadow is should be offset from the
+text. It defaults to 1. It can be positive to move the shadow and and
+right from the text, or negative to move it up and left from the text.
+You can set the shadowoffset by using <code>shadowoffset=2</code>. A shadowoffset
+of 0 will place it exactly behind the text and it will not be visible.</p>
+<p>The text shadow string used to be for choosing a font for the theme as
+well. Any other properties in the string, such as those for choosing a
+font, are ignored.</p>
+<p>Example: <code></p>
+<div class="highlight"><pre><span></span><code>window.active.label.text.font:shadow=y:shadowtint=70:shadowoffset=1
+</code></pre></div>
+<p></code></p>
+<h1 id="theme-elements">Theme elements<a class="headerlink" href="#theme-elements" title="Permanent link">🔗</a></h1>
+<p>Each theme element corresponds to one part of a window or a menu. We'll
+start be discussing the elements that let you change the size and
+placement of things, and then talk about how to change the textures used
+to render everything.</p>
+<p>We're going to use a table such as this to describe each element:</p>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Integers">integer</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Valid:</td>
+<td>0-100</td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
+<p>Type shows the type of the value for the element.</p>
+<p>Default gives the default value for the element if it is not listed in
+the theme. When Default refers to another theme element, then it means
+that element's values are used.</p>
+<p>Valid gives valid ranges for elements that this is applicable for, such
+as <a href="#Integers">integer values</a>.</p>
+<p>Parentrelative specifies if a given texture may use the
+<a href="#Parentrelative">Parentrelative</a> visual type, when
+applicable.</p>
+<h2 id="geometry">Geometry<a class="headerlink" href="#geometry" title="Permanent link">🔗</a></h2>
+<h3 id="borderwidth">border.width<a class="headerlink" href="#borderwidth" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Integers">integer</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Valid:</td>
+<td>0 - 100</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the size of the border drawn around window frames.</p>
+<p>See also:
+<a href="#window.active.border.color">window.active.border.color</a>,
+<a href="#window.inactive.border.color">window.inactive.border.color</a></p>
+<h3 id="menuborderwidth">menu.border.width<a class="headerlink" href="#menuborderwidth" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Integers">integer</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#border.width">border.width</a></td>
+</tr>
+<tr>
+<td>Valid:</td>
+<td>0 - 100</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the size of the border drawn around menus.</p>
+<p>See also: <a href="#menu.border.color">menu.border.color</a></p>
+<h3 id="menuseparatorwidth">menu.separator.width<a class="headerlink" href="#menuseparatorwidth" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Integers">integer</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Valid:</td>
+<td>1 - 100</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the size of menu line separators.
+<span style="color:green"><strong><em>(As of version 3.4.7)</em></strong></span></p>
+<h3 id="menuseparatorpaddingwidth">menu.separator.padding.width<a class="headerlink" href="#menuseparatorpaddingwidth" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Integers">integer</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Valid:</td>
+<td>0 - 100</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the space on the left and right side of menu line separators.
+<span style="color:green"><strong><em>(As of version 3.4.7)</em></strong></span></p>
+<p>See also:
+<a href="#menu.separator.padding.height">menu.separator.padding.height</a></p>
+<h3 id="menuseparatorpaddingheight">menu.separator.padding.height<a class="headerlink" href="#menuseparatorpaddingheight" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Integers">integer</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Valid:</td>
+<td>0 - 100</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the space on the top and bottom of menu line separators.
+<span style="color:green"><strong><em>(As of version 3.4.7)</em></strong></span></p>
+<p>See also:
+<a href="#menu.separator.padding.width">menu.separator.padding.width</a></p>
+<h3 id="osdborderwidth">osd.border.width<a class="headerlink" href="#osdborderwidth" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Integers">integer</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#border.width">border.width</a></td>
+</tr>
+<tr>
+<td>Valid:</td>
+<td>0 - 100</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the size of the border drawn on-screen-dialogs, such as the
+focus cycling (Alt-Tab) dialog.</p>
+<p>See also: <a href="#osd.border.color">osd.border.color</a></p>
+<h3 id="windowclientpaddingwidth">window.client.padding.width<a class="headerlink" href="#windowclientpaddingwidth" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Integers">integer</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#padding.width">padding.width</a></td>
+</tr>
+<tr>
+<td>Valid:</td>
+<td>0 - 100</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the size of the left and right sides of the inner border. The
+inner border is drawn around the window, but inside the other
+decorations.</p>
+<p>See also:
+<a href="#window.active.client.color">window.active.client.color</a>,
+<a href="#window.inactive.client.color">window.inactive.client.color</a>
+<a href="#window.client.padding.height">window.client.padding.height</a></p>
+<h3 id="windowclientpaddingheight">window.client.padding.height<a class="headerlink" href="#windowclientpaddingheight" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Integers">integer</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.client.padding.width">window.client.padding.width</a></td>
+</tr>
+<tr>
+<td>Valid:</td>
+<td>0 - 100</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the size of the top and bottom sides of the inner border. The
+inner border is drawn around the window, but inside the other
+decorations.</p>
+<p>See also:
+<a href="#window.active.client.color">window.active.client.color</a>,
+<a href="#window.inactive.client.color">window.inactive.client.color</a>
+<a href="#window.client.padding.width">window.client.padding.width</a></p>
+<h3 id="windowhandlewidth">window.handle.width<a class="headerlink" href="#windowhandlewidth" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Integers">integer</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Valid:</td>
+<td>0 - 100</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the size of the window handle. The window handle is the piece
+of decorations on the bottom of windows. A value of 0 means that no
+handle is shown.</p>
+<p>See also:
+<a href="#window.active.handle.bg">window.active.handle.bg</a>,
+<a href="#window.inactive.handle.bg">window.inactive.handle.bg</a>,
+<a href="#window.active.grip.bg">window.active.grip.bg</a>,
+<a href="#window.inactive.grip.bg">window.inactive.grip.bg</a></p>
+<h3 id="paddingwidth">padding.width<a class="headerlink" href="#paddingwidth" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Integers">integer</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Valid:</td>
+<td>0 - 100</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the padding size, used for spacing out elements in the window
+decorations. This can be used to give a theme a more compact or a more
+relaxed feel. This specifies padding in the horizontal direction (and
+vertical direction if <a href="#padding.height">padding.height</a> is
+not explicitly set).</p>
+<p>See also: <a href="#padding.height">padding.height</a></p>
+<h3 id="paddingheight">padding.height<a class="headerlink" href="#paddingheight" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Integers">integer</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#padding.width">padding.width</a></td>
+</tr>
+<tr>
+<td>Valid:</td>
+<td>0 - 100</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the padding size, used for spacing out elements in the window
+decorations. This can be used to give a theme a more compact or a more
+relaxed feel. This specifies padding in only the vertical direction.</p>
+<p>See also: <a href="#padding.width">padding.width</a></p>
+<h3 id="menuoverlapx">menu.overlap.x<a class="headerlink" href="#menuoverlapx" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Integers">integer</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#menu.overlap">menu.overlap</a></td>
+</tr>
+<tr>
+<td>Valid:</td>
+<td>-100 - 100</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies how sub menus should overlap their parents. A positive value
+moves the submenu over top of their parent by that amount. A negative
+value moves the submenu away from their parent by that amount.
+<span style="color:green"><strong><em>(As of version 3.4.7)</em></strong></span></p>
+<p>See also: <a href="#menu.overlap.y">menu.overlap.y</a></p>
+<h3 id="menuoverlapy">menu.overlap.y<a class="headerlink" href="#menuoverlapy" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Integers">integer</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#menu.overlap">menu.overlap</a></td>
+</tr>
+<tr>
+<td>Valid:</td>
+<td>-100 - 100</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies how sub menus should be positioned relative to their parents.
+A positive value moves the submenu vertically down by that amount, a
+negative value moves it up by that amount.
+<span style="color:green"><strong><em>(As of version 3.4.7)</em></strong></span></p>
+<p>See also: <a href="#menu.overlap.x">menu.overlap.x</a></p>
+<h3 id="menuoverlap">menu.overlap<a class="headerlink" href="#menuoverlap" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Integers">integer</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Valid:</td>
+<td>-100 - 100</td>
+</tr>
+</tbody>
+</table>
+<p><span style="color:red"><strong><em>This property is obsolete and only present
+for backwards compatibility.</em></strong></span></p>
+<p>See also: <a href="#menu.overlap.x">menu.overlap.x</a>,
+<a href="#menu.overlap.y">menu.overlap.y</a></p>
+<h2 id="border-colors">Border colors<a class="headerlink" href="#border-colors" title="Permanent link">🔗</a></h2>
+<h3 id="windowactivebordercolor">window.active.border.color<a class="headerlink" href="#windowactivebordercolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#border.color">border.color</a></td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the border color for the focused window.</p>
+<p>See also: <a href="#border.width">border.width</a>,
+<a href="#window.inactive.border.color">window.inactive.border.color</a></p>
+<h3 id="windowactivetitleseparatorcolor">window.active.title.separator.color<a class="headerlink" href="#windowactivetitleseparatorcolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.active.border.color">window.active.border.color</a></td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the border color for the border between the titlebar and the
+window, for the focused window.</p>
+<p>See also:
+<a href="#window.inactive.title.separator.color">window.inactive.title.separator.color</a></p>
+<h3 id="windowinactivebordercolor">window.inactive.border.color<a class="headerlink" href="#windowinactivebordercolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.active.border.color">window.active.border.color</a></td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the border color for all non-focused windows.</p>
+<p>See also: <a href="#border.width">border.width</a>,
+<a href="#window.active.border.color">window.active.border.color</a></p>
+<h3 id="windowinactivetitleseparatorcolor">window.inactive.title.separator.color<a class="headerlink" href="#windowinactivetitleseparatorcolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.inactive.border.color">window.inactive.border.color</a></td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the border color for the border between the titlebar and the
+window, for non-focused windows.</p>
+<p>See also:
+<a href="#window.active.title.separator.color">window.active.title.separator.color</a></p>
+<h3 id="bordercolor">border.color<a class="headerlink" href="#bordercolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>black</td>
+</tr>
+</tbody>
+</table>
+<p><span style="color:red"><strong><em>This property is obsolete and only present
+for backwards compatibility.</em></strong></span></p>
+<p>See also:
+<a href="#window.active.border.color">window.active.border.color</a>,
+<a href="#window.inactive.border.color">window.inactive.border.color</a>,
+<a href="#menu.border.color">menu.border.color</a></p>
+<h3 id="windowactiveclientcolor">window.active.client.color<a class="headerlink" href="#windowactiveclientcolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>white</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the color of the inner border for the focused window, drawn
+around the window but inside the other decorations.</p>
+<p>See also:
+<a href="#window.client.padding.width">window.client.padding.width</a>,
+<a href="#window.inactive.client.color">window.inactive.client.color</a></p>
+<h3 id="windowinactiveclientcolor">window.inactive.client.color<a class="headerlink" href="#windowinactiveclientcolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>white</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the color of the inner border for non-focused windows, drawn
+around the window but inside the other decorations.</p>
+<p>See also:
+<a href="#window.client.padding.width">window.client.padding.width</a>,
+<a href="#window.active.client.color">window.active.client.color</a></p>
+<h3 id="menubordercolor">menu.border.color<a class="headerlink" href="#menubordercolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.active.border.color">window.active.border.color</a></td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the border color for menus.</p>
+<p>See also: <a href="#menu.border.width">menu.border.width</a></p>
+<h3 id="osdbordercolor">osd.border.color<a class="headerlink" href="#osdbordercolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.active.border.color">window.active.border.color</a></td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the border color for on-screen-dialogs, such as the focus
+cycling (Alt-Tab) dialog.</p>
+<p>See also: <a href="#osd.border.width">osd.border.width</a></p>
+<h2 id="titlebar-colors">Titlebar colors<a class="headerlink" href="#titlebar-colors" title="Permanent link">🔗</a></h2>
+<h3 id="windowactivelabeltextcolor">window.active.label.text.color<a class="headerlink" href="#windowactivelabeltextcolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>black</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the color of the titlebar text for the focused window.</p>
+<p>See also:
+<a href="#window.inactive.label.text.color">window.inactive.label.text.color</a></p>
+<h3 id="windowinactivelabeltextcolor">window.inactive.label.text.color<a class="headerlink" href="#windowinactivelabeltextcolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>white</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the color of the titlebar text for non-focused windows.</p>
+<p>See also:
+<a href="#window.active.label.text.color">window.active.label.text.color</a></p>
+<h3 id="windowactivebuttonunpressedimagecolor">window.active.button.unpressed.image.color<a class="headerlink" href="#windowactivebuttonunpressedimagecolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>black</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the color of the images in titlebar buttons in their default,
+unpressed, state. This element is for the focused window.</p>
+<p>See also:
+<a href="#window.inactive.button.unpressed.image.color">window.inactive.button.unpressed.image.color</a></p>
+<h3 id="windowactivebuttonpressedimagecolor">window.active.button.pressed.image.color<a class="headerlink" href="#windowactivebuttonpressedimagecolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.active.button.unpressed.image.color">window.active.button.unpressed.image.color</a></td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the color of the images in titlebar buttons when they are
+being pressed by the user. This element is for the focused window.</p>
+<p>See also:
+<a href="#window.inactive.button.pressed.image.color">window.inactive.button.pressed.image.color</a></p>
+<h3 id="windowactivebuttondisabledimagecolor">window.active.button.disabled.image.color<a class="headerlink" href="#windowactivebuttondisabledimagecolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>white</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the color of the images in titlebar buttons when they are
+disabled for the window. This element is for the focused window.</p>
+<p>See also:
+<a href="#window.inactive.button.disabled.image.color">window.inactive.button.disabled.image.color</a></p>
+<h3 id="windowactivebuttonhoverimagecolor">window.active.button.hover.image.color<a class="headerlink" href="#windowactivebuttonhoverimagecolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.active.button.unpressed.image.color">window.active.button.unpressed.image.color</a></td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the color of the images in titlebar buttons when the mouse is
+over top of the button. This element is for the focused window.</p>
+<p>See also:
+<a href="#window.inactive.button.hover.image.color">window.inactive.button.hover.image.color</a></p>
+<h3 id="windowactivebuttontoggledunpressedimagecolor">window.active.button.toggled.unpressed.image.color<a class="headerlink" href="#windowactivebuttontoggledunpressedimagecolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.active.button.toggled.image.color">window.active.button.toggled.image.color</a></td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the color of the images in titlebar buttons when the button is
+toggled - such as when a window is maximized. This element is for the
+focused window.</p>
+<p>See also:
+<a href="#window.inactive.button.toggled.unpressed.image.color">window.inactive.button.toggled.unpressed.image.color</a></p>
+<h3 id="windowactivebuttontoggledpressedimagecolor">window.active.button.toggled.pressed.image.color<a class="headerlink" href="#windowactivebuttontoggledpressedimagecolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.active.button.pressed.image.color">window.active.button.pressed.image.color</a></td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the color of the images in the titlebar buttons if they are
+pressed on with the mouse while they are in the toggled state - such as
+when a window is maximized. This element is for the focused window.</p>
+<p>See also:
+<a href="#window.inactive.button.toggled.pressed.image.color">window.inactive.button.toggled.pressed.image.color</a></p>
+<h3 id="windowactivebuttontoggledhoverimagecolor">window.active.button.toggled.hover.image.color<a class="headerlink" href="#windowactivebuttontoggledhoverimagecolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.active.button.toggled.unpressed.image.color">window.active.button.toggled.unpressed.image.color</a></td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the color of the images in the titlebar buttons when the mouse
+is hovered over them while they are in the toggled state - such as when
+a window is maximized. This element is for the focused window.</p>
+<p>See also:
+<a href="#window.inactive.button.toggled.hover.image.color">window.inactive.button.toggled.hover.image.color</a></p>
+<h3 id="windowactivebuttontoggledimagecolor">window.active.button.toggled.image.color<a class="headerlink" href="#windowactivebuttontoggledimagecolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.active.button.pressed.image.color">window.active.button.pressed.image.color</a></td>
+</tr>
+</tbody>
+</table>
+<p><span style="color:red"><strong><em>This property is obsolete and only present
+for backwards compatibility.</em></strong></span></p>
+<h3 id="windowinactivebuttonunpressedimagecolor">window.inactive.button.unpressed.image.color<a class="headerlink" href="#windowinactivebuttonunpressedimagecolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>white</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the color of the images in titlebar buttons in their default,
+unpressed, state. This element is for non-focused windows.</p>
+<p>See also:
+<a href="#window.active.button.unpressed.image.color">window.active.button.unpressed.image.color</a></p>
+<h3 id="windowinactivebuttonpressedimagecolor">window.inactive.button.pressed.image.color<a class="headerlink" href="#windowinactivebuttonpressedimagecolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.inactive.button.unpressed.image.color">window.inactive.button.unpressed.image.color</a></td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the color of the images in titlebar buttons when they are
+being pressed by the user. This element is for non-focused windows.</p>
+<p>This color is also used for pressed color when the button is toggled.</p>
+<p>See also:
+<a href="#window.active.button.pressed.image.color">window.active.button.pressed.image.color</a></p>
+<h3 id="windowinactivebuttondisabledimagecolor">window.inactive.button.disabled.image.color<a class="headerlink" href="#windowinactivebuttondisabledimagecolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>black</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the color of the images in titlebar buttons when they are
+disabled for the window. This element is for non-focused windows.</p>
+<p>See also:
+<a href="#window.active.button.disabled.image.color">window.active.button.disabled.image.color</a></p>
+<h3 id="windowinactivebuttonhoverimagecolor">window.inactive.button.hover.image.color<a class="headerlink" href="#windowinactivebuttonhoverimagecolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.inactive.button.unpressed.image.color">window.inactive.button.unpressed.image.color</a></td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the color of the images in titlebar buttons when the mouse is
+over top of the button. This element is for non-focused windows.</p>
+<p>See also:
+<a href="#window.active.button.hover.image.color">window.active.button.hover.image.color</a></p>
+<h3 id="windowinactivebuttontoggledunpressedimagecolor">window.inactive.button.toggled.unpressed.image.color<a class="headerlink" href="#windowinactivebuttontoggledunpressedimagecolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.inactive.button.toggled.image.color">window.inactive.button.toggled.image.color</a></td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the color of the images in titlebar buttons when the button is
+toggled - such as when a window is maximized. This element is for
+non-focused windows.</p>
+<p>See also:
+<a href="#window.active.button.toggled.unpressed.image.color">window.active.button.toggled.unpressed.image.color</a></p>
+<h3 id="windowinactivebuttontoggledpressedimagecolor">window.inactive.button.toggled.pressed.image.color<a class="headerlink" href="#windowinactivebuttontoggledpressedimagecolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.inactive.button.pressed.image.color">window.inactive.button.pressed.image.color</a></td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the color of the images in the titlebar buttons if they are
+pressed on with the mouse while they are in the toggled state - such as
+when a window is maximized. This element is for non-focused windows.</p>
+<p>See also:
+<a href="#window.active.button.toggled.pressed.image.color">window.active.button.toggled.pressed.image.color</a></p>
+<h3 id="windowinactivebuttontoggledhoverimagecolor">window.inactive.button.toggled.hover.image.color<a class="headerlink" href="#windowinactivebuttontoggledhoverimagecolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.inactive.button.toggled.unpressed.image.color">window.inactive.button.toggled.unpressed.image.color</a></td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the color of the images in the titlebar buttons when the mouse
+is hovered over them while they are in the toggled state - such as when
+a window is maximized. This element is for non-focused windows.</p>
+<p>See also:
+<a href="#window.active.button.toggled.hover.image.color">window.active.button.toggled.hover.image.color</a></p>
+<h3 id="windowinactivebuttontoggledimagecolor">window.inactive.button.toggled.image.color<a class="headerlink" href="#windowinactivebuttontoggledimagecolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.active.button.pressed.image.color">window.active.button.pressed.image.color</a></td>
+</tr>
+</tbody>
+</table>
+<p><span style="color:red"><strong><em>This property is obsolete and only present
+for backwards compatibility.</em></strong></span></p>
+<h2 id="active-window-textures">Active window textures<a class="headerlink" href="#active-window-textures" title="Permanent link">🔗</a></h2>
+<h3 id="windowactivetitlebg">window.active.title.bg<a class="headerlink" href="#windowactivetitlebg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the background for the focused window's titlebar.</p>
+<p>See also:
+<a href="#window.inactive.title.bg">window.inactive.title.bg</a></p>
+<h3 id="windowactivelabelbg">window.active.label.bg<a class="headerlink" href="#windowactivelabelbg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the background for the focused window's titlebar label. The
+label is the container for the window title. When it is parentrelative,
+then it uses the
+<a href="#window.active.title.bg">window.active.title.bg</a> which is
+underneath it.</p>
+<p>See also: <a href="#Titlebar_colors">titlebar colors</a>,
+<a href="#window.inactive.label.bg">window.inactive.label.bg</a>,
+<a href="#window.active.title.bg">window.active.title.bg</a></p>
+<h3 id="windowactivehandlebg">window.active.handle.bg<a class="headerlink" href="#windowactivehandlebg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the background for the focused window's handle. The handle is
+the window decorations placed on the bottom of windows.</p>
+<p>See also: <a href="#window.handle.width">window.handle.width</a>,
+<a href="#window.inactive.handle.bg">window.inactive.handle.bg</a></p>
+<h3 id="windowactivegripbg">window.active.grip.bg<a class="headerlink" href="#windowactivegripbg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the background for the focused window's grips. The grips are
+located at the left and right sides of the window's handle. When it is
+parentrelative, then it uses the
+<a href="#window.active.handle.bg">window.active.handle.bg</a> which is
+underneath it.</p>
+<p>See also: <a href="#window.handle.width">window.handle.width</a>,
+<a href="#window.inactive.grip.bg">window.inactive.grip.bg</a>,
+<a href="#window.active.handle.bg">window.active.handle.bg</a></p>
+<h2 id="inactive-window-textures">Inactive window textures<a class="headerlink" href="#inactive-window-textures" title="Permanent link">🔗</a></h2>
+<h3 id="windowinactivetitlebg">window.inactive.title.bg<a class="headerlink" href="#windowinactivetitlebg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the background for non-focused windows' titlebars.</p>
+<p>See also: <a href="#window.active.title.bg">window.active.title.bg</a></p>
+<h3 id="windowinactivelabelbg">window.inactive.label.bg<a class="headerlink" href="#windowinactivelabelbg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the background for non-focused windows' titlebar labels. The
+label is the container for the window title. When it is parentrelative,
+then it uses the
+<a href="#window.inactive.title.bg">window.inactive.title.bg</a> which
+is underneath it.</p>
+<p>See also: <a href="#Titlebar_colors">titlebar colors</a>,
+<a href="#window.active.label.bg">window.active.label.bg</a>,
+<a href="#window.inactive.title.bg">window.inactive.title.bg</a></p>
+<h3 id="windowinactivehandlebg">window.inactive.handle.bg<a class="headerlink" href="#windowinactivehandlebg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the background for non-focused windows' handles. The handle is
+the window decorations placed on the bottom of windows.</p>
+<p>See also: <a href="#window.handle.width">window.handle.width</a>,
+<a href="#window.active.handle.bg">window.active.handle.bg</a></p>
+<h3 id="windowinactivegripbg">window.inactive.grip.bg<a class="headerlink" href="#windowinactivegripbg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the background for non-focused windows' grips. The grips are
+located at the left and right sides of the window's handle. When it is
+parentrelative, then it uses the
+<a href="#window.inactive.handle.bg">window.inactive.handle.bg</a> which
+is underneath it.</p>
+<p>See also: <a href="#window.handle.width">window.handle.width</a>,
+<a href="#window.active.grip.bg">window.active.grip.bg</a>,
+<a href="#window.inactive.handle.bg">window.inactive.handle.bg</a></p>
+<h2 id="active-window-button-textures">Active window button textures<a class="headerlink" href="#active-window-button-textures" title="Permanent link">🔗</a></h2>
+<h3 id="windowactivebuttonunpressedbg">window.active.button.unpressed.bg<a class="headerlink" href="#windowactivebuttonunpressedbg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the background for titlebar buttons in their default,
+unpressed, state. This element is for the focused window. When it is
+parentrelative, then it uses the
+<a href="#window.active.title.bg">window.active.title.bg</a> which is
+underneath it.</p>
+<p>See also: <a href="#Titlebar_colors">titlebar colors</a>,
+<a href="#window.active.title.bg">window.active.title.bg</a>,
+<a href="#window.inactive.button.unpressed.bg">window.inactive.button.unpressed.bg</a></p>
+<h3 id="windowactivebuttonpressedbg">window.active.button.pressed.bg<a class="headerlink" href="#windowactivebuttonpressedbg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the background for titlebar buttons when they are being
+pressed by the user. This element is for the focused window. When it is
+parentrelative, then it uses the
+<a href="#window.active.title.bg">window.active.title.bg</a> which is
+underneath it.</p>
+<p>See also: <a href="#Titlebar_colors">titlebar colors</a>,
+<a href="#window.active.title.bg">window.active.title.bg</a>,
+<a href="#window.inactive.button.pressed.bg">window.inactive.button.pressed.bg</a></p>
+<h3 id="windowactivebuttonhoverbg">window.active.button.hover.bg<a class="headerlink" href="#windowactivebuttonhoverbg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.active.button.unpressed.bg">window.active.button.unpressed.bg</a></td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the background for titlebar buttons when the mouse is over
+them. This element is for the focused window. When it is parentrelative,
+then it uses the
+<a href="#window.active.title.bg">window.active.title.bg</a> which is
+underneath it.</p>
+<p>See also: <a href="#Titlebar_colors">titlebar colors</a>,
+<a href="#window.active.title.bg">window.active.title.bg</a>,
+<a href="#window.inactive.button.hover.bg">window.inactive.button.hover.bg</a></p>
+<h3 id="windowactivebuttondisabledbg">window.active.button.disabled.bg<a class="headerlink" href="#windowactivebuttondisabledbg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the background for titlebar buttons when they are disabled for
+the window. This element is for the focused window. When it is
+parentrelative, then it uses the
+<a href="#window.active.title.bg">window.active.title.bg</a> which is
+underneath it.</p>
+<p>See also: <a href="#Titlebar_colors">titlebar colors</a>,
+<a href="#window.active.title.bg">window.active.title.bg</a>,
+<a href="#window.inactive.button.disabled.bg">window.inactive.button.disabled.bg</a></p>
+<h3 id="windowactivebuttontoggledunpressedbg">window.active.button.toggled.unpressed.bg<a class="headerlink" href="#windowactivebuttontoggledunpressedbg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.active.button.toggled.bg">window.active.button.toggled.bg</a></td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the default background for titlebar buttons when they are
+toggled - such as when a window is maximized. This element is for the
+focused window. When it is parentrelative, then it uses the
+<a href="#window.inactive.title.bg">window.inactive.title.bg</a> which
+is underneath it.</p>
+<p>See also: <a href="#Titlebar_colors">titlebar colors</a>,
+<a href="#window.active.title.bg">window.active.title.bg</a>,
+<a href="#window.inactive.button.toggled.unpresssed.bg">window.inactive.button.toggled.unpressed.bg</a></p>
+<h3 id="windowactivebuttontoggledpressedbg">window.active.button.toggled.pressed.bg<a class="headerlink" href="#windowactivebuttontoggledpressedbg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.active.button.pressed.bg">window.active.button.pressed.bg</a></td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the default background for titlebar buttons if the user is
+pressing them with the mouse while they are toggled - such as when a
+window is maximized. This element is for the focused window. When it is
+parentrelative, then it uses the
+<a href="#window.inactive.title.bg">window.inactive.title.bg</a> which
+is underneath it.</p>
+<p>See also: <a href="#Titlebar_colors">titlebar colors</a>,
+<a href="#window.active.title.bg">window.active.title.bg</a>,
+<a href="#window.inactive.button.toggled.presssed.bg">window.inactive.button.toggled.pressed.bg</a></p>
+<h3 id="windowactivebuttontoggledhoverbg">window.active.button.toggled.hover.bg<a class="headerlink" href="#windowactivebuttontoggledhoverbg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.active.button.toggled.unpressed.bg">window.active.button.toggled.unpressed.bg</a></td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the default background for titlebar buttons if the user is
+pressing them with the mouse while they are toggled - such as when a
+window is maximized. This element is for the focused window. When it is
+parentrelative, then it uses the
+<a href="#window.inactive.title.bg">window.inactive.title.bg</a> which
+is underneath it.</p>
+<p>See also: <a href="#Titlebar_colors">titlebar colors</a>,
+<a href="#window.active.title.bg">window.active.title.bg</a>,
+<a href="#window.inactive.button.toggled.hover.bg">window.inactive.button.toggled.hover.bg</a></p>
+<h3 id="windowactivebuttontoggledbg">window.active.button.toggled.bg<a class="headerlink" href="#windowactivebuttontoggledbg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.active.button.pressed.bg">window.active.button.pressed.bg</a></td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p><span style="color:red"><strong><em>This property is obsolete and only present
+for backwards compatibility.</em></strong></span></p>
+<h2 id="inactive-window-button-textures">Inactive window button textures<a class="headerlink" href="#inactive-window-button-textures" title="Permanent link">🔗</a></h2>
+<h3 id="windowinactivebuttonunpressedbg">window.inactive.button.unpressed.bg<a class="headerlink" href="#windowinactivebuttonunpressedbg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the background for titlebar buttons in their default,
+unpressed, state. This element is for non-focused windows. When it is
+parentrelative, then it uses the
+<a href="#window.inactive.title.bg">window.inactive.title.bg</a> which
+is underneath it.</p>
+<p>See also: <a href="#Titlebar_colors">titlebar colors</a>,
+<a href="#window.inactive.title.bg">window.inactive.title.bg</a>,
+<a href="#window.active.button.unpressed.bg">window.active.button.unpressed.bg</a></p>
+<h3 id="windowinactivebuttonpressedbg">window.inactive.button.pressed.bg<a class="headerlink" href="#windowinactivebuttonpressedbg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the background for titlebar buttons when they are being
+pressed by the user. This element is for non-focused windows. When it is
+parentrelative, then it uses the
+<a href="#window.inactive.title.bg">window.inactive.title.bg</a> which
+is underneath it.</p>
+<p>See also: <a href="#Titlebar_colors">titlebar colors</a>,
+<a href="#window.inactive.title.bg">window.inactive.title.bg</a>,
+<a href="#window.active.button.pressed.bg">window.active.button.pressed.bg</a></p>
+<h3 id="windowinactivebuttonhoverbg">window.inactive.button.hover.bg<a class="headerlink" href="#windowinactivebuttonhoverbg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.inactive.button.unpressed.bg">window.inactive.button.unpressed.bg</a></td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the background for titlebar buttons when the mouse is over
+them. This element is for non-focused windows. When it is
+parentrelative, then it uses the
+<a href="#window.inactive.title.bg">window.inactive.title.bg</a> which
+is underneath it.</p>
+<p>See also: <a href="#Titlebar_colors">titlebar colors</a>,
+<a href="#window.inactive.title.bg">window.inactive.title.bg</a>,
+<a href="#window.active.button.hover.bg">window.active.button.hover.bg</a></p>
+<h3 id="windowinactivebuttondisabledbg">window.inactive.button.disabled.bg<a class="headerlink" href="#windowinactivebuttondisabledbg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the background for titlebar buttons when they are disabled for
+the window. This element is for non-focused windows. When it is
+parentrelative, then it uses the
+<a href="#window.inactive.title.bg">window.inactive.title.bg</a> which
+is underneath it.</p>
+<p>See also: <a href="#Titlebar_colors">titlebar colors</a>,
+<a href="#window.inactive.title.bg">window.inactive.title.bg</a>,
+<a href="#window.active.button.disabled.bg">window.active.button.disabled.bg</a></p>
+<h3 id="windowinactivebuttontoggledunpressedbg">window.inactive.button.toggled.unpressed.bg<a class="headerlink" href="#windowinactivebuttontoggledunpressedbg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.inactive.button.toggled.bg">window.inactive.button.toggled.bg</a></td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the default background for titlebar buttons when they are
+toggled - such as when a window is maximized. This element is for
+non-focused windows. When it is parentrelative, then it uses the
+<a href="#window.inactive.title.bg">window.inactive.title.bg</a> which
+is underneath it.</p>
+<p>See also: <a href="#Titlebar_colors">titlebar colors</a>,
+<a href="#window.inactive.title.bg">window.inactive.title.bg</a>,
+<a href="#window.active.button.toggled.unpresssed.bg">window.active.button.toggled.unpressed.bg</a></p>
+<h3 id="windowinactivebuttontoggledpressedbg">window.inactive.button.toggled.pressed.bg<a class="headerlink" href="#windowinactivebuttontoggledpressedbg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.inactive.button.pressed.bg">window.inactive.button.pressed.bg</a></td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the default background for titlebar buttons if the user is
+pressing them with the mouse while they are toggled - such as when a
+window is maximized. This element is for non-focused windows. When it is
+parentrelative, then it uses the
+<a href="#window.inactive.title.bg">window.inactive.title.bg</a> which
+is underneath it.</p>
+<p>See also: <a href="#Titlebar_colors">titlebar colors</a>,
+<a href="#window.inactive.title.bg">window.inactive.title.bg</a>,
+<a href="#window.active.button.toggled.presssed.bg">window.active.button.toggled.pressed.bg</a></p>
+<h3 id="windowinactivebuttontoggledhoverbg">window.inactive.button.toggled.hover.bg<a class="headerlink" href="#windowinactivebuttontoggledhoverbg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.inactive.button.toggled.unpressed.bg">window.inactive.button.toggled.unpressed.bg</a></td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the default background for titlebar buttons if the user is
+pressing them with the mouse while they are toggled - such as when a
+window is maximized. This element is for non-focused windows. When it is
+parentrelative, then it uses the
+<a href="#window.inactive.title.bg">window.inactive.title.bg</a> which
+is underneath it.</p>
+<p>See also: <a href="#Titlebar_colors">titlebar colors</a>,
+<a href="#window.inactive.title.bg">window.inactive.title.bg</a>,
+<a href="#window.active.button.toggled.hover.bg">window.active.button.toggled.hover.bg</a></p>
+<h3 id="windowinactivebuttontoggledbg">window.inactive.button.toggled.bg<a class="headerlink" href="#windowinactivebuttontoggledbg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.inactive.button.pressed.bg">window.inactive.button.pressed.bg</a></td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p><span style="color:red"><strong><em>This property is obsolete and only present
+for backwards compatibility.</em></strong></span></p>
+<h2 id="menu-colors">Menu colors<a class="headerlink" href="#menu-colors" title="Permanent link">🔗</a></h2>
+<h3 id="menutitletextcolor">menu.title.text.color<a class="headerlink" href="#menutitletextcolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>black</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the text color for menu headers.</p>
+<h3 id="menuitemstextcolor">menu.items.text.color<a class="headerlink" href="#menuitemstextcolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>white</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the text color for normal menu entries.</p>
+<h3 id="menuitemsdisabledtextcolor">menu.items.disabled.text.color<a class="headerlink" href="#menuitemsdisabledtextcolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>black</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the text color for disabled menu entries.</p>
+<h3 id="menuitemsactivetextcolor">menu.items.active.text.color<a class="headerlink" href="#menuitemsactivetextcolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>black</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the text color for normal menu entries when they are selected.</p>
+<h3 id="menuitemsactivedisabledtextcolor">menu.items.active.disabled.text.color<a class="headerlink" href="#menuitemsactivedisabledtextcolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#menu.items.disabled.text.color">menu.items.disabled.text.color</a></td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the text color for disabled menu entries when they are
+selected.</p>
+<h3 id="menuseparatorcolor">menu.separator.color<a class="headerlink" href="#menuseparatorcolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#menu.items.text.color">menu.items.text.color</a></td>
+</tr>
+</tbody>
+</table>
+<p>The color of menu line separators. <span style="color:green"><strong><em>(As of
+version 3.4.7)</em></strong></span></p>
+<p>See also: <a href="#menu.items.text.color">menu.items.text.color</a></p>
+<h2 id="menu-textures">Menu textures<a class="headerlink" href="#menu-textures" title="Permanent link">🔗</a></h2>
+<h3 id="menuitemsbg">menu.items.bg<a class="headerlink" href="#menuitemsbg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the background for menus.</p>
+<p>See also: <a href="#menu.items.active.bg">menu.items.active.bg</a></p>
+<h3 id="menuitemsactivebg">menu.items.active.bg<a class="headerlink" href="#menuitemsactivebg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the background for the selected menu entry (whether or not it
+is disabled). When it is parentrelative, then it uses the
+<a href="#menu.items.bg">menu.items.bg</a> which is underneath it.</p>
+<p>See also: <a href="#menu.items.bg">menu.items.bg</a></p>
+<h3 id="menutitlebg">menu.title.bg<a class="headerlink" href="#menutitlebg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the background for menu headers. When it is parentrelative,
+then it uses the <a href="#menu.items.bg">menu.items.bg</a> which is
+underneath it.</p>
+<p>See also: <a href="#menu.items.bg">menu.items.bg</a></p>
+<h2 id="osd-textures">OSD textures<a class="headerlink" href="#osd-textures" title="Permanent link">🔗</a></h2>
+<h3 id="osdbg">osd.bg<a class="headerlink" href="#osdbg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.active.title.bg">window.active.title.bg</a></td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the background for on-screen-dialogs, such as the focus
+cycling (Alt-Tab) dialog.</p>
+<h3 id="osdlabelbg">osd.label.bg<a class="headerlink" href="#osdlabelbg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.active.label.bg">window.active.label.bg</a></td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the background for text in on-screen-dialogs, such as the
+focus cycling (Alt-Tab) dialog.</p>
+<h3 id="osdhilightbg">osd.hilight.bg<a class="headerlink" href="#osdhilightbg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.active.label.bg">window.active.label.bg</a>, if it is not parentrelative. Otherwise, <a href="#window.active.title.bg">window.active.title.bg</a></td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the texture for the selected desktop in the desktop cycling
+(pager) dialog.</p>
+<h3 id="osdunhilightbg">osd.unhilight.bg<a class="headerlink" href="#osdunhilightbg" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Textures">texture</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td><a href="#window.inactive.label.bg">window.inactive.label.bg</a>, if it is not parentrelative. Otherwise, <a href="#window.inactive.title.bg">window.inactive.title.bg</a></td>
+</tr>
+<tr>
+<td>Parentrelative:</td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the texture for unselected desktops in the desktop cycling
+(pager) dialog.</p>
+<h2 id="osd-colors">OSD colors<a class="headerlink" href="#osd-colors" title="Permanent link">🔗</a></h2>
+<h3 id="osdlabeltextcolor">osd.label.text.color<a class="headerlink" href="#osdlabeltextcolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>black</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the text color for on-screen-dialogs, such as the focus
+cycling (Alt-Tab) dialog.</p>
+<h3 id="osdhilightbgcolor">osd.hilight.bg.color<a class="headerlink" href="#osdhilightbgcolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>black</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the color for selected desktops in the desktop cycling (pager)
+dialog.</p>
+<h3 id="osdunhilightbgcolor">osd.unhilight.bg.color<a class="headerlink" href="#osdunhilightbgcolor" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Colors">color</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>black</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the color for unselected desktops in the desktop cycling
+(pager) dialog.</p>
+<h2 id="text-justification">Text justification<a class="headerlink" href="#text-justification" title="Permanent link">🔗</a></h2>
+<h3 id="windowlabeltextjustify">window.label.text.justify<a class="headerlink" href="#windowlabeltextjustify" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Justification">justification</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>Left</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies how window titles are aligned in the titlebar for both the
+focused and non-focused windows.</p>
+<h3 id="menutitletextjustify">menu.title.text.justify<a class="headerlink" href="#menutitletextjustify" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Justification">justification</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>Left</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies how text is aligned in all menu headers.</p>
+<h2 id="text-shadows">Text shadows<a class="headerlink" href="#text-shadows" title="Permanent link">🔗</a></h2>
+<h3 id="windowactivelabeltextfont">window.active.label.text.font<a class="headerlink" href="#windowactivelabeltextfont" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Text_shadow_strings">text shadow string</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>no shadow</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the shadow for the focused window's title.</p>
+<p>See also:
+<a href="#window.inactive.label.text.font">window.inactive.label.text.font</a></p>
+<h3 id="windowinactivelabeltextfont">window.inactive.label.text.font<a class="headerlink" href="#windowinactivelabeltextfont" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Text_shadow_strings">text shadow string</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>no shadow</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the shadow for non-focused windows' titles.</p>
+<p>See also:
+<a href="#window.active.label.text.font">window.active.label.text.font</a></p>
+<h3 id="menuitemsfont">menu.items.font<a class="headerlink" href="#menuitemsfont" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Text_shadow_strings">text shadow string</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>no shadow</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the shadow for all menu entries.</p>
+<h3 id="menutitletextfont">menu.title.text.font<a class="headerlink" href="#menutitletextfont" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Text_shadow_strings">text shadow string</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>no shadow</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the shadow for all menu headers.</p>
+<h3 id="osdlabeltextfont">osd.label.text.font<a class="headerlink" href="#osdlabeltextfont" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th><a href="#Text_shadow_strings">text shadow string</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default:</td>
+<td>no shadow</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the text shadow for on-screen-dialogs, such as the focus
+cycling (Alt-Tab) dialog.</p>
+<h1 id="dialogs">Dialogs<a class="headerlink" href="#dialogs" title="Permanent link">🔗</a></h1>
+<p>Openbox shows dialog boxes in some situations. Two examples are:</p>
+<ul>
+<li>The exit dialog window that appears when the <a href="Help:Actions#Exit">exit
+  action</a> is called.</li>
+<li>When closing a window for a program that is not responding.</li>
+</ul>
+<p>These dialogs have buttons, such as <strong>Cancel</strong> and <strong>Exit</strong>. These
+buttons get their background information from
+<a href="Help:Themes#Active_window_button_textures">window.active.button.*.bg</a>.
+The buttons' text color comes from
+<a href="Help:Themes#window.active.button.unpressed.image.color">window.active.button.*.image.color</a>.</p>
+<h1 id="button-images">Button images<a class="headerlink" href="#button-images" title="Permanent link">🔗</a></h1>
+<p>The images used for the titlebar buttons and the submenu bullet are
+1-bit xbm (X Bitmaps). These are masks where 0 = clear and 1 = colored.</p>
+<p>The xbm image files are placed in the same directory within your theme
+as the <code>themerc</code> file, as shown in the <a href="#Theme_file_structure">file structure
+discussion</a>.</p>
+<p>The xbm's which Openbox uses as its internal defaults are distributed
+with Openbox and installed to <code>/usr/share/doc/openbox/xbm</code>.</p>
+<p>Here are all the possible xbm files which Openbox looks for.</p>
+<h2 id="maximized-button">Maximized button<a class="headerlink" href="#maximized-button" title="Permanent link">🔗</a></h2>
+<h3 id="maxxbm">max.xbm<a class="headerlink" href="#maxxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>Internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Maximize button in its default, unpressed state.</p>
+<h3 id="max_toggledxbm">max_toggled.xbm<a class="headerlink" href="#max_toggledxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>If max.xbm is present, it uses that. If not, it has a separate internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Maximize button when it is in toggled state.</p>
+<h3 id="max_pressedxbm">max_pressed.xbm<a class="headerlink" href="#max_pressedxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>max.xbm, or its internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Maximized button when pressed.</p>
+<h3 id="max_disabledxbm">max_disabled.xbm<a class="headerlink" href="#max_disabledxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>max.xbm, or its internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Maximized button when disabled.</p>
+<h3 id="max_hoverxbm">max_hover.xbm<a class="headerlink" href="#max_hoverxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>max.xbm, or its internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Maximized button when mouse is over it.</p>
+<h3 id="max_toggled_pressedxbm">max_toggled_pressed.xbm<a class="headerlink" href="#max_toggled_pressedxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>max_toggled.xbm, or max.xbm, or its internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Maximized button when pressed, in toggled state.</p>
+<h3 id="max_toggled_hoverxbm">max_toggled_hover.xbm<a class="headerlink" href="#max_toggled_hoverxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>max_toggled.xbm, or max.xbm, or its internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Maximized button when mouse is over it, in toggled state.</p>
+<h2 id="iconify-button">Iconify button<a class="headerlink" href="#iconify-button" title="Permanent link">🔗</a></h2>
+<h3 id="iconifyxbm">iconify.xbm<a class="headerlink" href="#iconifyxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>Internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Iconify button in its default, unpressed state.</p>
+<h3 id="iconify_pressedxbm">iconify_pressed.xbm<a class="headerlink" href="#iconify_pressedxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>iconify.xbm, or its internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Iconify button when pressed.</p>
+<h3 id="iconify_disabledxbm">iconify_disabled.xbm<a class="headerlink" href="#iconify_disabledxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>iconify.xbm, or its internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Iconify button when disabled.</p>
+<h3 id="iconify_hoverxbm">iconify_hover.xbm<a class="headerlink" href="#iconify_hoverxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>iconify.xbm, or its internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Iconify button when mouse is over it.</p>
+<h2 id="close-button">Close button<a class="headerlink" href="#close-button" title="Permanent link">🔗</a></h2>
+<h3 id="closexbm">close.xbm<a class="headerlink" href="#closexbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>Internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Close button in its default, unpressed state.</p>
+<h3 id="close_pressedxbm">close_pressed.xbm<a class="headerlink" href="#close_pressedxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>close.xbm, or its internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Close button when pressed.</p>
+<h3 id="close_disabledxbm">close_disabled.xbm<a class="headerlink" href="#close_disabledxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>close.xbm, or its internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Close button when disabled.</p>
+<h3 id="close_hoverxbm">close_hover.xbm<a class="headerlink" href="#close_hoverxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>close.xbm, or its internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Close button when mouse is over it.</p>
+<h2 id="all-desktops-button">All-desktops button<a class="headerlink" href="#all-desktops-button" title="Permanent link">🔗</a></h2>
+<h3 id="deskxbm">desk.xbm<a class="headerlink" href="#deskxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>Internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>All-desktops button in its default, unpressed state.</p>
+<h3 id="desk_toggledxbm">desk_toggled.xbm<a class="headerlink" href="#desk_toggledxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>If desk.xbm is present, it uses that. If not, it has a separate internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>All-desktops button when it is in toggled state.</p>
+<h3 id="desk_pressedxbm">desk_pressed.xbm<a class="headerlink" href="#desk_pressedxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>desk.xbm, or its internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>All-desktops button when pressed.</p>
+<h3 id="desk_disabledxbm">desk_disabled.xbm<a class="headerlink" href="#desk_disabledxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>desk.xbm, or its internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>All-desktops button when disabled.</p>
+<h3 id="desk_hoverxbm">desk_hover.xbm<a class="headerlink" href="#desk_hoverxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>desk.xbm, or its internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>All-desktops button when mouse is over it.</p>
+<h3 id="desk_toggled_pressedxbm">desk_toggled_pressed.xbm<a class="headerlink" href="#desk_toggled_pressedxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>desk_toggled.xbm, or desk.xbm, or its internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>All-desktops button when pressed, in toggled state.</p>
+<h3 id="desk_toggled_hoverxbm">desk_toggled_hover.xbm<a class="headerlink" href="#desk_toggled_hoverxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>desk_toggled.xbm, or desk.xbm, or its internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>All-desktops button when mouse is over it, in toggled state.</p>
+<h2 id="shade-button">Shade button<a class="headerlink" href="#shade-button" title="Permanent link">🔗</a></h2>
+<h3 id="shadexbm">shade.xbm<a class="headerlink" href="#shadexbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>Internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Shade button in its default, unpressed state.</p>
+<h3 id="shade_toggledxbm">shade_toggled.xbm<a class="headerlink" href="#shade_toggledxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>If shade.xbm is present, it uses that. If not, it has a separate internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Shade button when it is in toggled state.</p>
+<h3 id="shade_pressedxbm">shade_pressed.xbm<a class="headerlink" href="#shade_pressedxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>shade.xbm, or its internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Shade button when pressed.</p>
+<h3 id="shade_disabledxbm">shade_disabled.xbm<a class="headerlink" href="#shade_disabledxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>shade.xbm, or its internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Shade button when disabled.</p>
+<h3 id="shade_hoverxbm">shade_hover.xbm<a class="headerlink" href="#shade_hoverxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>shade.xbm, or its internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Shade button when mouse is over it.</p>
+<h3 id="shade_toggled_pressedxbm">shade_toggled_pressed.xbm<a class="headerlink" href="#shade_toggled_pressedxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>shade_toggled.xbm, or shade.xbm, or its internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Shade button when pressed, in toggled state.</p>
+<h3 id="shade_toggled_hoverxbm">shade_toggled_hover.xbm<a class="headerlink" href="#shade_toggled_hoverxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>shade_toggled.xbm, or shade.xbm, or its internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Shade button when mouse is over it, in toggled state.</p>
+<h2 id="submenu-bullet">Submenu bullet<a class="headerlink" href="#submenu-bullet" title="Permanent link">🔗</a></h2>
+<h3 id="bulletxbm">bullet.xbm<a class="headerlink" href="#bulletxbm" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Default:</th>
+<th>Internal default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>The bullet shown in a menu for submenu entries.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../Session/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Session" rel="prev">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Session
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../UpgradingTo3.4/" class="md-footer__link md-footer__link--next" aria-label="Next: Upgrading to 3.4" rel="next">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Upgrading to 3.4
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/redtide/openbox-wiki" target="_blank" rel="noopener" title="Openbox Wiki on GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.action.view", "content.code.copy", "header.autohide", "navigation.footer", "navigation.top"], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

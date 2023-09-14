@@ -12,13 +12,13 @@
         <meta name="author" content="Openbox Wiki Group">
       
       
-        <link rel="canonical" href="https://redtide.github.io/openbox-wiki/Help/Contents/">
+        <link rel="canonical" href="https://redtide.github.io/openbox-wiki/Help/Applications/">
       
       
-        <link rel="prev" href="../Configuration/">
+        <link rel="prev" href="../../DesignDocuments/Tasks/">
       
       
-        <link rel="next" href="../DefaultConfiguration/">
+        <link rel="next" href="../Autostart/">
       
       
       <link rel="icon" href="../../assets/ico/favicon.ico">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Contents - Openbox Wiki</title>
+        <title>Applications - Openbox Wiki</title>
       
     
     
@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#contents" class="md-skip">
+        <a href="#settings-for-specific-windows-per-application-settings" class="md-skip">
           Skip to content
         </a>
       
@@ -123,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Contents
+              Applications
             
           </span>
         </div>
@@ -625,9 +625,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../Applications/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Applications
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -636,6 +656,68 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    Syntax
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finding-the-class-name-role-title-and-type-parameters" class="md-nav__link">
+    Finding the class, name, role, title and type parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#matching-windows-with-wildcards" class="md-nav__link">
+    Matching windows with wildcards
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#matching-against-multiple-rules" class="md-nav__link">
+    Matching against multiple rules
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-of-per-app-settings" class="md-nav__link">
+    Example of per-app settings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphically-managing-per-application-settings" class="md-nav__link">
+    Graphically managing per-application settings
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -705,29 +787,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Contents
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Contents/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -736,278 +798,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#rcxml" class="md-nav__link">
-    rc.xml
-  </a>
-  
-    <nav class="md-nav" aria-label="rc.xml">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    Configuration
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#application-settings" class="md-nav__link">
-    Application settings
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#mouse-keybindings" class="md-nav__link">
-    Mouse &amp; keybindings
-  </a>
-  
-    <nav class="md-nav" aria-label="Mouse & keybindings">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#binding-documentation" class="md-nav__link">
-    Binding documentation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#actions" class="md-nav__link">
-    Actions
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#menus" class="md-nav__link">
-    Menus
-  </a>
-  
-    <nav class="md-nav" aria-label="Menus">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#menu-documentation" class="md-nav__link">
-    Menu documentation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#actions_1" class="md-nav__link">
-    Actions
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pipe-menus" class="md-nav__link">
-    Pipe menus
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#generating-an-applications-menu" class="md-nav__link">
-    Generating an applications menu
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#themes" class="md-nav__link">
-    Themes
-  </a>
-  
-    <nav class="md-nav" aria-label="Themes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#theme-specification" class="md-nav__link">
-    Theme specification
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#openbox-34-theme-file-changes" class="md-nav__link">
-    Openbox 3.4 theme file changes
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#desktop-environments" class="md-nav__link">
-    Desktop Environments
-  </a>
-  
-    <nav class="md-nav" aria-label="Desktop Environments">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#openbox-in-gnome" class="md-nav__link">
-    Openbox in GNOME
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#openbox-in-kde" class="md-nav__link">
-    Openbox in KDE
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#openbox-in-xfce" class="md-nav__link">
-    Openbox in XFCE
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#custom-desktop-environments" class="md-nav__link">
-    Custom Desktop Environments
-  </a>
-  
-    <nav class="md-nav" aria-label="Custom Desktop Environments">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#openbox-session" class="md-nav__link">
-    openbox-session
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#autostart" class="md-nav__link">
-    Autostart
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#miscellaneous" class="md-nav__link">
-    Miscellaneous
-  </a>
-  
-    <nav class="md-nav" aria-label="Miscellaneous">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#rcxml-configuration-examples" class="md-nav__link">
-    rc.xml Configuration examples
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#feature-list" class="md-nav__link">
-    Feature list
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#frequently-asked-questions" class="md-nav__link">
-    Frequently asked questions
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#compiling-from-source" class="md-nav__link">
-    Compiling from source
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#using-git" class="md-nav__link">
-    Using Git
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#obconf" class="md-nav__link">
-    ObConf
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#upgrading-to-34" class="md-nav__link">
-    Upgrading to 3.4
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#other-resources" class="md-nav__link">
-    Other resources
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1531,253 +1321,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#rcxml" class="md-nav__link">
-    rc.xml
+  <a href="#syntax" class="md-nav__link">
+    Syntax
   </a>
-  
-    <nav class="md-nav" aria-label="rc.xml">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    Configuration
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#application-settings" class="md-nav__link">
-    Application settings
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#mouse-keybindings" class="md-nav__link">
-    Mouse &amp; keybindings
-  </a>
-  
-    <nav class="md-nav" aria-label="Mouse & keybindings">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#binding-documentation" class="md-nav__link">
-    Binding documentation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#actions" class="md-nav__link">
-    Actions
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#menus" class="md-nav__link">
-    Menus
+  <a href="#finding-the-class-name-role-title-and-type-parameters" class="md-nav__link">
+    Finding the class, name, role, title and type parameters
   </a>
-  
-    <nav class="md-nav" aria-label="Menus">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#menu-documentation" class="md-nav__link">
-    Menu documentation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#actions_1" class="md-nav__link">
-    Actions
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pipe-menus" class="md-nav__link">
-    Pipe menus
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#generating-an-applications-menu" class="md-nav__link">
-    Generating an applications menu
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#themes" class="md-nav__link">
-    Themes
+  <a href="#matching-windows-with-wildcards" class="md-nav__link">
+    Matching windows with wildcards
   </a>
-  
-    <nav class="md-nav" aria-label="Themes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#theme-specification" class="md-nav__link">
-    Theme specification
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#openbox-34-theme-file-changes" class="md-nav__link">
-    Openbox 3.4 theme file changes
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#desktop-environments" class="md-nav__link">
-    Desktop Environments
+  <a href="#matching-against-multiple-rules" class="md-nav__link">
+    Matching against multiple rules
   </a>
-  
-    <nav class="md-nav" aria-label="Desktop Environments">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#openbox-in-gnome" class="md-nav__link">
-    Openbox in GNOME
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#openbox-in-kde" class="md-nav__link">
-    Openbox in KDE
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#openbox-in-xfce" class="md-nav__link">
-    Openbox in XFCE
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#custom-desktop-environments" class="md-nav__link">
-    Custom Desktop Environments
+  <a href="#example-of-per-app-settings" class="md-nav__link">
+    Example of per-app settings
   </a>
-  
-    <nav class="md-nav" aria-label="Custom Desktop Environments">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#openbox-session" class="md-nav__link">
-    openbox-session
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#autostart" class="md-nav__link">
-    Autostart
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#miscellaneous" class="md-nav__link">
-    Miscellaneous
-  </a>
-  
-    <nav class="md-nav" aria-label="Miscellaneous">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#rcxml-configuration-examples" class="md-nav__link">
-    rc.xml Configuration examples
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#feature-list" class="md-nav__link">
-    Feature list
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#frequently-asked-questions" class="md-nav__link">
-    Frequently asked questions
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#compiling-from-source" class="md-nav__link">
-    Compiling from source
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#using-git" class="md-nav__link">
-    Using Git
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#obconf" class="md-nav__link">
-    ObConf
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#upgrading-to-34" class="md-nav__link">
-    Upgrading to 3.4
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#other-resources" class="md-nav__link">
-    Other resources
+  <a href="#graphically-managing-per-application-settings" class="md-nav__link">
+    Graphically managing per-application settings
   </a>
   
 </li>
@@ -1797,7 +1377,7 @@
                   
 
   
-    <a href="https://github.com/redtide/openbox-wiki/edit/master/docs/Help/Contents.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/redtide/openbox-wiki/edit/master/docs/Help/Applications.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
     </a>
@@ -1806,114 +1386,123 @@
     
       
     
-    <a href="https://github.com/redtide/openbox-wiki/raw/master/docs/Help/Contents.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/redtide/openbox-wiki/raw/master/docs/Help/Applications.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5Z"/></svg>
     </a>
   
 
 
-<h1 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link">🔗</a></h1>
-<p>Welcome to the community maintained documentation for Openbox!
-Please help out and add your own articles or improve the ones that are already here.</p>
-<p>In order to get full access and contribute in the wiki,
-all you need to do is prove you are a person. Please see
-<a href="../../Help/RequestWriteAccess">RequestWriteAccess</a>.</p>
-<h2 id="rcxml">rc.xml<a class="headerlink" href="#rcxml" title="Permanent link">🔗</a></h2>
-<h3 id="configuration"><a href="../../Help/Configuration">Configuration</a><a class="headerlink" href="#configuration" title="Permanent link">🔗</a></h3>
-<p>The configuration documentation has details on the various options you can set in <em>rc.xml</em>.</p>
-<h3 id="application-settings"><a href="../../Help/Applications">Application settings</a><a class="headerlink" href="#application-settings" title="Permanent link">🔗</a></h3>
-<p>Customize properties such as borders, geometry, workspace presence, layering etc.
-on a per-application basis.</p>
-<h3 id="mouse-keybindings">Mouse &amp; keybindings<a class="headerlink" href="#mouse-keybindings" title="Permanent link">🔗</a></h3>
-<h4 id="binding-documentation"><a href="../../Help/Bindings">Binding documentation</a><a class="headerlink" href="#binding-documentation" title="Permanent link">🔗</a></h4>
-<p>Improve productivity and customize the function of your desktop
-by binding actions to key/mouse buttons (commonly called hot keys).</p>
-<h4 id="actions"><a href="../../Help/Actions">Actions</a><a class="headerlink" href="#actions" title="Permanent link">🔗</a></h4>
-<p>Comprehensive documentation of all actions available for key and mouse bindings
-and the options which can affect their behavior.</p>
-<h2 id="menus">Menus<a class="headerlink" href="#menus" title="Permanent link">🔗</a></h2>
-<h3 id="menu-documentation"><a href="../../Help/Menus">Menu documentation</a><a class="headerlink" href="#menu-documentation" title="Permanent link">🔗</a></h3>
-<p>Describes how to set up your own menus in Openbox.</p>
-<h3 id="actions_1"><a href="../../Help/Actions#Introduction">Actions</a><a class="headerlink" href="#actions_1" title="Permanent link">🔗</a></h3>
-<p>The actions documentation lists all of the actions available for use in Openbox menus.</p>
-<h3 id="pipe-menus"><a href="../../Help/Menus#pipe-menus">Pipe menus</a><a class="headerlink" href="#pipe-menus" title="Permanent link">🔗</a></h3>
-<p>The pipe menu documentation explains basic use of pipe menus in Openbox.
-If you're looking for scripts there are many available <a href="../../Pipemenus">on the community page</a>.</p>
-<h3 id="generating-an-applications-menu">Generating an applications menu<a class="headerlink" href="#generating-an-applications-menu" title="Permanent link">🔗</a></h3>
-<ul>
-<li>Scripts may be used to generate an application menu based
-  on the contents of <code>/usr/share/applications</code> or other directories.
-  See <a href="../../Pipemenus#application-menus">this section</a> for a complete list.</li>
-<li>There are also instructions available for getting
-  a <a href="../../Help/Menus/DebianMenu">working Debian menu</a>, if yours is not.</li>
-</ul>
-<h2 id="themes">Themes<a class="headerlink" href="#themes" title="Permanent link">🔗</a></h2>
-<h3 id="theme-specification"><a href="../../Help/Themes">Theme specification</a><a class="headerlink" href="#theme-specification" title="Permanent link">🔗</a></h3>
-<p>Comprehensive detail and documentation all of the elements found in an Openbox theme.</p>
-<h3 id="openbox-34-theme-file-changes"><a href="../../Help/UpgradingTo3.4#themes">Openbox 3.4 theme file changes</a><a class="headerlink" href="#openbox-34-theme-file-changes" title="Permanent link">🔗</a></h3>
-<ul>
-<li>Details differences between 3.3-&gt;3.4 theme files</li>
-<li>A tool to help with <a href="http://icculus.org/openbox/tools/themeupdate.py">converting blackbox/fluxbox themes</a>
-  to Openbox themes. (For non-xpm-based themes.)</li>
-</ul>
-<h2 id="desktop-environments">Desktop Environments<a class="headerlink" href="#desktop-environments" title="Permanent link">🔗</a></h2>
-<h3 id="openbox-in-gnome"><a href="../../Help/UsingOpenboxInGNOME">Openbox in GNOME</a><a class="headerlink" href="#openbox-in-gnome" title="Permanent link">🔗</a></h3>
-<p>Instructions for running Openbox in the GNOME desktop environment
-and getting things to work how you want.</p>
-<h3 id="openbox-in-kde"><a href="../../Help/UsingOpenboxInKDE">Openbox in KDE</a><a class="headerlink" href="#openbox-in-kde" title="Permanent link">🔗</a></h3>
-<p>Instructions for running Openbox in K Desktop Environment.</p>
-<h3 id="openbox-in-xfce"><a href="../../Help/XFCE/Openbox">Openbox in XFCE</a><a class="headerlink" href="#openbox-in-xfce" title="Permanent link">🔗</a></h3>
-<p>Instructions for running Openbox in the XFCE desktop enviroment.</p>
-<h2 id="custom-desktop-environments">Custom Desktop Environments<a class="headerlink" href="#custom-desktop-environments" title="Permanent link">🔗</a></h2>
-<h3 id="openbox-session"><a href="../../Help/Session">openbox-session</a><a class="headerlink" href="#openbox-session" title="Permanent link">🔗</a></h3>
-<p>Running Openbox as a stand-alone window manager in part of a custom desktop environment.</p>
-<h3 id="autostart"><a href="../../Help/Autostart">Autostart</a><a class="headerlink" href="#autostart" title="Permanent link">🔗</a></h3>
-<p>The autostart documentation gives instructions on how to launch programs
-with Openbox at startup (not applicable unless openbox-session is called
-from the Desktop Manager/<code>xinit</code>)</p>
-<h2 id="miscellaneous">Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permanent link">🔗</a></h2>
-<h3 id="rcxml-configuration-examples">rc.xml Configuration examples<a class="headerlink" href="#rcxml-configuration-examples" title="Permanent link">🔗</a></h3>
-<ul>
-<li><a href="../../Help/DefaultConfiguration">rc.xml Configuration reference</a> -
-  Lists all default key bindings and default configuration.</li>
-<li><a href="../../Help/MouseFocusExample">Focus-follows-mouse</a> -
-  This configuration is similar to the default configuration,
-  but has more suitable mouse bindings for focus-follows-mouse
-  that won't interfere with your windows' stacking order.</li>
-<li><a href="../../Help/ClaysViStyleSpatial">Vi-styled bindings</a> -
-  Two examples of Vi-style keybindings (by <a href="../../User/Rcbarnes">Clay Barnes</a>).</li>
-<li><a href="../../Help/WindowsInteractionWithWindowsKey">"Windows"/Super key control</a> - Example
-  of using the "Windows" AKA. Super key to control windows (by
-  <a href="User:Deters">Deters</a>).</li>
-<li><a href="../../Help/IrssiStyleFocus">Irssi-style window switching</a></li>
-</ul>
-<h3 id="feature-list"><a href="../../Help/Features">Feature list</a><a class="headerlink" href="#feature-list" title="Permanent link">🔗</a></h3>
-<p>A list of features found in the Openbox windowmanager.</p>
-<h3 id="frequently-asked-questions"><a href="../../Help/FAQ">Frequently asked questions</a><a class="headerlink" href="#frequently-asked-questions" title="Permanent link">🔗</a></h3>
-<h3 id="compiling-from-source"><a href="../../Help/Compiling">Compiling from source</a><a class="headerlink" href="#compiling-from-source" title="Permanent link">🔗</a></h3>
-<p>Details what you need to build the latest version of Openbox,
-and how to install it correctly.</p>
-<h3 id="using-git"><a href="../../Help/UsingGit">Using Git</a><a class="headerlink" href="#using-git" title="Permanent link">🔗</a></h3>
-<p>Explains how to get bleeding-edge Openbox code for testing or developing with.</p>
-<h3 id="obconf"><a href="../../ObConf/About">ObConf</a><a class="headerlink" href="#obconf" title="Permanent link">🔗</a></h3>
-<p><code>Obconf</code> provides a simple graphical user interface to ease configuration
-for new Openbox users.</p>
-<h3 id="upgrading-to-34"><a href="../../Help/UpgradingTo3.4">Upgrading to 3.4</a><a class="headerlink" href="#upgrading-to-34" title="Permanent link">🔗</a></h3>
-<p>Walks through all the changes made since version 3.3, and there is a lot of them.
-Some of them mean new configuration options and features available to you,
-that you need to update your configuration to access.</p>
-<h2 id="other-resources">Other resources<a class="headerlink" href="#other-resources" title="Permanent link">🔗</a></h2>
-<p><a href="http://wiki.archlinux.org/index.php/Openbox">The Arch wiki</a>
-has a lot of great information on setting up and using Openbox.</p>
-<!-- -->
-
-<p>Many Openbox questions have been answered in forums around the internet.
-Trying a search may be fruitful.</p>
-<!-- -->
-
-<p>See <a href="../../Openbox/CommunityPortal">community portal</a> for other community resources
-and <strong>related projects</strong>.</p>
+<h1 id="settings-for-specific-windows-per-application-settings">Settings for specific windows (Per-application settings)<a class="headerlink" href="#settings-for-specific-windows-per-application-settings" title="Permanent link">🔗</a></h1>
+<p>Per-application settings are specified in the <applications> section of
+<code>rc.xml</code></p>
+<h2 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link">🔗</a></h2>
+<p>A per-app setting is specified as follows: <code></p>
+<div class="highlight"><pre><span></span><code>&lt;applications&gt;
+  ...
+  &lt;application name=&quot;NAME&quot; class=&quot;CLASS&quot; role=&quot;ROLE&quot; title=&quot;TITLE&quot; type=&quot;TYPE&quot;&gt;
+    ...PROPERTIES...
+  &lt;/application&gt;
+  ...
+&lt;/applications&gt;
+</code></pre></div>
+<p></code></p>
+<p>A complete list of possible properties to set is in the <a href="http://git.icculus.org/?p=mikachu/openbox.git;a=blob_plain;f=data/rc.xml;hb=master">default rc.xml
+file</a>,
+which you can find in <code>/etc/xdg/openbox/rc.xml</code>.</p>
+<h2 id="finding-the-class-name-role-title-and-type-parameters">Finding the class, name, role, title and type parameters<a class="headerlink" href="#finding-the-class-name-role-title-and-type-parameters" title="Permanent link">🔗</a></h2>
+<p>Per-application settings let you match on what we call class, name,
+role, title and type. These can all be determined with the <code>obxprop</code>
+utility. Run <code>obxprop | grep "^_OB_APP"</code> to see the value of these five
+properties. The output will look like <code></p>
+<div class="highlight"><pre><span></span><code>_OB_APP_TYPE(UTF8_STRING) = &quot;normal&quot;
+_OB_APP_CLASS(UTF8_STRING) = &quot;Google-chrome&quot;
+_OB_APP_NAME(UTF8_STRING) = &quot;google-chrome&quot;
+_OB_APP_ROLE(UTF8_STRING) =
+_OB_APP_TITLE(UTF8_STRING) = &quot;Google Chrome&quot;
+</code></pre></div>
+<p></code></p>
+<p>You have to specify at least one of class and name. Optionally, you may
+specify more than one, in which case they must all match for the rule to
+be applied. You may also optionally specify role and type. Note that the
+title matched is the one when the window was mapped. Many programs set
+the title just after mapping the window which means the value Openbox
+sees as it is determining which rules to apply is sometimes empty or
+something like "Untitled". The _OB_APP_TITLE property will show the
+value that Openbox used, not the current title.</p>
+<h2 id="matching-windows-with-wildcards">Matching windows with wildcards<a class="headerlink" href="#matching-windows-with-wildcards" title="Permanent link">🔗</a></h2>
+<p>When specifying the name, class, or role for a rule, you can use simple
+wildcard matching with the "*" and "?" characters. A "*" matches any
+number of characters and a "?" matches any single character.</p>
+<h2 id="matching-against-multiple-rules">Matching against multiple rules<a class="headerlink" href="#matching-against-multiple-rules" title="Permanent link">🔗</a></h2>
+<p>As well, multiple rules can be applied to the same window. This lets you
+do more with less writing. For instance you could write one rule to
+match against all windows and then later rules could further change
+things for more specific windows. The rules are matched in the order
+they appear in your configuration file, so later rules will override
+previous rules if they both specify the same setting for a window.</p>
+<h2 id="example-of-per-app-settings">Example of per-app settings<a class="headerlink" href="#example-of-per-app-settings" title="Permanent link">🔗</a></h2>
+<p>Here's an example from rc.xml that uses wildcards, and matches multiple
+rules against windows: <code></p>
+<div class="highlight"><pre><span></span><code>&lt;applications&gt;
+  &lt;!-- match all windows, and remove their decorations --&gt;
+  &lt;application class=&quot;*&quot;&gt;
+    &lt;decor&gt;no&lt;/decor&gt;
+  &lt;/application&gt;
+  &lt;!-- orage does get decorations though.
+       calender app, see http://www.xfce.org/projects/orage/ --&gt;
+  &lt;application class=&quot;Orage&quot;&gt;
+    &lt;decor&gt;yes&lt;/decor&gt;
+  &lt;/application&gt;
+  &lt;!-- my xterm with screen in it must always be on desktop 2,
+       maximized and below everything else --&gt;
+  &lt;application name=&quot;screen&quot;&gt;
+    &lt;desktop&gt;2&lt;/desktop&gt;
+    &lt;maximized&gt;yes&lt;/maximized&gt;
+    &lt;layer&gt;below&lt;/layer&gt;
+  &lt;/application&gt;
+  &lt;!-- i want firefox on desktop 3 and maximized --&gt;
+  &lt;application name=&quot;Firefox*&quot;&gt;
+    &lt;desktop&gt;3&lt;/desktop&gt;
+    &lt;maximized&gt;yes&lt;/maximized&gt;
+  &lt;/application&gt;
+  &lt;!-- MPlayer will follow me around when i switch desktop.
+       that way i can always watch my vids when coding.
+       same goes for Realplayer --&gt;
+  &lt;application class=&quot;MPlayer&quot;&gt;
+    &lt;desktop&gt;all&lt;/desktop&gt;
+    &lt;layer&gt;above&lt;/layer&gt;
+  &lt;/application&gt;
+  &lt;application class=&quot;Realplay.bin&quot;&gt;
+    &lt;desktop&gt;all&lt;/desktop&gt;
+    &lt;layer&gt;above&lt;/layer&gt;
+  &lt;/application&gt;
+  &lt;!-- i want nwn always maximized, same for openttd --&gt;
+  &lt;application name=&quot;Neverwinter Nights Client&quot;&gt;
+    &lt;maximized&gt;yes&lt;/maximized&gt;
+  &lt;/application&gt;
+  &lt;application class=&quot;openttd&quot;&gt;
+    &lt;maximized&gt;yes&lt;/maximized&gt;
+  &lt;/application&gt;
+  &lt;!-- A is for Amarok, A is the 1st letter in the alphabet, so
+       move Amarok to the first desktop --&gt;
+  &lt;application class=&quot;Amarokapp&quot;&gt;
+    &lt;desktop&gt;1&lt;/desktop&gt;
+    &lt;maximized&gt;yes&lt;/maximized&gt;
+  &lt;/application&gt;
+  &lt;!-- Easytag is obviously something which belongs on desktop 6, duh --&gt;
+  &lt;application name=&quot;easytag&quot;&gt;
+    &lt;desktop&gt;6&lt;/desktop&gt;
+    &lt;maximized&gt;yes&lt;/maximized&gt;
+  &lt;/application&gt;
+&lt;/applications&gt;
+</code></pre></div>
+<p></code></p>
+<h2 id="graphically-managing-per-application-settings">Graphically managing per-application settings<a class="headerlink" href="#graphically-managing-per-application-settings" title="Permanent link">🔗</a></h2>
+<p><a href="http://sourceforge.net/projects/obapps/">OBApps</a> is a GUI tool for
+creating and editing per-application settings. It allows you to click on
+a window to create a matching rule and to easily set all the properties
+documented in the example configuration</p>
 
 
 
@@ -1941,7 +1530,7 @@ and <strong>related projects</strong>.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../Configuration/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Configuration" rel="prev">
+          <a href="../../DesignDocuments/Tasks/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Tasks" rel="prev">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1951,20 +1540,20 @@ and <strong>related projects</strong>.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Configuration
+                Tasks
               </div>
             </div>
           </a>
         
         
           
-          <a href="../DefaultConfiguration/" class="md-footer__link md-footer__link--next" aria-label="Next: Default Configuration" rel="next">
+          <a href="../Autostart/" class="md-footer__link md-footer__link--next" aria-label="Next: Autostart" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Default Configuration
+                Autostart
               </div>
             </div>
             <div class="md-footer__button md-icon">

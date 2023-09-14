@@ -12,13 +12,13 @@
         <meta name="author" content="Openbox Wiki Group">
       
       
-        <link rel="canonical" href="https://redtide.github.io/openbox-wiki/Help/Contents/">
+        <link rel="canonical" href="https://redtide.github.io/openbox-wiki/Help/Bindings/">
       
       
-        <link rel="prev" href="../Configuration/">
+        <link rel="prev" href="../Autostart/">
       
       
-        <link rel="next" href="../DefaultConfiguration/">
+        <link rel="next" href="../Configuration/">
       
       
       <link rel="icon" href="../../assets/ico/favicon.ico">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Contents - Openbox Wiki</title>
+        <title>Bindings - Openbox Wiki</title>
       
     
     
@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#contents" class="md-skip">
+        <a href="#key-bindings" class="md-skip">
           Skip to content
         </a>
       
@@ -123,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Contents
+              Bindings
             
           </span>
         </div>
@@ -665,9 +665,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../Bindings/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Bindings
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -676,6 +696,121 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    Syntax
+  </a>
+  
+    <nav class="md-nav" aria-label="Syntax">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-combination" class="md-nav__link">
+    Key combination
+  </a>
+  
+    <nav class="md-nav" aria-label="Key combination">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modifiers" class="md-nav__link">
+    Modifiers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keys" class="md-nav__link">
+    Keys
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actions" class="md-nav__link">
+    Actions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-chains" class="md-nav__link">
+    Key chains
+  </a>
+  
+    <nav class="md-nav" aria-label="Key chains">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-key-chain-dialog" class="md-nav__link">
+    The key chain dialog
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cancelling-key-chains" class="md-nav__link">
+    Cancelling key chains
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chrooting-key-chains" class="md-nav__link">
+    Chrooting key chains
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-quoting-with-chroots" class="md-nav__link">
+    Key quoting with Chroots
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-hotkeys-from-the-command-line" class="md-nav__link">
+    Creating hotkeys from the command line
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -705,29 +840,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Contents
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Contents/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -736,278 +851,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#rcxml" class="md-nav__link">
-    rc.xml
-  </a>
-  
-    <nav class="md-nav" aria-label="rc.xml">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    Configuration
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#application-settings" class="md-nav__link">
-    Application settings
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#mouse-keybindings" class="md-nav__link">
-    Mouse &amp; keybindings
-  </a>
-  
-    <nav class="md-nav" aria-label="Mouse & keybindings">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#binding-documentation" class="md-nav__link">
-    Binding documentation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#actions" class="md-nav__link">
-    Actions
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#menus" class="md-nav__link">
-    Menus
-  </a>
-  
-    <nav class="md-nav" aria-label="Menus">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#menu-documentation" class="md-nav__link">
-    Menu documentation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#actions_1" class="md-nav__link">
-    Actions
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pipe-menus" class="md-nav__link">
-    Pipe menus
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#generating-an-applications-menu" class="md-nav__link">
-    Generating an applications menu
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#themes" class="md-nav__link">
-    Themes
-  </a>
-  
-    <nav class="md-nav" aria-label="Themes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#theme-specification" class="md-nav__link">
-    Theme specification
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#openbox-34-theme-file-changes" class="md-nav__link">
-    Openbox 3.4 theme file changes
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#desktop-environments" class="md-nav__link">
-    Desktop Environments
-  </a>
-  
-    <nav class="md-nav" aria-label="Desktop Environments">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#openbox-in-gnome" class="md-nav__link">
-    Openbox in GNOME
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#openbox-in-kde" class="md-nav__link">
-    Openbox in KDE
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#openbox-in-xfce" class="md-nav__link">
-    Openbox in XFCE
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#custom-desktop-environments" class="md-nav__link">
-    Custom Desktop Environments
-  </a>
-  
-    <nav class="md-nav" aria-label="Custom Desktop Environments">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#openbox-session" class="md-nav__link">
-    openbox-session
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#autostart" class="md-nav__link">
-    Autostart
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#miscellaneous" class="md-nav__link">
-    Miscellaneous
-  </a>
-  
-    <nav class="md-nav" aria-label="Miscellaneous">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#rcxml-configuration-examples" class="md-nav__link">
-    rc.xml Configuration examples
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#feature-list" class="md-nav__link">
-    Feature list
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#frequently-asked-questions" class="md-nav__link">
-    Frequently asked questions
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#compiling-from-source" class="md-nav__link">
-    Compiling from source
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#using-git" class="md-nav__link">
-    Using Git
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#obconf" class="md-nav__link">
-    ObConf
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#upgrading-to-34" class="md-nav__link">
-    Upgrading to 3.4
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#other-resources" class="md-nav__link">
-    Other resources
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1531,39 +1374,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#rcxml" class="md-nav__link">
-    rc.xml
+  <a href="#syntax" class="md-nav__link">
+    Syntax
   </a>
   
-    <nav class="md-nav" aria-label="rc.xml">
+    <nav class="md-nav" aria-label="Syntax">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    Configuration
+  <a href="#key-combination" class="md-nav__link">
+    Key combination
+  </a>
+  
+    <nav class="md-nav" aria-label="Key combination">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modifiers" class="md-nav__link">
+    Modifiers
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#application-settings" class="md-nav__link">
-    Application settings
+  <a href="#keys" class="md-nav__link">
+    Keys
   </a>
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#mouse-keybindings" class="md-nav__link">
-    Mouse &amp; keybindings
-  </a>
-  
-    <nav class="md-nav" aria-label="Mouse & keybindings">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#binding-documentation" class="md-nav__link">
-    Binding documentation
-  </a>
+      </ul>
+    </nav>
   
 </li>
         
@@ -1578,44 +1419,39 @@
     </nav>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
         <li class="md-nav__item">
-  <a href="#menus" class="md-nav__link">
-    Menus
+  <a href="#key-chains" class="md-nav__link">
+    Key chains
   </a>
   
-    <nav class="md-nav" aria-label="Menus">
+    <nav class="md-nav" aria-label="Key chains">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#menu-documentation" class="md-nav__link">
-    Menu documentation
+  <a href="#the-key-chain-dialog" class="md-nav__link">
+    The key chain dialog
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#actions_1" class="md-nav__link">
-    Actions
+  <a href="#cancelling-key-chains" class="md-nav__link">
+    Cancelling key chains
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pipe-menus" class="md-nav__link">
-    Pipe menus
+  <a href="#chrooting-key-chains" class="md-nav__link">
+    Chrooting key chains
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#generating-an-applications-menu" class="md-nav__link">
-    Generating an applications menu
+  <a href="#key-quoting-with-chroots" class="md-nav__link">
+    Key quoting with Chroots
   </a>
   
 </li>
@@ -1626,158 +1462,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#themes" class="md-nav__link">
-    Themes
-  </a>
-  
-    <nav class="md-nav" aria-label="Themes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#theme-specification" class="md-nav__link">
-    Theme specification
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#openbox-34-theme-file-changes" class="md-nav__link">
-    Openbox 3.4 theme file changes
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#desktop-environments" class="md-nav__link">
-    Desktop Environments
-  </a>
-  
-    <nav class="md-nav" aria-label="Desktop Environments">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#openbox-in-gnome" class="md-nav__link">
-    Openbox in GNOME
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#openbox-in-kde" class="md-nav__link">
-    Openbox in KDE
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#openbox-in-xfce" class="md-nav__link">
-    Openbox in XFCE
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#custom-desktop-environments" class="md-nav__link">
-    Custom Desktop Environments
-  </a>
-  
-    <nav class="md-nav" aria-label="Custom Desktop Environments">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#openbox-session" class="md-nav__link">
-    openbox-session
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#autostart" class="md-nav__link">
-    Autostart
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#miscellaneous" class="md-nav__link">
-    Miscellaneous
-  </a>
-  
-    <nav class="md-nav" aria-label="Miscellaneous">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#rcxml-configuration-examples" class="md-nav__link">
-    rc.xml Configuration examples
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#feature-list" class="md-nav__link">
-    Feature list
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#frequently-asked-questions" class="md-nav__link">
-    Frequently asked questions
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#compiling-from-source" class="md-nav__link">
-    Compiling from source
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#using-git" class="md-nav__link">
-    Using Git
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#obconf" class="md-nav__link">
-    ObConf
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#upgrading-to-34" class="md-nav__link">
-    Upgrading to 3.4
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#other-resources" class="md-nav__link">
-    Other resources
+  <a href="#creating-hotkeys-from-the-command-line" class="md-nav__link">
+    Creating hotkeys from the command line
   </a>
   
 </li>
@@ -1797,7 +1483,7 @@
                   
 
   
-    <a href="https://github.com/redtide/openbox-wiki/edit/master/docs/Help/Contents.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/redtide/openbox-wiki/edit/master/docs/Help/Bindings.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
     </a>
@@ -1806,114 +1492,440 @@
     
       
     
-    <a href="https://github.com/redtide/openbox-wiki/raw/master/docs/Help/Contents.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/redtide/openbox-wiki/raw/master/docs/Help/Bindings.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5Z"/></svg>
     </a>
   
 
 
-<h1 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link">🔗</a></h1>
-<p>Welcome to the community maintained documentation for Openbox!
-Please help out and add your own articles or improve the ones that are already here.</p>
-<p>In order to get full access and contribute in the wiki,
-all you need to do is prove you are a person. Please see
-<a href="../../Help/RequestWriteAccess">RequestWriteAccess</a>.</p>
-<h2 id="rcxml">rc.xml<a class="headerlink" href="#rcxml" title="Permanent link">🔗</a></h2>
-<h3 id="configuration"><a href="../../Help/Configuration">Configuration</a><a class="headerlink" href="#configuration" title="Permanent link">🔗</a></h3>
-<p>The configuration documentation has details on the various options you can set in <em>rc.xml</em>.</p>
-<h3 id="application-settings"><a href="../../Help/Applications">Application settings</a><a class="headerlink" href="#application-settings" title="Permanent link">🔗</a></h3>
-<p>Customize properties such as borders, geometry, workspace presence, layering etc.
-on a per-application basis.</p>
-<h3 id="mouse-keybindings">Mouse &amp; keybindings<a class="headerlink" href="#mouse-keybindings" title="Permanent link">🔗</a></h3>
-<h4 id="binding-documentation"><a href="../../Help/Bindings">Binding documentation</a><a class="headerlink" href="#binding-documentation" title="Permanent link">🔗</a></h4>
-<p>Improve productivity and customize the function of your desktop
-by binding actions to key/mouse buttons (commonly called hot keys).</p>
-<h4 id="actions"><a href="../../Help/Actions">Actions</a><a class="headerlink" href="#actions" title="Permanent link">🔗</a></h4>
-<p>Comprehensive documentation of all actions available for key and mouse bindings
-and the options which can affect their behavior.</p>
-<h2 id="menus">Menus<a class="headerlink" href="#menus" title="Permanent link">🔗</a></h2>
-<h3 id="menu-documentation"><a href="../../Help/Menus">Menu documentation</a><a class="headerlink" href="#menu-documentation" title="Permanent link">🔗</a></h3>
-<p>Describes how to set up your own menus in Openbox.</p>
-<h3 id="actions_1"><a href="../../Help/Actions#Introduction">Actions</a><a class="headerlink" href="#actions_1" title="Permanent link">🔗</a></h3>
-<p>The actions documentation lists all of the actions available for use in Openbox menus.</p>
-<h3 id="pipe-menus"><a href="../../Help/Menus#pipe-menus">Pipe menus</a><a class="headerlink" href="#pipe-menus" title="Permanent link">🔗</a></h3>
-<p>The pipe menu documentation explains basic use of pipe menus in Openbox.
-If you're looking for scripts there are many available <a href="../../Pipemenus">on the community page</a>.</p>
-<h3 id="generating-an-applications-menu">Generating an applications menu<a class="headerlink" href="#generating-an-applications-menu" title="Permanent link">🔗</a></h3>
+<p>Key and mouse bindings are created in your <code>~/.config/openbox/rc.xml</code>
+file. You should copy the file from <code>/etc/xdg/openbox/rc.xml</code> to
+<code>~/.config/openbox/rc.xml</code> to edit it, if that file does not already
+exist.</p>
+<p>Key bindings and mouse bindings both use
+<a href="Help:Actions">Actions</a> to specify what they will do. There
+are a <em>lot</em> of actions available to you. Here we'll talk about how to
+write a generic key binding, or mouse binding. See the <a href="Help:Actions">actions
+documentation</a> for details about what actions
+are available to use and their varied options.</p>
+<h1 id="key-bindings">Key bindings<a class="headerlink" href="#key-bindings" title="Permanent link">🔗</a></h1>
+<p>Key bindings are found in the <keyboard> section of your <code>rc.xml</code>
+configuration file. Any bindings outside of that section are not valid
+and will be ignored.</p>
+<p>Here are a few example key bindings from the default configuration file,
+to give us an idea of what we'll be talking about: <code></p>
+<div class="highlight"><pre><span></span><code>&lt;keyboard&gt;
+  &lt;keybind key=&quot;A-F4&quot;&gt;
+    &lt;action name=&quot;Close&quot;/&gt;
+  &lt;/keybind&gt;
+  &lt;keybind key=&quot;A-Escape&quot;&gt;
+    &lt;action name=&quot;Lower&quot;/&gt;
+    &lt;action name=&quot;FocusToBottom&quot;/&gt;
+    &lt;action name=&quot;Unfocus&quot;/&gt;
+  &lt;/keybind&gt;
+  &lt;keybind key=&quot;A-space&quot;&gt;
+    &lt;action name=&quot;ShowMenu&quot;&gt;&lt;menu&gt;client-menu&lt;/menu&gt;&lt;/action&gt;
+  &lt;/keybind&gt;
+&lt;/keyboard&gt;
+</code></pre></div>
+<p></code></p>
+<h2 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link">🔗</a></h2>
+<p>A key binding is specified as follows: <code></p>
+<div class="highlight"><pre><span></span><code>&lt;keyboard&gt;
+  ...
+  &lt;keybind key=&quot;KEY-COMBINATION...&quot;&gt;
+    ...ACTIONS...
+  &lt;/keybind&gt;
+  ...
+&lt;/keyboard&gt;
+</code></pre></div>
+<p></code></p>
+<h3 id="key-combination">Key combination<a class="headerlink" href="#key-combination" title="Permanent link">🔗</a></h3>
+<p><strong>KEY-COMBINATION</strong> is the key combination which you want to bind to the
+actions. The format for the <strong>KEY-COMBINATION</strong> is:
+<code>Modifier-Modifier-Key</code>. Any number of modifiers (0 or more) can be used
+together, and they are each separated by a "-". Multiple
+<strong>KEY-COMBINATION</strong> can be specified in one keybind by separating them
+with spaces. This is useful if you use multiple keybinds for a thing
+that is quite complicated to specify.</p>
+<h4 id="modifiers">Modifiers<a class="headerlink" href="#modifiers" title="Permanent link">🔗</a></h4>
+<table>
+<thead>
+<tr>
+<th>Modifier keys</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S</td>
+<td>Shift key</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Control key</td>
+</tr>
+<tr>
+<td>A</td>
+<td>Alt key</td>
+</tr>
+<tr>
+<td>W</td>
+<td>Super key (Usually bound to the Windows key on keyboards which have one)</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Meta key</td>
+</tr>
+<tr>
+<td>H</td>
+<td>Hyper key (If it is bound to something)</td>
+</tr>
+</tbody>
+</table>
+<p>You can also use <code>Mod1</code> through <code>Mod5</code> as the modifiers to directly
+select a modifier mask (e.g. <code>Mod1</code> to select <code>Mod1Mask</code>), but this is
+for advanced users who have customized their modifier mapping with
+<code>xmodmap</code>.</p>
+<h4 id="keys">Keys<a class="headerlink" href="#keys" title="Permanent link">🔗</a></h4>
+<p>The <strong>Key</strong> is the name of the key, such as "a", "space", "Escape",
+"less", or "F1". You can find the name of any key by using the <code>xev</code>
+command in a terminal, pressing the desired key, and watching the output
+from <code>xev</code> in the terminal. For example, the following <code>xev</code> output
+indicates, on the third line, that the <strong>Menu</strong> key was pressed.</p>
+<p><code></p>
+<div class="highlight"><pre><span></span><code>KeyRelease event, serial 36, synthetic NO, window 0x1e00001,
+    root 0x7e, subw 0x0, time 29920856, (168,-7), root:(900,313),
+    state 0x0, keycode 135 (keysym 0xff67, Menu), same_screen YES,
+    XLookupString gives 0 bytes:
+    XFilterEvent returns: False
+</code></pre></div>
+<p></code></p>
+<p>This key can then be used as in the following example.</p>
+<p><code></p>
+<div class="highlight"><pre><span></span><code>&lt;keyboard&gt;
+  ...
+  &lt;keybind key=&quot;C-Menu S-F10&quot;&gt;
+    &lt;action name=&quot;ShowMenu&quot;&gt;
+      &lt;menu&gt;root-menu&lt;/menu&gt;
+    &lt;/action&gt;
+  &lt;/keybind&gt;
+  ...
+&lt;/keyboard&gt;
+</code></pre></div>
+<p></code></p>
+<p>Keys can also be specified by their numeric codes. This can be done by
+specifying the keycode in hex. To take the above example, the keycode
+for the <strong>Menu</strong> key is <strong>135</strong>, which is <strong>0x87</strong> in hexadecimal. This
+can then be used:</p>
+<p><code></p>
+<div class="highlight"><pre><span></span><code>&lt;keyboard&gt;
+  ...
+  &lt;keybind key=&quot;C-0x87&quot;&gt;
+    &lt;action name=&quot;ShowMenu&quot;&gt;
+      &lt;menu&gt;root-menu&lt;/menu&gt;
+    &lt;/action&gt;
+  &lt;/keybind&gt;
+  ...
+&lt;/keyboard&gt;
+</code></pre></div>
+<p></code></p>
+<p>Note that the "0x" prefix is required to interpret the key as a numeric
+keycode, and that the hex characters are case-insensitive (i.e. you can
+use "0xAE" or "0xae").</p>
+<h3 id="actions">Actions<a class="headerlink" href="#actions" title="Permanent link">🔗</a></h3>
+<p>The <strong>ACTIONS</strong> can be any number of <a href="Help:Actions">actions</a>.
+They will generally be executed in order from the first to the last.</p>
+<h2 id="key-chains">Key chains<a class="headerlink" href="#key-chains" title="Permanent link">🔗</a></h2>
+<p>You can create Emacs-style key chains simply by nesting key bindings
+inside each other. Here's an example: <code></p>
+<div class="highlight"><pre><span></span><code>  &lt;keybind key=&quot;C-f&quot;&gt;
+    &lt;keybind key=&quot;x&quot;&gt;
+      &lt;action name=&quot;ToggleMaximizeFull&quot;/&gt;
+    &lt;/keybind&gt;
+    &lt;keybind key=&quot;s&quot;&gt;
+      &lt;action name=&quot;ToggleShade&quot;/&gt;
+    &lt;/keybind&gt;
+  &lt;/keybind&gt;
+</code></pre></div>
+<p></code></p>
+<p>In order to maximize a window using this key binding you would press the
+Control key and the "f" key together (which is written as C-f), then you
+would release everything and press the "x" key.</p>
+<p>To shade a window, you would press Control and the "f" key together, and
+then release everything and press the "s" key.</p>
+<p>You can create key chains within key chains, with as many levels as you
+want, if you wish to.</p>
+<h3 id="the-key-chain-dialog">The key chain dialog<a class="headerlink" href="#the-key-chain-dialog" title="Permanent link">🔗</a></h3>
+<p><a class="glightbox" href="KeychainDialog.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="KeychainDialog.png" title="KeychainDialog.png" /></a> When you start a key chain,
+after a short delay, a small dialog will appear in the top left corner
+of the screen to show you where you are in the key chain.</p>
+<p>As long as you are in a key chain, other key bindings will not work
+except the ones found inside the key chain.</p>
+<h3 id="cancelling-key-chains">Cancelling key chains<a class="headerlink" href="#cancelling-key-chains" title="Permanent link">🔗</a></h3>
+<p>If you leave Openbox in a key chain state for too long without
+completing it, Openbox will cancel the key chain and restore your normal
+key bindings.</p>
+<p>You can also use the "C-g" (Control key and "g" key together), in the
+default configuration, to cancel any key chain which you are in. The
+choice of this key is controlled by the <chainQuitKey> in the <keyboard>
+section of the <code>rc.xml</code> configuration file.</p>
+<p>The default <chainQuitKey> is defined as this: <code></p>
+<div class="highlight"><pre><span></span><code>&lt;keyboard&gt;
+  &lt;chainQuitKey&gt;C-g&lt;/chainQuitKey&gt;
+  ...
+&lt;/keyboard&gt;
+</code></pre></div>
+<p></code></p>
+<h3 id="chrooting-key-chains">Chrooting key chains<a class="headerlink" href="#chrooting-key-chains" title="Permanent link">🔗</a></h3>
+<p>By default, once you get to the terminal end of a key chain, and run
+some actions with it, Openbox will exit the key chain and return to the
+normal key bindings. With a "chrooted" key chain, Openbox will not leave
+the key chain automatically, and when you use keys further along the
+chain, it will stay within the chroot.</p>
+<p>There are a number of examples of how this could be used, so you can get
+a better idea. You could use this to use the arrow keys to change
+desktops, for instance. A key chain setup such as: <code></p>
+<div class="highlight"><pre><span></span><code>  &lt;keybind key=&quot;C-A-d&quot; chroot=&quot;true&quot;&gt;
+    &lt;keybind key=&quot;Up&quot;&gt;&lt;action name=&quot;DesktopUp&quot;&gt;&lt;dialog&gt;no&lt;/dialog&gt;&lt;/action&gt;&lt;/keybind&gt;
+    &lt;keybind key=&quot;Down&quot;&gt;&lt;action name=&quot;DesktopDown&quot;&gt;&lt;dialog&gt;no&lt;/dialog&gt;&lt;/action&gt;&lt;/keybind&gt;
+    &lt;keybind key=&quot;Left&quot;&gt;&lt;action name=&quot;DesktopLeft&quot;&gt;&lt;dialog&gt;no&lt;/dialog&gt;&lt;/action&gt;&lt;/keybind&gt;
+    &lt;keybind key=&quot;Right&quot;&gt;&lt;action name=&quot;DesktopRight&quot;&gt;&lt;dialog&gt;no&lt;/dialog&gt;&lt;/action&gt;&lt;/keybind&gt;
+    &lt;keybind key=&quot;Escape&quot;&gt;&lt;action name=&quot;BreakChroot&quot;/&gt;&lt;/keybind&gt;
+  &lt;/keybind&gt;
+</code></pre></div>
+<p></code></p>
+<p>This key chain would mean that when you pressed and released
+Control-Alt-D, you would enter a chroot. From then on, other key
+bindings would not function, but the Arrow keys by themselves would move
+your around your desktops. Pressing Escape or Control-G (in the default
+configuration) would take you back out of the chroot and return your key
+bindings to normal.</p>
+<p>Once you enter a chrooted key chain, Openbox will not time out and leave
+the chain. You will remain inside the key chain until you use a
+<em>BreakChroot</em> action, as shown here, or press the
+<a href="#Cancelling_key_chains"><chainQuitKey></a>. BreakChroot actions
+are different from the <chainQuitKey> in that they will only break out
+of <em>one</em> chroot. So, if you have nested chroots, you can break out of
+only as many as you want, by placing 1 or more BreakChroot actions in a
+key binding.</p>
+<h3 id="key-quoting-with-chroots">Key quoting with Chroots<a class="headerlink" href="#key-quoting-with-chroots" title="Permanent link">🔗</a></h3>
+<p>Another use for chroots is "key quoting". This is used when you run an
+Openbox session in a window, such as a VNC client. In order to use key
+bindings inside the VNC, generally, you have to make sure that they are
+different from the ones in your main Openbox session.</p>
+<p>With key quoting, you can use the same key bindings in both. Here's an
+example: <code></p>
+<div class="highlight"><pre><span></span><code>  &lt;keybind key=&quot;C-A-q&quot; chroot=&quot;true&quot;&gt;
+    &lt;keybind key=&quot;C-A-q&quot;&gt;&lt;action name=&quot;BreakChroot&quot;/&gt;&lt;/keybind&gt;
+  &lt;/keybind&gt;
+</code></pre></div>
+<p></code></p>
+<p>With this example, when you pressed Control-Alt-Q, Openbox would enter
+the chroot. Then your normal Openbox key bindings would stop working and
+would instead be passed through to the VNC session (assuming you have it
+focused). When you were done, you could press Control-Alt-Q again, and
+your normal key bindings would be restored in you main Openbox session.</p>
+<h2 id="creating-hotkeys-from-the-command-line">Creating hotkeys from the command line<a class="headerlink" href="#creating-hotkeys-from-the-command-line" title="Permanent link">🔗</a></h2>
+<p><a href="http://obhotkey.sourceforge.net">OBHotkey</a> lets you add/remove key
+bindings from the command line.</p>
+<h1 id="mouse-bindings">Mouse bindings<a class="headerlink" href="#mouse-bindings" title="Permanent link">🔗</a></h1>
+<p>Mouse bindings are used to bind <a href="Help:Actions">Actions</a> to
+mouse events. These are used to control and define most of Openbox's
+interactive behavior, from what happens when you drag a window's
+titlebar, to when you press a window's Close button.</p>
+<p>Mouse bindings are found in the <mouse> section of your <code>rc.xml</code>
+configuration file. Any bindings outside of that section are not valid
+and will be ignored.</p>
+<p><a class="glightbox" href="Important.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Image:Important.png" src="Important.png" title="Image:Important.png" /></a> It is highly
+recommended that you build any custom mouse bindings from those in the
+default configuration, or the <a href="#Help:MouseFocusExample">mouse-focus
+example</a>, rather than starting from
+nothing, as they are rather intricate and have some advanced but subtle
+features.</p>
+<p>To get us started, here are a few example mouse bindings from the
+default configuration file: <code></p>
+<div class="highlight"><pre><span></span><code>&lt;mouse&gt;
+  &lt;context name=&quot;Titlebar&quot;&gt;
+    &lt;mousebind button=&quot;Left&quot; action=&quot;Press&quot;&gt;
+      &lt;action name=&quot;Focus&quot;/&gt;
+      &lt;action name=&quot;Raise&quot;/&gt;
+    &lt;/mousebind&gt;
+    &lt;mousebind button=&quot;Left&quot; action=&quot;Click&quot;&gt;
+      &lt;action name=&quot;Unshade&quot;/&gt;
+    &lt;/mousebind&gt;
+    &lt;mousebind button=&quot;Left&quot; action=&quot;Drag&quot;&gt;
+      &lt;action name=&quot;Move&quot;/&gt;
+    &lt;/mousebind&gt;
+    &lt;mousebind button=&quot;Left&quot; action=&quot;DoubleClick&quot;&gt;
+      &lt;action name=&quot;ToggleMaximizeFull&quot;/&gt;
+    &lt;/mousebind&gt;
+
+    &lt;mousebind button=&quot;Up&quot; action=&quot;Click&quot;&gt;
+      &lt;action name=&quot;Shade&quot;/&gt;
+      &lt;action name=&quot;FocusToBottom&quot;/&gt;
+      &lt;action name=&quot;Unfocus&quot;/&gt;
+    &lt;/mousebind&gt;
+    &lt;mousebind button=&quot;Down&quot; action=&quot;Click&quot;&gt;
+      &lt;action name=&quot;Unshade&quot;/&gt;
+    &lt;/mousebind&gt;
+  &lt;/context&gt;
+&lt;/mouse&gt;
+</code></pre></div>
+<p></code></p>
+<h2 id="syntax_1">Syntax<a class="headerlink" href="#syntax_1" title="Permanent link">🔗</a></h2>
+<p>A mouse binding is specified as follows: <code></p>
+<div class="highlight"><pre><span></span><code>&lt;mouse&gt;
+  ...
+  &lt;context name=&quot;CONTEXT...&quot;&gt;
+    &lt;mousebind button=&quot;BUTTON...&quot; action=&quot;EVENT&quot;&gt;
+      ...ACTIONS...
+    &lt;/mousebind&gt;
+  &lt;/context&gt;
+  ...
+&lt;/mouse&gt;
+</code></pre></div>
+<p></code></p>
+<p>Any number of <mousebind>s may appear within a <context>, and any number
+of <a href="Help:Actions">Actions</a> may appear within a <mousebind>.</p>
+<h3 id="context">Context<a class="headerlink" href="#context" title="Permanent link">🔗</a></h3>
+<p>Mouse bindings, unlike key bindings, are made within <strong>contexts</strong>. The
+<strong>CONTEXT</strong> represents what you are clicking/dragging on with your mouse
+(with the exception of the special MoveResize context). You can create
+identical mousebinds for multiple contexts at once by specifying the
+contexts separated by spaces in the name attribute.</p>
 <ul>
-<li>Scripts may be used to generate an application menu based
-  on the contents of <code>/usr/share/applications</code> or other directories.
-  See <a href="../../Pipemenus#application-menus">this section</a> for a complete list.</li>
-<li>There are also instructions available for getting
-  a <a href="../../Help/Menus/DebianMenu">working Debian menu</a>, if yours is not.</li>
+<li><strong>Frame</strong></li>
+<li>The entire window frame for any window (except the desktop). This
+    includes both the window decorations (if any) and the application
+    window itself.<ul>
+<li><strong>Note:</strong> When a button is bound in this context, the clicks will
+  <em>not</em> be passed through to the application. Use with care.</li>
 </ul>
-<h2 id="themes">Themes<a class="headerlink" href="#themes" title="Permanent link">🔗</a></h2>
-<h3 id="theme-specification"><a href="../../Help/Themes">Theme specification</a><a class="headerlink" href="#theme-specification" title="Permanent link">🔗</a></h3>
-<p>Comprehensive detail and documentation all of the elements found in an Openbox theme.</p>
-<h3 id="openbox-34-theme-file-changes"><a href="../../Help/UpgradingTo3.4#themes">Openbox 3.4 theme file changes</a><a class="headerlink" href="#openbox-34-theme-file-changes" title="Permanent link">🔗</a></h3>
-<ul>
-<li>Details differences between 3.3-&gt;3.4 theme files</li>
-<li>A tool to help with <a href="http://icculus.org/openbox/tools/themeupdate.py">converting blackbox/fluxbox themes</a>
-  to Openbox themes. (For non-xpm-based themes.)</li>
+</li>
 </ul>
-<h2 id="desktop-environments">Desktop Environments<a class="headerlink" href="#desktop-environments" title="Permanent link">🔗</a></h2>
-<h3 id="openbox-in-gnome"><a href="../../Help/UsingOpenboxInGNOME">Openbox in GNOME</a><a class="headerlink" href="#openbox-in-gnome" title="Permanent link">🔗</a></h3>
-<p>Instructions for running Openbox in the GNOME desktop environment
-and getting things to work how you want.</p>
-<h3 id="openbox-in-kde"><a href="../../Help/UsingOpenboxInKDE">Openbox in KDE</a><a class="headerlink" href="#openbox-in-kde" title="Permanent link">🔗</a></h3>
-<p>Instructions for running Openbox in K Desktop Environment.</p>
-<h3 id="openbox-in-xfce"><a href="../../Help/XFCE/Openbox">Openbox in XFCE</a><a class="headerlink" href="#openbox-in-xfce" title="Permanent link">🔗</a></h3>
-<p>Instructions for running Openbox in the XFCE desktop enviroment.</p>
-<h2 id="custom-desktop-environments">Custom Desktop Environments<a class="headerlink" href="#custom-desktop-environments" title="Permanent link">🔗</a></h2>
-<h3 id="openbox-session"><a href="../../Help/Session">openbox-session</a><a class="headerlink" href="#openbox-session" title="Permanent link">🔗</a></h3>
-<p>Running Openbox as a stand-alone window manager in part of a custom desktop environment.</p>
-<h3 id="autostart"><a href="../../Help/Autostart">Autostart</a><a class="headerlink" href="#autostart" title="Permanent link">🔗</a></h3>
-<p>The autostart documentation gives instructions on how to launch programs
-with Openbox at startup (not applicable unless openbox-session is called
-from the Desktop Manager/<code>xinit</code>)</p>
-<h2 id="miscellaneous">Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permanent link">🔗</a></h2>
-<h3 id="rcxml-configuration-examples">rc.xml Configuration examples<a class="headerlink" href="#rcxml-configuration-examples" title="Permanent link">🔗</a></h3>
-<ul>
-<li><a href="../../Help/DefaultConfiguration">rc.xml Configuration reference</a> -
-  Lists all default key bindings and default configuration.</li>
-<li><a href="../../Help/MouseFocusExample">Focus-follows-mouse</a> -
-  This configuration is similar to the default configuration,
-  but has more suitable mouse bindings for focus-follows-mouse
-  that won't interfere with your windows' stacking order.</li>
-<li><a href="../../Help/ClaysViStyleSpatial">Vi-styled bindings</a> -
-  Two examples of Vi-style keybindings (by <a href="../../User/Rcbarnes">Clay Barnes</a>).</li>
-<li><a href="../../Help/WindowsInteractionWithWindowsKey">"Windows"/Super key control</a> - Example
-  of using the "Windows" AKA. Super key to control windows (by
-  <a href="User:Deters">Deters</a>).</li>
-<li><a href="../../Help/IrssiStyleFocus">Irssi-style window switching</a></li>
-</ul>
-<h3 id="feature-list"><a href="../../Help/Features">Feature list</a><a class="headerlink" href="#feature-list" title="Permanent link">🔗</a></h3>
-<p>A list of features found in the Openbox windowmanager.</p>
-<h3 id="frequently-asked-questions"><a href="../../Help/FAQ">Frequently asked questions</a><a class="headerlink" href="#frequently-asked-questions" title="Permanent link">🔗</a></h3>
-<h3 id="compiling-from-source"><a href="../../Help/Compiling">Compiling from source</a><a class="headerlink" href="#compiling-from-source" title="Permanent link">🔗</a></h3>
-<p>Details what you need to build the latest version of Openbox,
-and how to install it correctly.</p>
-<h3 id="using-git"><a href="../../Help/UsingGit">Using Git</a><a class="headerlink" href="#using-git" title="Permanent link">🔗</a></h3>
-<p>Explains how to get bleeding-edge Openbox code for testing or developing with.</p>
-<h3 id="obconf"><a href="../../ObConf/About">ObConf</a><a class="headerlink" href="#obconf" title="Permanent link">🔗</a></h3>
-<p><code>Obconf</code> provides a simple graphical user interface to ease configuration
-for new Openbox users.</p>
-<h3 id="upgrading-to-34"><a href="../../Help/UpgradingTo3.4">Upgrading to 3.4</a><a class="headerlink" href="#upgrading-to-34" title="Permanent link">🔗</a></h3>
-<p>Walks through all the changes made since version 3.3, and there is a lot of them.
-Some of them mean new configuration options and features available to you,
-that you need to update your configuration to access.</p>
-<h2 id="other-resources">Other resources<a class="headerlink" href="#other-resources" title="Permanent link">🔗</a></h2>
-<p><a href="http://wiki.archlinux.org/index.php/Openbox">The Arch wiki</a>
-has a lot of great information on setting up and using Openbox.</p>
 <!-- -->
 
-<p>Many Openbox questions have been answered in forums around the internet.
-Trying a search may be fruitful.</p>
+<ul>
+<li><strong>Client</strong></li>
+<li>The application window, inside the window decorations.<ul>
+<li><strong>Note</strong>: When a button is bound in this context, the clicks
+  <em>will</em> be passed through to the application. However, because of
+  this, only "Press" events can be used for this context.</li>
+</ul>
+</li>
+</ul>
 <!-- -->
 
-<p>See <a href="../../Openbox/CommunityPortal">community portal</a> for other community resources
-and <strong>related projects</strong>.</p>
+<ul>
+<li><strong>Desktop</strong></li>
+<li>The desktop, or background, regardless of if you use a program to
+    place icons on your desktop or not (such as in KDE and GNOME). This
+    is also called the "root window" frequently.</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>Root</strong></li>
+<li>This works similarly to the Desktop context. However, this is a
+    special context for bindings you only want to work only when you
+    <em>don't</em> have a program running to place icons on your desktop.
+    Generally this is only used for the root menus, so that they won't
+    override the menus provided by your desktop icons.</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>Titlebar</strong></li>
+<li>The decorations on the top of each application window</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>Top</strong>, <strong>Bottom</strong>, <strong>Left</strong>, <strong>Right</strong></li>
+<li>The top, bottom, left or right edge of a window</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>TLCorner</strong>, <strong>TRCorner</strong>, <strong>BLCorner</strong>, <strong>BRCorner</strong></li>
+<li>The top-left, top-right, bottom-left or bottom-right corner of a
+    window</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>Icon</strong></li>
+<li>The window icon shown in window titlebars</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>Iconify</strong></li>
+<li>The iconify button shown in window titlebars</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>Maximize</strong></li>
+<li>The maximize button shown in window titlebars</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>Close</strong></li>
+<li>The close button shown in window titlebars</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>AllDesktops</strong></li>
+<li>The all-desktops (omnipresent) button shown in window titlebars</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>Shade</strong></li>
+<li>The shade button shown in window titlebars</li>
+</ul>
+<!-- -->
+
+<ul>
+<li><strong>MoveResize</strong></li>
+<li>Bindings in this special context are available while a window is
+    being moved or resized interactively</li>
+</ul>
+<h3 id="button">Button<a class="headerlink" href="#button" title="Permanent link">🔗</a></h3>
+<p>The <strong>BUTTON</strong> specifies which mouse button is used to trigger the mouse
+binding.</p>
+<p>The named buttons are: <code>Left</code>, <code>Right</code>, <code>Middle</code>, <code>Up</code> (scroll wheel up)
+and <code>Down</code> (scroll wheel down). To bind more than 5 buttons, use
+<code>Button6</code>, <code>Button7</code> and so on.</p>
+<p>You can also prefix the button name with a modifier as for key bindings
+(see above section), for example <code>S-A-Down</code> for shift-alt-scroll wheel
+down.</p>
+<p>You can create multiple mousebinds that trigger the same set of actions
+by specifying them separated by spaces.</p>
+<h3 id="event">Event<a class="headerlink" href="#event" title="Permanent link">🔗</a></h3>
+<p>The <strong>EVENT</strong> for a mouse binding specifies what mouse event triggers
+the actions contained within.</p>
+<ul>
+<li><strong>Press</strong></li>
+<li>The mouse button was pressed down in the specified context</li>
+<li><strong>Click</strong></li>
+<li>The mouse button was pressed and released in the specified context</li>
+<li><strong>DoubleClick</strong></li>
+<li>The mouse button was double clicked in the specified context</li>
+<li><strong>Release</strong></li>
+<li>The mouse button was released in the specified context</li>
+<li><strong>Drag</strong></li>
+<li>The mouse was dragged with the mouse button held down in the
+    specified context</li>
+</ul>
+<h3 id="actions_1">Actions<a class="headerlink" href="#actions_1" title="Permanent link">🔗</a></h3>
+<p>The <strong>ACTIONS</strong> can be any number of <a href="Help:Actions">actions</a>.
+They will generally be executed in order from the first to the last.</p>
 
 
 
@@ -1941,7 +1953,7 @@ and <strong>related projects</strong>.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../Configuration/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Configuration" rel="prev">
+          <a href="../Autostart/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Autostart" rel="prev">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1951,20 +1963,20 @@ and <strong>related projects</strong>.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Configuration
+                Autostart
               </div>
             </div>
           </a>
         
         
           
-          <a href="../DefaultConfiguration/" class="md-footer__link md-footer__link--next" aria-label="Next: Default Configuration" rel="next">
+          <a href="../Configuration/" class="md-footer__link md-footer__link--next" aria-label="Next: Configuration" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Default Configuration
+                Configuration
               </div>
             </div>
             <div class="md-footer__button md-icon">
