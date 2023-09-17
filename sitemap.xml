@@ -2,322 +2,357 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://redtide.github.io/openbox-wiki/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/About/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Changelog/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Contribute/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Download/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/FAQ/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Community/Pipemenus/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Community/Portal/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Community/Screenshots/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Community/Themes/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/DesignDocuments/Actions/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/DesignDocuments/Config/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/DesignDocuments/Placement/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/DesignDocuments/Tasks/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Help/Actions/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Help/Applications/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Help/Autostart/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Help/Bindings/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://redtide.github.io/openbox-wiki/Help/ClaysViStyleSpatial/</loc>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Help/Configuration/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Help/Contents/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Help/DefaultConfiguration/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Help/DistrosAndDEsUsingOpenbox/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Help/Features/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Help/GettingStarted/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Help/Installing/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://redtide.github.io/openbox-wiki/Help/IrssiStyleFocus/</loc>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Help/Menus/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Help/MenusDebian/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://redtide.github.io/openbox-wiki/Help/MouseFocusExample/</loc>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Help/PowerManagement/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://redtide.github.io/openbox-wiki/Help/RequestWriteAccess/</loc>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Help/Session/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Help/SuspendAndHibernate/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Help/Themes/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Help/Themes_fr/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Help/UpgradingTo3.4/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Help/UsingGit/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Help/UsingOpenboxInGNOME/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Help/UsingOpenboxInKDE/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Help/UsingOpenboxInLXDE/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Help/UsingOpenboxInXFCE/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Help/Wallpaper/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://redtide.github.io/openbox-wiki/Help/WindowsInteractionWithWindowsKey/</loc>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/ObConf/About/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/ObConf/Changelog/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Pipemenus/AudaciousControl/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Pipemenus/AudaciousControlAlternative/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Pipemenus/DateMenu/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Pipemenus/Dirsmenu/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Pipemenus/MPDControl/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Pipemenus/battery/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Pipemenus/bmenu-1.0/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Pipemenus/feeder-python/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Pipemenus/gtk-bookmarks/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Pipemenus/mntmenu/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Pipemenus/obam/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Pipemenus/obdevicemenu/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Pipemenus/obm-mozilla/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Pipemenus/obreboot/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Pipemenus/processes-python/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/Pipemenus/recentfilesxbel/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/User/Baavgai/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/User/DanaJansens/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/User/Dbbolton/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/User/Mikachu/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/User/Rcbarnes/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/User/Spoiledbroth/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://redtide.github.io/openbox-wiki/User/Spoiledbroth/ob-chromium/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://redtide.github.io/openbox-wiki/User/Spoiledbroth/x-tile/</loc>
+         <lastmod>2023-09-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://redtide.github.io/openbox-wiki/User/Spoiledbroth/xdotool/</loc>
+         <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

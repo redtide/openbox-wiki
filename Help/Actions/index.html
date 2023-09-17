@@ -1343,6 +1343,86 @@
 
               
             
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ClaysViStyleSpatial/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Clay' Vim-Style bindings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../IrssiStyleFocus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IRSSI style focus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MouseFocusExample/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mouse focus example
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WindowsInteractionWithWindowsKey/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Windows keys
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2181,6 +2261,46 @@
 
               
             
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../User/Spoiledbroth/x-tile/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    x-tile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../User/Spoiledbroth/xdotool/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    xdotool
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2793,28 +2913,27 @@
 
 <h1 id="actions">Actions<a class="headerlink" href="#actions" title="Permanent link">🔗</a></h1>
 <h2 id="older-versions">Older versions<a class="headerlink" href="#older-versions" title="Permanent link">🔗</a></h2>
-<p>This page describes Openbox 3.6. For older documentation, see
-<code>/wiki/?title=Help:Actions&amp;oldid=3651 3.5</code> and
-<code>/wiki/?title=Help:Actions&amp;oldid=2410 3.4</code>. The syntax described there
-should still work in 3.6. If you have an older config that doesn't work
-in 3.6, please let us know.</p>
+<p>This page describes Openbox 3.6.
+<del>For older documentation, see <code>/wiki/?title=Help:Actions&amp;oldid=3651 3.5</code> and
+<code>/wiki/?title=Help:Actions&amp;oldid=2410 3.4</code>.
+The syntax described there should still work in 3.6.
+If you have an older config that doesn't work in 3.6, please let us know.</del></p>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">🔗</a></h2>
-<p>Actions are used both in <a href="../Help/Bindings">key and mouse bindings</a> and in
-<a href="../Help/Menus">menus</a>.</p>
+<p>Actions are used both in <a href="../Bindings/">key and mouse bindings</a> and in <a href="../Menus/">menus</a>.</p>
 <h2 id="action-syntax">Action syntax<a class="headerlink" href="#action-syntax" title="Permanent link">🔗</a></h2>
-<p>Actions are specified with the <action> tag as follows: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;action name=&quot;NAME&quot;&gt;
-OPTIONS
-&lt;/action&gt;
+<p>Actions are specified with the <code>&lt;action&gt;</code> tag as follows:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;NAME&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">  </span>OPTIONS
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="nt">&lt;/action&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code> NAME is the name of the action as listed below, OPTIONS is a set
-of tags specific to each action also defined below.</p>
+<p>NAME is the name of the action as listed below,
+OPTIONS is a set of tags specific to each action also defined below.</p>
 <h2 id="global-actions">Global actions<a class="headerlink" href="#global-actions" title="Permanent link">🔗</a></h2>
-<p>These actions are not used to manipulate windows. As such, they work
-whether a window is currently focused or not.</p>
-<h4 id="execute">Execute<a class="headerlink" href="#execute" title="Permanent link">🔗</a></h4>
+<p>These actions are not used to manipulate windows.
+As such, they work whether a window is currently focused or not.</p>
+<h3 id="execute">Execute<a class="headerlink" href="#execute" title="Permanent link">🔗</a></h3>
 <p>Runs a program.</p>
 <table>
 <thead>
@@ -2826,26 +2945,26 @@ whether a window is currently focused or not.</p>
 </thead>
 <tbody>
 <tr>
-<td><command></td>
+<td><code>&lt;command&gt;</code></td>
 <td>""</td>
-<td>A string which is the command to be executed, along with any arguments to be passed to it. The "~" tilde character will be expanded to your home directory, but no other shell expansions or scripting syntax may be used in the command unless they are passed to the <code>sh</code> command. Also, the <code>&amp;</code> character must be written as <code>&amp;</code> in order to be parsed correctly. <execute> is a deprecated name for <command>.</td>
+<td>A string which is the command to be executed, along with any arguments to be passed to it. The <code>~</code> tilde character will be expanded to your home directory, but no other shell expansions or scripting syntax may be used in the command unless they are passed to the <code>sh</code> command. Also, the <code>&amp;</code> character must be written as <code>&amp;</code> in order to be parsed correctly. <code>&lt;execute&gt;</code> is a deprecated name for <code>&lt;command&gt;</code>.</td>
 </tr>
 <tr>
-<td><prompt></td>
+<td><code>&lt;prompt&gt;</code></td>
 <td>none</td>
 <td>A string which Openbox will display in a popup dialog, along with "Yes" and "No" buttons. The execute action will only be run if you choose the "Yes" button in the dialog.</td>
 </tr>
 </tbody>
 </table>
-<h5 id="startup-notification">Startup notification<a class="headerlink" href="#startup-notification" title="Permanent link">🔗</a></h5>
+<h4 id="startup-notification">Startup notification<a class="headerlink" href="#startup-notification" title="Permanent link">🔗</a></h4>
 <p>You can use the startup notification protocol to tell everyone that an
 application is starting up. This can be used with most applications, but
-should <strong>not</strong> be used with old-style xterminals such as xterm, urxvt,
-aterm, etc, unless you include the command
+should <strong>not</strong> be used with old-style xterminals such as <code>xterm</code>, <code>urxvt</code>,
+<code>aterm</code>, etc, unless you include the command
 <strong><code>unset DESKTOP_STARTUP_ID</code></strong> in your shell's <code>~/.zshrc</code>, <code>~/.bashrc</code>
 or equivalent startup script.</p>
 <p>Startup notification has these options, which are included inside the
-Execute action, in a <startupnotify> tag:</p>
+Execute action, in a <code>&lt;startupnotify&gt;</code> tag:</p>
 <table>
 <thead>
 <tr>
@@ -2856,224 +2975,214 @@ Execute action, in a <startupnotify> tag:</p>
 </thead>
 <tbody>
 <tr>
-<td><enabled></td>
+<td><code>&lt;enabled&gt;</code></td>
 <td>no</td>
 <td>A boolean (yes/no) which says if the startup notification protocol should be used to notify other programs that an application is launching. This is disabled by default to avoid it being used for old-style xterminals.</td>
 </tr>
 <tr>
-<td><wmclass></td>
+<td><code>&lt;wmclass&gt;</code></td>
 <td>none</td>
 <td>A string specifying one of the values that will be in the application window's WM_CLASS property when the window appears. This is not needed for applications that support the startup-notification protocol.</td>
 </tr>
 <tr>
-<td><name></td>
+<td><code>&lt;name&gt;</code></td>
 <td>none</td>
 <td>The name of the application which is launching. If this option is not used, then the command itself will be used for the name.</td>
 </tr>
 <tr>
-<td><icon></td>
+<td><code>&lt;icon&gt;</code></td>
 <td>none</td>
 <td>The icon of the application which is launching. If this option is not used, then the command itself will be used to pick the icon.</td>
 </tr>
 </tbody>
 </table>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;W-t&quot;&gt;
-  &lt;action name=&quot;Execute&quot;&gt;
-    &lt;command&gt;urxvt&lt;/command&gt;
-  &lt;/action&gt;
-&lt;/keybind&gt;
-
-&lt;keybind key=&quot;W-space&quot;&gt;
-  &lt;action name=&quot;Execute&quot;&gt;
-    &lt;startupnotify&gt;
-      &lt;enabled&gt;yes&lt;/enabled&gt;
-      &lt;name&gt;Terminal&lt;/name&gt;
-      &lt;icon&gt;konsole&lt;/icon&gt;
-    &lt;/startupnotify&gt;
-    &lt;command&gt;gnome-terminal&lt;/command&gt;
-  &lt;/action&gt;
-  &lt;action name=&quot;Execute&quot;&gt;
-    &lt;prompt&gt;Are you sure you want to run a calculator!?&lt;/prompt&gt;
-    &lt;startupnotify&gt;
-      &lt;enabled&gt;yes&lt;/enabled&gt;
-      &lt;name&gt;Calculator&lt;/name&gt;
-      &lt;wmclass&gt;xcalc&lt;/wmclass&gt;
-    &lt;/startupnotify&gt;
-    &lt;command&gt;xcalc&lt;/command&gt;
-  &lt;/action&gt;
-&lt;/keybind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span>
+<span class="normal"><a href="#__codelineno-1-11">11</a></span>
+<span class="normal"><a href="#__codelineno-1-12">12</a></span>
+<span class="normal"><a href="#__codelineno-1-13">13</a></span>
+<span class="normal"><a href="#__codelineno-1-14">14</a></span>
+<span class="normal"><a href="#__codelineno-1-15">15</a></span>
+<span class="normal"><a href="#__codelineno-1-16">16</a></span>
+<span class="normal"><a href="#__codelineno-1-17">17</a></span>
+<span class="normal"><a href="#__codelineno-1-18">18</a></span>
+<span class="normal"><a href="#__codelineno-1-19">19</a></span>
+<span class="normal"><a href="#__codelineno-1-20">20</a></span>
+<span class="normal"><a href="#__codelineno-1-21">21</a></span>
+<span class="normal"><a href="#__codelineno-1-22">22</a></span>
+<span class="normal"><a href="#__codelineno-1-23">23</a></span>
+<span class="normal"><a href="#__codelineno-1-24">24</a></span>
+<span class="normal"><a href="#__codelineno-1-25">25</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-t&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Execute&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">    </span><span class="nt">&lt;command&gt;</span>urxvt<span class="nt">&lt;/command&gt;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">  </span><span class="nt">&lt;/action&gt;</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="nt">&lt;/keybind&gt;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-space&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Execute&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">    </span><span class="nt">&lt;startupnotify&gt;</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">      </span><span class="nt">&lt;enabled&gt;</span>yes<span class="nt">&lt;/enabled&gt;</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">      </span><span class="nt">&lt;name&gt;</span>Terminal<span class="nt">&lt;/name&gt;</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">      </span><span class="nt">&lt;icon&gt;</span>konsole<span class="nt">&lt;/icon&gt;</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="w">    </span><span class="nt">&lt;/startupnotify&gt;</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="w">    </span><span class="nt">&lt;command&gt;</span>gnome-terminal<span class="nt">&lt;/command&gt;</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="w">  </span><span class="nt">&lt;/action&gt;</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Execute&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="w">    </span><span class="nt">&lt;prompt&gt;</span>Are<span class="w"> </span>you<span class="w"> </span>sure<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>run<span class="w"> </span>a<span class="w"> </span>calculator!?<span class="nt">&lt;/prompt&gt;</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18"></a><span class="w">    </span><span class="nt">&lt;startupnotify&gt;</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19"></a><span class="w">      </span><span class="nt">&lt;enabled&gt;</span>yes<span class="nt">&lt;/enabled&gt;</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20"></a><span class="w">      </span><span class="nt">&lt;name&gt;</span>Calculator<span class="nt">&lt;/name&gt;</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21"></a><span class="w">      </span><span class="nt">&lt;wmclass&gt;</span>xcalc<span class="nt">&lt;/wmclass&gt;</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22"></a><span class="w">    </span><span class="nt">&lt;/startupnotify&gt;</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23"></a><span class="w">    </span><span class="nt">&lt;command&gt;</span>xcalc<span class="nt">&lt;/command&gt;</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24"></a><span class="w">  </span><span class="nt">&lt;/action&gt;</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="showmenu">ShowMenu<a class="headerlink" href="#showmenu" title="Permanent link">🔗</a></h4>
+<h3 id="showmenu">ShowMenu<a class="headerlink" href="#showmenu" title="Permanent link">🔗</a></h3>
 <p>Shows a menu by name.</p>
 <table>
 <thead>
-<tr class="header">
-<th><p>Option</p></th>
-<th><p>Default Value</p></th>
-<th><p>Description</p></th>
+<tr>
+<th>Option</th>
+<th>Default Value</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><menu></td>
-<td style="text-align:center"><p>""</p></td>
-<td><p>The name of the menu to be shown. Names of menus are specified in
-the menu file, in the <strong>id</strong> attribute of the</p>
-<menu>
-<p>tag.</p></td>
+<tr>
+<td><code>&lt;menu&gt;</code></td>
+<td>""</td>
+<td>The name of the menu to be shown. Names of menus are specified in the menu file, in the <code>id</code> attribute of the <code>&lt;menu&gt;</code> tag.</td>
 </tr>
-<tr class="even">
-<td><p><position></p></td>
+<tr>
+<td><code>&lt;position&gt;</code></td>
 <td></td>
-<td><p>Show the menu in the specified position on the specified monitor,
-see below.</p></td>
+<td>Show the menu in the specified position on the specified monitor, see below.</td>
 </tr>
 </tbody>
 </table>
-
 <p>The position tag has three sub-tags that are similar to how the
-per-application position tag works. <x> and <y> specify a position and
+per-application position tag works. <code>&lt;x&gt;</code> and <code>&lt;y&gt;</code> specify a position and
 take either a pixel value, the string "center" which will center the
 menu in that dimension, or a relative value specified either as a
 percentage or ratio. A relative value is interpreted in terms of the
 monitor the menu will be shown on, and will be relative to the left/top
 edge of the menu window and monitor for positive values, and to the
-right/bottom edge for negative values. The <monitor> tag can take one of
+right/bottom edge for negative values. The <code>&lt;monitor&gt;</code> tag can take one of
 the following values: <em>default</em> which is the default, this is also the
 same as specifying <em>primary</em> at present, and means the menu will show up
 on the primary monitor; <em>mouse</em> is the monitor containing the mouse
 pointer; <em>active</em> is the monitor containing the focused client, or the
 primary monitor if no client has focus; <em>all</em> will make the positions be
 relative to the full workspace area; any integer between 1 and the
-number of monitors you have will place the menu on the monitor with that
-number.</p>
+number of monitors you have will place the menu on the monitor with that number.</p>
 <p>Openbox provides a number of built-in menus:</p>
 <ul>
 <li><code>client-list-combined-menu</code> - A list of all windows, across all
   desktops</li>
 <li><code>client-list-menu</code> - A list of all windows, separated into sub menus
   by desktop</li>
-<li><code>client-menu</code> - A menu to control a window, such as to maximize or
-  iconify it</li>
+<li><code>client-menu</code> - A menu to control a window, such as to maximize or iconify it</li>
 <li>This menu will only show with a key binding if an application window
     is focused, and for mouse bindings if the mouse event was on an
     application window (or its decorations).</li>
-<li><code>client-send-to-menu</code> - A list of desktops. When one is selected, the
-  window is sent to the desktop.</li>
+<li><code>client-send-to-menu</code> - A list of desktops. When one is selected,
+  the window is sent to the desktop.</li>
 <li>This menu will only show with a key binding if an application window
     is focused, and for mouse bindings if the mouse event was on an
     application window (or its decorations).</li>
-<li><code>client-layer-menu</code> - A menu for selecting the stacking layer for a
-  window, to put it "always on top" for example.</li>
+<li><code>client-layer-menu</code> - A menu for selecting the stacking layer for a window,
+  to put it "always on top" for example.</li>
 <li>This menu will only show with a key binding if an application window
     is focused, and for mouse bindings if the mouse event was on an
     application window (or its decorations).</li>
 </ul>
-<p>In addition, the default configuration provides this menu in the
-<code>menu.xml</code> file:</p>
+<p>In addition, the default configuration provides this menu in the <code>menu.xml</code> file:</p>
 <ul>
 <li><code>root-menu</code> - An example menu containing some applications and options
   for controlling Openbox</li>
 </ul>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span>
-<span class="normal">30</span>
-<span class="normal">31</span>
-<span class="normal">32</span>
-<span class="normal">33</span>
-<span class="normal">34</span>
-<span class="normal">35</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;A-space&quot;&gt;
-  &lt;action name=&quot;ShowMenu&quot;&gt;
-    &lt;menu&gt;client-menu&lt;/menu&gt;
-  &lt;/action&gt;
-&lt;/keybind&gt;
-
-&lt;mousebind button=&quot;Right&quot; action=&quot;Press&quot;&gt;
-  &lt;action name=&quot;Activate&quot;/&gt;
-  &lt;action name=&quot;ShowMenu&quot;&gt;
-    &lt;menu&gt;client-menu&lt;/menu&gt;
-  &lt;/action&gt;
-&lt;/mousebind&gt;
-
-&lt;mousebind button=&quot;Middle&quot; action=&quot;Press&quot;&gt;
-  &lt;action name=&quot;ShowMenu&quot;&gt;
-    &lt;menu&gt;client-list-combined-menu&lt;/menu&gt;
-  &lt;/action&gt;
-&lt;/mousebind&gt;
-
-&lt;mousebind button=&quot;Right&quot; action=&quot;Press&quot;&gt;
-  &lt;action name=&quot;ShowMenu&quot;&gt;
-    &lt;menu&gt;root-menu&lt;/menu&gt;
-  &lt;/action&gt;
-&lt;/mousebind&gt;
-
-&lt;keybind key=&quot;W-x&quot;&gt;
-  &lt;action name=&quot;ShowMenu&quot;&gt;
-    &lt;menu&gt;programs&lt;/menu&gt;
-    &lt;position&gt;
-      &lt;x&gt;center&lt;/x&gt;
-      &lt;y&gt;center&lt;/y&gt;
-      &lt;monitor&gt;1&lt;/monitor&gt;
-    &lt;/position&gt;
-  &lt;/action&gt;
-&lt;/keybind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span>
+<span class="normal"><a href="#__codelineno-2-13">13</a></span>
+<span class="normal"><a href="#__codelineno-2-14">14</a></span>
+<span class="normal"><a href="#__codelineno-2-15">15</a></span>
+<span class="normal"><a href="#__codelineno-2-16">16</a></span>
+<span class="normal"><a href="#__codelineno-2-17">17</a></span>
+<span class="normal"><a href="#__codelineno-2-18">18</a></span>
+<span class="normal"><a href="#__codelineno-2-19">19</a></span>
+<span class="normal"><a href="#__codelineno-2-20">20</a></span>
+<span class="normal"><a href="#__codelineno-2-21">21</a></span>
+<span class="normal"><a href="#__codelineno-2-22">22</a></span>
+<span class="normal"><a href="#__codelineno-2-23">23</a></span>
+<span class="normal"><a href="#__codelineno-2-24">24</a></span>
+<span class="normal"><a href="#__codelineno-2-25">25</a></span>
+<span class="normal"><a href="#__codelineno-2-26">26</a></span>
+<span class="normal"><a href="#__codelineno-2-27">27</a></span>
+<span class="normal"><a href="#__codelineno-2-28">28</a></span>
+<span class="normal"><a href="#__codelineno-2-29">29</a></span>
+<span class="normal"><a href="#__codelineno-2-30">30</a></span>
+<span class="normal"><a href="#__codelineno-2-31">31</a></span>
+<span class="normal"><a href="#__codelineno-2-32">32</a></span>
+<span class="normal"><a href="#__codelineno-2-33">33</a></span>
+<span class="normal"><a href="#__codelineno-2-34">34</a></span>
+<span class="normal"><a href="#__codelineno-2-35">35</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;A-space&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;ShowMenu&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">    </span><span class="nt">&lt;menu&gt;</span>client-menu<span class="nt">&lt;/menu&gt;</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="w">  </span><span class="nt">&lt;/action&gt;</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="nt">&lt;/keybind&gt;</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="nt">&lt;mousebind</span><span class="w"> </span><span class="na">button=</span><span class="s">&quot;Right&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;Press&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Activate&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;ShowMenu&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="w">    </span><span class="nt">&lt;menu&gt;</span>client-menu<span class="nt">&lt;/menu&gt;</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="w">  </span><span class="nt">&lt;/action&gt;</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="nt">&lt;/mousebind&gt;</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13"></a>
+<a id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="nt">&lt;mousebind</span><span class="w"> </span><span class="na">button=</span><span class="s">&quot;Middle&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;Press&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;ShowMenu&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16"></a><span class="w">    </span><span class="nt">&lt;menu&gt;</span>client-list-combined-menu<span class="nt">&lt;/menu&gt;</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17"></a><span class="w">  </span><span class="nt">&lt;/action&gt;</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18"></a><span class="nt">&lt;/mousebind&gt;</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19"></a>
+<a id="__codelineno-2-20" name="__codelineno-2-20"></a><span class="nt">&lt;mousebind</span><span class="w"> </span><span class="na">button=</span><span class="s">&quot;Right&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;Press&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;ShowMenu&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22"></a><span class="w">    </span><span class="nt">&lt;menu&gt;</span>root-menu<span class="nt">&lt;/menu&gt;</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23"></a><span class="w">  </span><span class="nt">&lt;/action&gt;</span>
+<a id="__codelineno-2-24" name="__codelineno-2-24"></a><span class="nt">&lt;/mousebind&gt;</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25"></a>
+<a id="__codelineno-2-26" name="__codelineno-2-26"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-x&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-2-27" name="__codelineno-2-27"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;ShowMenu&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-2-28" name="__codelineno-2-28"></a><span class="w">    </span><span class="nt">&lt;menu&gt;</span>programs<span class="nt">&lt;/menu&gt;</span>
+<a id="__codelineno-2-29" name="__codelineno-2-29"></a><span class="w">    </span><span class="nt">&lt;position&gt;</span>
+<a id="__codelineno-2-30" name="__codelineno-2-30"></a><span class="w">      </span><span class="nt">&lt;x&gt;</span>center<span class="nt">&lt;/x&gt;</span>
+<a id="__codelineno-2-31" name="__codelineno-2-31"></a><span class="w">      </span><span class="nt">&lt;y&gt;</span>center<span class="nt">&lt;/y&gt;</span>
+<a id="__codelineno-2-32" name="__codelineno-2-32"></a><span class="w">      </span><span class="nt">&lt;monitor&gt;</span>1<span class="nt">&lt;/monitor&gt;</span>
+<a id="__codelineno-2-33" name="__codelineno-2-33"></a><span class="w">    </span><span class="nt">&lt;/position&gt;</span>
+<a id="__codelineno-2-34" name="__codelineno-2-34"></a><span class="w">  </span><span class="nt">&lt;/action&gt;</span>
+<a id="__codelineno-2-35" name="__codelineno-2-35"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="nextwindow">NextWindow<a class="headerlink" href="#nextwindow" title="Permanent link">🔗</a></h4>
+<h3 id="nextwindow">NextWindow<a class="headerlink" href="#nextwindow" title="Permanent link">🔗</a></h3>
 <p>Cycles focus to the next window.</p>
 <table>
 <thead>
@@ -3085,102 +3194,100 @@ number.</p>
 </thead>
 <tbody>
 <tr>
-<td><dialog></td>
+<td><code>&lt;dialog&gt;</code></td>
 <td>list</td>
-<td>Specifies the type of dialog to be shown on screen with icons for all the windows which can be focused. Choices are "list", "icons", or "none". If "none" is selected then no dialog will be shown.</td>
+<td>Specifies the type of dialog to be shown on screen with icons for all the windows which can be focused. Choices are <code>list</code>, <code>icons</code>, or <code>none</code>. If <code>none</code> is selected then no dialog will be shown.</td>
 </tr>
 <tr>
-<td><bar></td>
+<td><code>&lt;bar&gt;</code></td>
 <td>yes</td>
 <td>A boolean (yes/no) which specifies if the focus indicator is shown which highlights the window that will be focused.</td>
 </tr>
 <tr>
-<td><raise></td>
+<td><code>&lt;raise&gt;</code></td>
 <td>no</td>
 <td>A boolean (yes/no) which specifies if windows are temporarily raised to the front while cycling through them.</td>
 </tr>
 <tr>
-<td><allDesktops></td>
+<td><code>&lt;allDesktops&gt;</code></td>
 <td>no</td>
 <td>A boolean (yes/no) which when enabled lets you cycle focus between windows on all desktops, instead of only on the current desktop.</td>
 </tr>
 <tr>
-<td><panels></td>
+<td><code>&lt;panels&gt;</code></td>
 <td>no</td>
-<td>A boolean (yes/no) which when enabled lets you cycle focus to/between panel windows such as your taskbar. This can be combined with <desktop>.</td>
+<td>A boolean (yes/no) which when enabled lets you cycle focus to/between panel windows such as your taskbar. This can be combined with <code>&lt;desktop&gt;</code>.</td>
 </tr>
 <tr>
-<td><desktop></td>
+<td><code>&lt;desktop&gt;</code></td>
 <td>no</td>
-<td>A boolean (yes/no) which when enabled lets you cycle focus to the desktop window, if one exists (such as in GNOME or KDE). This can be combined with <panels>.</td>
+<td>A boolean (yes/no) which when enabled lets you cycle focus to the desktop window, if one exists (such as in GNOME or KDE). This can be combined with <code>&lt;panels&gt;</code>.</td>
 </tr>
 <tr>
-<td><linear></td>
+<td><code>&lt;linear&gt;</code></td>
 <td>no</td>
 <td>A boolean (yes/no) which when enabled causes focus to cycle in a fixed ordering, rather than in the order which windows have been last focused.</td>
 </tr>
 <tr>
-<td><interactive></td>
+<td><code>&lt;interactive&gt;</code></td>
 <td>yes</td>
 <td>A boolean (yes/no) which when disabled causes the action to immediately switch focus to the next target.</td>
 </tr>
 <tr>
-<td><finalactions></td>
-<td><a href="#Focus">Focus</a>, <a href="#Raise">Raise</a>, <a href="#Unshade">Unshade</a></td>
+<td><code>&lt;finalactions&gt;</code></td>
+<td><a href="#focus">Focus</a>, <a href="#raise">Raise</a>, <a href="#unshade">Unshade</a></td>
 <td>A list of actions to run on the window which the user finally selects using this action.</td>
 </tr>
 </tbody>
 </table>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;A-Tab&quot;&gt;
-  &lt;action name=&quot;NextWindow&quot;/&gt;
-&lt;/keybind&gt;
-&lt;keybind key=&quot;C-A-Tab&quot;&gt;
-  &lt;action name=&quot;NextWindow&quot;&gt;
-    &lt;panels&gt;yes&lt;/panels&gt;
-    &lt;desktop&gt;yes&lt;/desktop&gt;
-  &lt;/action&gt;
-&lt;/keybind&gt;
-&lt;keybind key=&quot;W-Tab&quot;&gt;
-  &lt;action name=&quot;NextWindow&quot;&gt;
-    &lt;finalactions&gt;
-      &lt;action name=&quot;Focus&quot;/&gt;
-      &lt;action name=&quot;Raise&quot;/&gt;
-      &lt;action name=&quot;Unshade&quot;/&gt;
-      &lt;action name=&quot;MoveResizeTo&quot;&gt;  &lt;!-- center the window which we&#39;re focusing --&gt;
-        &lt;x&gt;center&lt;/x&gt;
-        &lt;y&gt;center&lt;/y&gt;
-      &lt;/action&gt;
-    &lt;/finalactions&gt;
-  &lt;/action&gt;
-&lt;/keybind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-3-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-3-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-3-10">10</a></span>
+<span class="normal"><a href="#__codelineno-3-11">11</a></span>
+<span class="normal"><a href="#__codelineno-3-12">12</a></span>
+<span class="normal"><a href="#__codelineno-3-13">13</a></span>
+<span class="normal"><a href="#__codelineno-3-14">14</a></span>
+<span class="normal"><a href="#__codelineno-3-15">15</a></span>
+<span class="normal"><a href="#__codelineno-3-16">16</a></span>
+<span class="normal"><a href="#__codelineno-3-17">17</a></span>
+<span class="normal"><a href="#__codelineno-3-18">18</a></span>
+<span class="normal"><a href="#__codelineno-3-19">19</a></span>
+<span class="normal"><a href="#__codelineno-3-20">20</a></span>
+<span class="normal"><a href="#__codelineno-3-21">21</a></span>
+<span class="normal"><a href="#__codelineno-3-22">22</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;A-Tab&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;NextWindow&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="nt">&lt;/keybind&gt;</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;C-A-Tab&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;NextWindow&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="w">    </span><span class="nt">&lt;panels&gt;</span>yes<span class="nt">&lt;/panels&gt;</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="w">    </span><span class="nt">&lt;desktop&gt;</span>yes<span class="nt">&lt;/desktop&gt;</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="w">  </span><span class="nt">&lt;/action&gt;</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="nt">&lt;/keybind&gt;</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-Tab&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;NextWindow&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12"></a><span class="w">    </span><span class="nt">&lt;finalactions&gt;</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13"></a><span class="w">      </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Focus&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="w">      </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Raise&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="w">      </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Unshade&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16"></a><span class="w">      </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;MoveResizeTo&quot;</span><span class="nt">&gt;</span><span class="w">  </span><span class="cm">&lt;!-- center the window which we&#39;re focusing --&gt;</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17"></a><span class="w">        </span><span class="nt">&lt;x&gt;</span>center<span class="nt">&lt;/x&gt;</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18"></a><span class="w">        </span><span class="nt">&lt;y&gt;</span>center<span class="nt">&lt;/y&gt;</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19"></a><span class="w">      </span><span class="nt">&lt;/action&gt;</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20"></a><span class="w">    </span><span class="nt">&lt;/finalactions&gt;</span>
+<a id="__codelineno-3-21" name="__codelineno-3-21"></a><span class="w">  </span><span class="nt">&lt;/action&gt;</span>
+<a id="__codelineno-3-22" name="__codelineno-3-22"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="previouswindow">PreviousWindow<a class="headerlink" href="#previouswindow" title="Permanent link">🔗</a></h4>
-<p>Cycles focus to the previous window. Takes the same options as
-<a href="#NextWindow">NextWindow</a>.</p>
-<h4 id="directionalcyclewindows">DirectionalCycleWindows<a class="headerlink" href="#directionalcyclewindows" title="Permanent link">🔗</a></h4>
+<h3 id="previouswindow">PreviousWindow<a class="headerlink" href="#previouswindow" title="Permanent link">🔗</a></h3>
+<p>Cycles focus to the previous window. Takes the same options as <a href="#nextwindow">NextWindow</a>.</p>
+<h3 id="directionalcyclewindows">DirectionalCycleWindows<a class="headerlink" href="#directionalcyclewindows" title="Permanent link">🔗</a></h3>
 <p>Cycles focus to the window in the direction specified of the currently
 focused window.</p>
 <table>
@@ -3193,101 +3300,99 @@ focused window.</p>
 </thead>
 <tbody>
 <tr>
-<td><direction></td>
+<td><code>&lt;direction&gt;</code></td>
 <td>north</td>
 <td>Which direction to cycle focus in. Can be "north", "northeast", "east", "southeast", "south", "southwest", "west" or "northwest".</td>
 </tr>
 <tr>
-<td><dialog></td>
+<td><code>&lt;dialog&gt;</code></td>
 <td>yes</td>
 <td>A boolean (yes/no) which specifies if a dialog is shown on screen with the name and icon of the window which will be focused.</td>
 </tr>
 <tr>
-<td><bar></td>
+<td><code>&lt;bar&gt;</code></td>
 <td>yes</td>
 <td>A boolean (yes/no) which specifies if the focus indicator is shown which highlights the window that will be focused.</td>
 </tr>
 <tr>
-<td><raise></td>
+<td><code>&lt;raise&gt;</code></td>
 <td>no</td>
 <td>A boolean (yes/no) which specifies if windows are temporarily raised to the front while cycling through them.</td>
 </tr>
 <tr>
-<td><finalactions></td>
-<td><a href="#Focus">Focus</a>, <a href="#Raise">Raise</a>, <a href="#Unshade">Unshade</a></td>
+<td><code>&lt;finalactions&gt;</code></td>
+<td><a href="#focus">Focus</a>, <a href="#raise">Raise</a>, <a href="#unshade">Unshade</a></td>
 <td>A list of actions to run on the window which the user finally selects using this action.</td>
 </tr>
 <tr>
-<td><panels></td>
+<td><code>&lt;panels&gt;</code></td>
 <td>no</td>
 <td>A boolean (yes/no) which specifies whether panel windows are to be selectable.</td>
 </tr>
 <tr>
-<td><desktops></td>
+<td><code>&lt;desktops&gt;</code></td>
 <td>no</td>
 <td>A boolean (yes/no) which specifies whether desktop windows are to be selectable.</td>
 </tr>
 </tbody>
 </table>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;W-Up&quot;&gt;
-  &lt;action name=&quot;DirectionalalCycleWindows&quot;&gt;&lt;direction&gt;north&lt;/direction&gt;&lt;dialog&gt;yes&lt;/dialog&gt;&lt;/action&gt;
-&lt;/keybind&gt;
-&lt;keybind key=&quot;W-S-Down&quot;&gt;
-  &lt;action name=&quot;DirectionalFocus&quot;&gt;
-    &lt;direction&gt;south&lt;/direction&gt;
-    &lt;finalactions&gt;
-      &lt;action name=&quot;Focus&quot;&gt; &lt;!-- give focus without raising the window --&gt;
-      &lt;action name=&quot;Unshade&quot;&gt;
-    &lt;/finalactions&gt;
-  &lt;/action&gt;
-&lt;/keybind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-4-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-4-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-4-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-4-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-4-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-4-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-4-10">10</a></span>
+<span class="normal"><a href="#__codelineno-4-11">11</a></span>
+<span class="normal"><a href="#__codelineno-4-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-Up&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;DirectionalalCycleWindows&quot;</span><span class="nt">&gt;&lt;direction&gt;</span>north<span class="nt">&lt;/direction&gt;&lt;dialog&gt;</span>yes<span class="nt">&lt;/dialog&gt;&lt;/action&gt;</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="nt">&lt;/keybind&gt;</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-S-Down&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;DirectionalFocus&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="w">    </span><span class="nt">&lt;direction&gt;</span>south<span class="nt">&lt;/direction&gt;</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="w">    </span><span class="nt">&lt;finalactions&gt;</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="w">      </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Focus&quot;</span><span class="nt">&gt;</span><span class="w"> </span><span class="cm">&lt;!-- give focus without raising the window --&gt;</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="w">      </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Unshade&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10"></a><span class="w">    </span><span class="nt">&lt;/finalactions&gt;</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="w">  </span><span class="nt">&lt;/action&gt;</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="directionaltargetwindow">DirectionalTargetWindow<a class="headerlink" href="#directionaltargetwindow" title="Permanent link">🔗</a></h4>
+<h3 id="directionaltargetwindow">DirectionalTargetWindow<a class="headerlink" href="#directionaltargetwindow" title="Permanent link">🔗</a></h3>
 <p>Moves focus to the window in the direction specified of the currently
 focused window. This is similar to the
-<a href="#DirectionalFocusCycle">DirectionalFocusCycle</a> action, but
-it moves focus instantly instead of letting you interactively choose a
-window. Takes the same options except for <dialog> and <bar>.</p>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;W-Up&quot;&gt;
-  &lt;action name=&quot;DirectionalTargetWindow&quot;&gt;&lt;direction&gt;north&lt;/direction&gt;&lt;/action&gt;
-&lt;/keybind&gt;
-&lt;keybind key=&quot;W-S-Down&quot;&gt;
-  &lt;action name=&quot;DirectionalTargetWindow&quot;&gt;
-    &lt;direction&gt;south&lt;/direction&gt;
-    &lt;finalactions&gt;
-      &lt;action name=&quot;Focus&quot;&gt; &lt;!-- give focus without raising the window --&gt;
-      &lt;action name=&quot;Unshade&quot;&gt;
-    &lt;/finalactions&gt;
-  &lt;/action&gt;
-&lt;/keybind&gt;
+<a href="#directionalfocuscycle">DirectionalFocusCycle</a> action, but it moves focus instantly
+instead of letting you interactively choose a window.
+Takes the same options except for <code>&lt;dialog&gt;</code> and <code>&lt;bar&gt;</code>.</p>
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-5-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-5-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-5-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-5-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-5-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-5-10">10</a></span>
+<span class="normal"><a href="#__codelineno-5-11">11</a></span>
+<span class="normal"><a href="#__codelineno-5-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-Up&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;DirectionalTargetWindow&quot;</span><span class="nt">&gt;&lt;direction&gt;</span>north<span class="nt">&lt;/direction&gt;&lt;/action&gt;</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="nt">&lt;/keybind&gt;</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-S-Down&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;DirectionalTargetWindow&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="w">    </span><span class="nt">&lt;direction&gt;</span>south<span class="nt">&lt;/direction&gt;</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="w">    </span><span class="nt">&lt;finalactions&gt;</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="w">      </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Focus&quot;</span><span class="nt">&gt;</span><span class="w"> </span><span class="cm">&lt;!-- give focus without raising the window --&gt;</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="w">      </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Unshade&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="w">    </span><span class="nt">&lt;/finalactions&gt;</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11"></a><span class="w">  </span><span class="nt">&lt;/action&gt;</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="gotodesktop">GoToDesktop<a class="headerlink" href="#gotodesktop" title="Permanent link">🔗</a></h4>
+<h3 id="gotodesktop">GoToDesktop<a class="headerlink" href="#gotodesktop" title="Permanent link">🔗</a></h3>
 <p>Changes the visible desktop.</p>
 <table>
 <thead>
@@ -3299,45 +3404,44 @@ window. Takes the same options except for <dialog> and <bar>.</p>
 </thead>
 <tbody>
 <tr>
-<td><to></td>
+<td><code>&lt;to&gt;</code></td>
 <td>current</td>
 <td>The desktop to switch to, starting from 1, or one of the following special values: "current", "next", "previous", "last", "north" or "up", "south" or "down", "west" or "left", "east" or "right".</td>
 </tr>
 <tr>
-<td><wrap></td>
+<td><code>&lt;wrap&gt;</code></td>
 <td>yes</td>
 <td>A boolean (yes/no) which when enabled lets you wrap around from the last desktop to the first, west to east, north to south, etc, and vice versa.</td>
 </tr>
 </tbody>
 </table>
-<p>The value "last" for the <to> option goes to the desktop you were on
+<p>The value "last" for the <code>&lt;to&gt;</code> option goes to the desktop you were on
 before the current one. Only one desktop is remembered, but there is a
 timeout so that if you go past a few desktops, you will go to the one
 you were really on before. This is useful if you switch between two
 desktops by going to the next or previous desktop several times, for
 example with the scroll wheel. The timeout is 750ms and cannot be
 configured currently.</p>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span>
-<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;W-F1&quot;&gt;
-  &lt;action name=&quot;GoToDesktop&quot;&gt;&lt;to&gt;1&lt;/to&gt;&lt;/action&gt;
-&lt;/keybind&gt;
-&lt;keybind key=&quot;W-BackSpace&quot;&gt;
-  &lt;action name=&quot;GoToDesktop&quot;&gt;&lt;to&gt;last&lt;/to&gt;&lt;/action&gt;
-&lt;/keybind&gt;
-&lt;keybind key=&quot;W-A&quot;&gt;
-  &lt;action name=&quot;GoToDesktop&quot;&gt;&lt;to&gt;next&lt;/to&gt;&lt;wrap&gt;no&lt;/wrap&gt;&lt;/action&gt;
-&lt;/keybind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#__codelineno-6-2">2</a></span>
+<span class="normal"><a href="#__codelineno-6-3">3</a></span>
+<span class="normal"><a href="#__codelineno-6-4">4</a></span>
+<span class="normal"><a href="#__codelineno-6-5">5</a></span>
+<span class="normal"><a href="#__codelineno-6-6">6</a></span>
+<span class="normal"><a href="#__codelineno-6-7">7</a></span>
+<span class="normal"><a href="#__codelineno-6-8">8</a></span>
+<span class="normal"><a href="#__codelineno-6-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-F1&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;GoToDesktop&quot;</span><span class="nt">&gt;&lt;to&gt;</span>1<span class="nt">&lt;/to&gt;&lt;/action&gt;</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="nt">&lt;/keybind&gt;</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-BackSpace&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;GoToDesktop&quot;</span><span class="nt">&gt;&lt;to&gt;</span>last<span class="nt">&lt;/to&gt;&lt;/action&gt;</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6"></a><span class="nt">&lt;/keybind&gt;</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-A&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;GoToDesktop&quot;</span><span class="nt">&gt;&lt;to&gt;</span>next<span class="nt">&lt;/to&gt;&lt;wrap&gt;</span>no<span class="nt">&lt;/wrap&gt;&lt;/action&gt;</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="adddesktop">AddDesktop<a class="headerlink" href="#adddesktop" title="Permanent link">🔗</a></h4>
+<h3 id="adddesktop">AddDesktop<a class="headerlink" href="#adddesktop" title="Permanent link">🔗</a></h3>
 <p>Create a new desktop in the location specified.</p>
 <table>
 <thead>
@@ -3349,28 +3453,25 @@ configured currently.</p>
 </thead>
 <tbody>
 <tr>
-<td><where></td>
+<td><code>&lt;where&gt;</code></td>
 <td>last</td>
-<td>Can be "current" (add a new desktop in front of the current one and shuffle the desktops after it over) or "last" (add a new desktop after the last one).</td>
+<td>Can be <code>current</code> (add a new desktop in front of the current one and shuffle the desktops after it over) or <code>last</code> (add a new desktop after the last one).</td>
 </tr>
 </tbody>
 </table>
-<p>Example <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;W-F12&quot;&gt;
-  &lt;action name=&quot;AddDesktop&quot;&gt;
-     &lt;where&gt;current&lt;/where&gt;
-  &lt;/action
-&lt;/keybind&gt;
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span>
+<span class="normal"><a href="#__codelineno-7-4">4</a></span>
+<span class="normal"><a href="#__codelineno-7-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-F12&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;AddDesktop&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="w">    </span><span class="nt">&lt;where&gt;</span>current<span class="nt">&lt;/where&gt;</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="w">  </span><span class="nt">&lt;/action&gt;</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="removedesktop">RemoveDesktop<a class="headerlink" href="#removedesktop" title="Permanent link">🔗</a></h4>
+<h3 id="removedesktop">RemoveDesktop<a class="headerlink" href="#removedesktop" title="Permanent link">🔗</a></h3>
 <p>Remove the a desktop in the location specified and move the windows on
-it to the one after it (or before if the removed desktop is the last
-one).</p>
+it to the one after it (or before if the removed desktop is the last one).</p>
 <table>
 <thead>
 <tr>
@@ -3381,25 +3482,23 @@ one).</p>
 </thead>
 <tbody>
 <tr>
-<td><where></td>
+<td><code>&lt;where&gt;</code></td>
 <td>last</td>
-<td>Can be "current" (remove the current desktop and shuffle the desktops after it over) or "last" (remove the last desktop).</td>
+<td>Can be <code>current</code> (remove the current desktop and shuffle the desktops after it over) or <code>last</code> (remove the last desktop).</td>
 </tr>
 </tbody>
 </table>
-<p>Example <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;W-F11&quot;&gt;
-  &lt;action name=&quot;RemoveDesktop&quot;/&gt;
-&lt;/keybind&gt;
+<p>Example</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
+<span class="normal"><a href="#__codelineno-8-2">2</a></span>
+<span class="normal"><a href="#__codelineno-8-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-F11&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;RemoveDesktop&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="toggleshowdesktop">ToggleShowDesktop<a class="headerlink" href="#toggleshowdesktop" title="Permanent link">🔗</a></h4>
-<p>Hides all windows so that the desktop is visible, and gives focus to the
-desktop window if one exists (such as in GNOME and KDE). You can also
-use the action again to show the windows again, if no windows have
-become visible yet.</p>
+<h3 id="toggleshowdesktop">ToggleShowDesktop<a class="headerlink" href="#toggleshowdesktop" title="Permanent link">🔗</a></h3>
+<p>Hides all windows so that the desktop is visible, and gives focus to
+the desktop window if one exists (such as in GNOME and KDE). You can also use
+the action again to show the windows again, if no windows have become visible yet.</p>
 <table>
 <thead>
 <tr>
@@ -3410,45 +3509,41 @@ become visible yet.</p>
 </thead>
 <tbody>
 <tr>
-<td><strict></td>
+<td><code>&lt;strict&gt;</code></td>
 <td>"no"</td>
 <td>A boolean (yes/no) which specifies if windows are allowed to show themselves while in Show Desktop mode. In strict mode, they cannot.</td>
 </tr>
 </tbody>
 </table>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;W-d&quot;&gt;
-  &lt;action name=&quot;ToggleShowDesktop&quot;/&gt;
-&lt;/keybind&gt;
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
+<span class="normal"><a href="#__codelineno-9-2">2</a></span>
+<span class="normal"><a href="#__codelineno-9-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-d&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;ToggleShowDesktop&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="toggledockautohide">ToggleDockAutohide<a class="headerlink" href="#toggledockautohide" title="Permanent link">🔗</a></h4>
-<p>Toggles the autohide setting on the dock temporarily. This effectively
-means you can show/hide the dock with a keybinding.</p>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;C-A-d&quot;&gt;
-  &lt;action name=&quot;ToggleDockAutohide&quot;/&gt;
-&lt;/keybind&gt;
+<h3 id="toggledockautohide">ToggleDockAutohide<a class="headerlink" href="#toggledockautohide" title="Permanent link">🔗</a></h3>
+<p>Toggles the autohide setting on the dock temporarily.
+This effectively means you can show/hide the dock with a keybinding.</p>
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
+<span class="normal"><a href="#__codelineno-10-2">2</a></span>
+<span class="normal"><a href="#__codelineno-10-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;C-A-d&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;ToggleDockAutohide&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="reconfigure">Reconfigure<a class="headerlink" href="#reconfigure" title="Permanent link">🔗</a></h4>
+<h3 id="reconfigure">Reconfigure<a class="headerlink" href="#reconfigure" title="Permanent link">🔗</a></h3>
 <p>Prompts Openbox to reload its config file, menu and theme.</p>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;W-F11&quot;&gt;
-  &lt;action name=&quot;Reconfigure&quot;/&gt;
-&lt;/keybind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
+<span class="normal"><a href="#__codelineno-11-2">2</a></span>
+<span class="normal"><a href="#__codelineno-11-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-F11&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Reconfigure&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="restart">Restart<a class="headerlink" href="#restart" title="Permanent link">🔗</a></h4>
-<p>Restarts Openbox. This starts a new copy of Openbox, and can be used to
-upgrade to a newly installed version without logging out of your X
-session. It can also be used to start another window manager.</p>
+<h3 id="restart">Restart<a class="headerlink" href="#restart" title="Permanent link">🔗</a></h3>
+<p>Restarts Openbox. This starts a new copy of Openbox, and can be used to upgrade
+to a newly installed version without logging out of your X session.
+It can also be used to start another window manager.</p>
 <table>
 <thead>
 <tr>
@@ -3459,32 +3554,30 @@ session. It can also be used to start another window manager.</p>
 </thead>
 <tbody>
 <tr>
-<td><command></td>
+<td><code>&lt;command&gt;</code></td>
 <td>""</td>
 <td>A string which is the command to be executed as the new window manager, along with any arguments to be passed to it.</td>
 </tr>
 </tbody>
 </table>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;W-F12&quot;&gt;
-  &lt;action name=&quot;Restart&quot;/&gt;
-&lt;/keybind&gt;
-&lt;keybind key=&quot;W-F11&quot;&gt;
-  &lt;action name=&quot;Restart&quot;&gt;&lt;command&gt;firebox&lt;/command&gt;&lt;/action&gt;
-&lt;/keybind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span>
+<span class="normal"><a href="#__codelineno-12-2">2</a></span>
+<span class="normal"><a href="#__codelineno-12-3">3</a></span>
+<span class="normal"><a href="#__codelineno-12-4">4</a></span>
+<span class="normal"><a href="#__codelineno-12-5">5</a></span>
+<span class="normal"><a href="#__codelineno-12-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-F12&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Restart&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="nt">&lt;/keybind&gt;</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-F11&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Restart&quot;</span><span class="nt">&gt;&lt;command&gt;</span>firebox<span class="nt">&lt;/command&gt;&lt;/action&gt;</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="exit">Exit<a class="headerlink" href="#exit" title="Permanent link">🔗</a></h4>
+<h3 id="exit">Exit<a class="headerlink" href="#exit" title="Permanent link">🔗</a></h3>
 <p>Exits Openbox.</p>
-<p>If Openbox is built with session support and is running inside a session
-manager (such as gnome-session, ksmserver), then Openbox will ask the
-session manager to log out. Otherwise, Openbox will simply exit, ending
-the current X session.</p>
+<p>If Openbox is built with session support and is running inside a session manager
+(such as gnome-session, ksmserver), then Openbox will ask the session manager
+to log out. Otherwise, Openbox will simply exit, ending the current X session.</p>
 <table>
 <thead>
 <tr>
@@ -3495,27 +3588,26 @@ the current X session.</p>
 </thead>
 <tbody>
 <tr>
-<td><prompt></td>
+<td><code>&lt;prompt&gt;</code></td>
 <td>true</td>
 <td>A boolean (yes/no) which specifies if Openbox should display a prompt dialog asking if you really want to exit before it actually exits.</td>
 </tr>
 </tbody>
 </table>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;C-A-S-F12&quot;&gt;
-  &lt;action name=&quot;Exit&quot;&gt;
-    &lt;prompt&gt;yes&lt;/prompt&gt;
-  &lt;/action&gt;
-&lt;/keybind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span>
+<span class="normal"><a href="#__codelineno-13-2">2</a></span>
+<span class="normal"><a href="#__codelineno-13-3">3</a></span>
+<span class="normal"><a href="#__codelineno-13-4">4</a></span>
+<span class="normal"><a href="#__codelineno-13-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;C-A-S-F12&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Exit&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3"></a><span class="w">    </span><span class="nt">&lt;prompt&gt;</span>yes<span class="nt">&lt;/prompt&gt;</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4"></a><span class="w">  </span><span class="nt">&lt;/action&gt;</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="sessionlogout">SessionLogout<a class="headerlink" href="#sessionlogout" title="Permanent link">🔗</a></h4>
-<p>This is a synonym for the <a href="#Exit">Exit</a> action.</p>
-<h4 id="debug">Debug<a class="headerlink" href="#debug" title="Permanent link">🔗</a></h4>
+<h3 id="sessionlogout">SessionLogout<a class="headerlink" href="#sessionlogout" title="Permanent link">🔗</a></h3>
+<p>This is a synonym for the <a href="#exit">Exit</a> action.</p>
+<h3 id="debug">Debug<a class="headerlink" href="#debug" title="Permanent link">🔗</a></h3>
 <p>Prints out a string in Openbox's output for debugging purposes.</p>
 <table>
 <thead>
@@ -3527,181 +3619,163 @@ the current X session.</p>
 </thead>
 <tbody>
 <tr>
-<td><string></td>
+<td><code>&lt;string&gt;</code></td>
 <td>""</td>
 <td>The string to be printed out.</td>
 </tr>
 </tbody>
 </table>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;W-F10&quot;&gt;
-  &lt;action name=&quot;Debug&quot;&gt;
-   &lt;string&gt;-------------------------------&lt;/string&gt;
-  &lt;/action&gt;
-&lt;/keybind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span>
+<span class="normal"><a href="#__codelineno-14-2">2</a></span>
+<span class="normal"><a href="#__codelineno-14-3">3</a></span>
+<span class="normal"><a href="#__codelineno-14-4">4</a></span>
+<span class="normal"><a href="#__codelineno-14-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-F10&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Debug&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3"></a><span class="w">    </span><span class="nt">&lt;string&gt;</span>-------------------------------<span class="nt">&lt;/string&gt;</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4"></a><span class="w">  </span><span class="nt">&lt;/action&gt;</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
 <h2 id="window-actions">Window actions<a class="headerlink" href="#window-actions" title="Permanent link">🔗</a></h2>
 <p>These actions are used to control windows. For key bindings, they
 operate on the currently focused window. For mouse bindings they operate
 on the window being clicked/dragged on.</p>
-<h4 id="focus">Focus<a class="headerlink" href="#focus" title="Permanent link">🔗</a></h4>
+<h3 id="focus">Focus<a class="headerlink" href="#focus" title="Permanent link">🔗</a></h3>
 <p>Focuses a window.</p>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;mousebind button=&quot;A-Left&quot; action=&quot;Press&quot;&gt;
-  &lt;action name=&quot;Focus&quot;/&gt;
-  &lt;action name=&quot;Raise&quot;/&gt;
-&lt;/mousebind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span>
+<span class="normal"><a href="#__codelineno-15-2">2</a></span>
+<span class="normal"><a href="#__codelineno-15-3">3</a></span>
+<span class="normal"><a href="#__codelineno-15-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="nt">&lt;mousebind</span><span class="w"> </span><span class="na">button=</span><span class="s">&quot;A-Left&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;Press&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Focus&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Raise&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4"></a><span class="nt">&lt;/mousebind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="raise">Raise<a class="headerlink" href="#raise" title="Permanent link">🔗</a></h4>
+<h3 id="raise">Raise<a class="headerlink" href="#raise" title="Permanent link">🔗</a></h3>
 <p>Raises a window above other windows in its layer.</p>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;mousebind button=&quot;A-Left&quot; action=&quot;Press&quot;&gt;
-  &lt;action name=&quot;Focus&quot;/&gt;
-  &lt;action name=&quot;Raise&quot;/&gt;
-&lt;/mousebind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1">1</a></span>
+<span class="normal"><a href="#__codelineno-16-2">2</a></span>
+<span class="normal"><a href="#__codelineno-16-3">3</a></span>
+<span class="normal"><a href="#__codelineno-16-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="nt">&lt;mousebind</span><span class="w"> </span><span class="na">button=</span><span class="s">&quot;A-Left&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;Press&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Focus&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Raise&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4"></a><span class="nt">&lt;/mousebind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="lower">Lower<a class="headerlink" href="#lower" title="Permanent link">🔗</a></h4>
+<h3 id="lower">Lower<a class="headerlink" href="#lower" title="Permanent link">🔗</a></h3>
 <p>Lowers a window below other windows in its layer.</p>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;mousebind button=&quot;A-Middle&quot; action=&quot;Press&quot;&gt;
-  &lt;action name=&quot;Lower&quot;/&gt;
-  &lt;action name=&quot;FocusToBottom&quot;/&gt;
-  &lt;action name=&quot;Unfocus&quot;/&gt;
-&lt;/mousebind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1">1</a></span>
+<span class="normal"><a href="#__codelineno-17-2">2</a></span>
+<span class="normal"><a href="#__codelineno-17-3">3</a></span>
+<span class="normal"><a href="#__codelineno-17-4">4</a></span>
+<span class="normal"><a href="#__codelineno-17-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="nt">&lt;mousebind</span><span class="w"> </span><span class="na">button=</span><span class="s">&quot;A-Middle&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;Press&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Lower&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;FocusToBottom&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Unfocus&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5"></a><span class="nt">&lt;/mousebind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="raiselower">RaiseLower<a class="headerlink" href="#raiselower" title="Permanent link">🔗</a></h4>
-<p>Raises the window if it is currently behind any other windows in its
-layer. Lowers the window if it is above all other windows in its layer.</p>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;C-A-r&quot;&gt;
-  &lt;action name=&quot;RaiseLower&quot;/&gt;
-&lt;/keybind&gt;
+<h3 id="raiselower">RaiseLower<a class="headerlink" href="#raiselower" title="Permanent link">🔗</a></h3>
+<p>Raises the window if it is currently behind any other windows in its layer.
+Lowers the window if it is above all other windows in its layer.</p>
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1">1</a></span>
+<span class="normal"><a href="#__codelineno-18-2">2</a></span>
+<span class="normal"><a href="#__codelineno-18-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;C-A-r&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;RaiseLower&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="unfocus">Unfocus<a class="headerlink" href="#unfocus" title="Permanent link">🔗</a></h4>
-<p>Move focus off of the window. Usually used in conjuction with
-<a href="#FocusToBottom">FocusToBottom</a>.</p>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;mousebind button=&quot;A-Middle&quot; action=&quot;Press&quot;&gt;
-  &lt;action name=&quot;Lower&quot;/&gt;
-  &lt;action name=&quot;FocusToBottom&quot;/&gt;
-  &lt;action name=&quot;Unfocus&quot;/&gt;
-&lt;/mousebind&gt;
+<h3 id="unfocus">Unfocus<a class="headerlink" href="#unfocus" title="Permanent link">🔗</a></h3>
+<p>Move focus off of the window. Usually used in conjuction with <a href="#focustobottom">FocusToBottom</a>.</p>
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-19-1">1</a></span>
+<span class="normal"><a href="#__codelineno-19-2">2</a></span>
+<span class="normal"><a href="#__codelineno-19-3">3</a></span>
+<span class="normal"><a href="#__codelineno-19-4">4</a></span>
+<span class="normal"><a href="#__codelineno-19-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="nt">&lt;mousebind</span><span class="w"> </span><span class="na">button=</span><span class="s">&quot;A-Middle&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;Press&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Lower&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;FocusToBottom&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Unfocus&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5"></a><span class="nt">&lt;/mousebind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="focustobottom">FocusToBottom<a class="headerlink" href="#focustobottom" title="Permanent link">🔗</a></h4>
-<p>Move the window to the bottom of the recently-used-windows list. This
-means that other windows will be given preference when selecting which
-window to focus. Usually used in conjuction with
-<a href="#Unfocus">Unfocus</a>.</p>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;A-Escape&quot;&gt;
-  &lt;action name=&quot;Lower&quot;/&gt;
-  &lt;action name=&quot;FocusToBottom&quot;/&gt;
-  &lt;action name=&quot;Unfocus&quot;/&gt;
-&lt;/keybind&gt;
+<h3 id="focustobottom">FocusToBottom<a class="headerlink" href="#focustobottom" title="Permanent link">🔗</a></h3>
+<p>Move the window to the bottom of the recently-used-windows list.
+This means that other windows will be given preference when selecting which
+window to focus. Usually used in conjuction with <a href="#unfocus">Unfocus</a>.</p>
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1">1</a></span>
+<span class="normal"><a href="#__codelineno-20-2">2</a></span>
+<span class="normal"><a href="#__codelineno-20-3">3</a></span>
+<span class="normal"><a href="#__codelineno-20-4">4</a></span>
+<span class="normal"><a href="#__codelineno-20-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;A-Escape&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Lower&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;FocusToBottom&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Unfocus&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="iconify">Iconify<a class="headerlink" href="#iconify" title="Permanent link">🔗</a></h4>
+<h3 id="iconify">Iconify<a class="headerlink" href="#iconify" title="Permanent link">🔗</a></h3>
 <p>Iconify (a.k.a. minimize) the window.</p>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;mousebind button=&quot;Left&quot; action=&quot;Click&quot;&gt;
-  &lt;action name=&quot;Iconify&quot;/&gt;
-&lt;/mousebind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-21-1">1</a></span>
+<span class="normal"><a href="#__codelineno-21-2">2</a></span>
+<span class="normal"><a href="#__codelineno-21-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1"></a><span class="nt">&lt;mousebind</span><span class="w"> </span><span class="na">button=</span><span class="s">&quot;Left&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;Click&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Iconify&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3"></a><span class="nt">&lt;/mousebind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="close">Close<a class="headerlink" href="#close" title="Permanent link">🔗</a></h4>
+<h3 id="close">Close<a class="headerlink" href="#close" title="Permanent link">🔗</a></h3>
 <p>Close the window.</p>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;A-F4&quot;&gt;
-  &lt;action name=&quot;Close&quot;/&gt;
-&lt;/keybind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-22-1">1</a></span>
+<span class="normal"><a href="#__codelineno-22-2">2</a></span>
+<span class="normal"><a href="#__codelineno-22-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;A-F4&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Close&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="toggleshade">ToggleShade<a class="headerlink" href="#toggleshade" title="Permanent link">🔗</a></h4>
-<p>Shade (a.k.a. Roll up) the window, so only its titlebar is visible. If
-the window is already shaded, then Unshade (a.k.a. Roll down) the
-window.</p>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;mousebind button=&quot;Left&quot; action=&quot;Click&quot;&gt;
-  &lt;action name=&quot;ToggleShade&quot;/&gt;
-&lt;/mousebind&gt;
+<h3 id="toggleshade">ToggleShade<a class="headerlink" href="#toggleshade" title="Permanent link">🔗</a></h3>
+<p>Shade (a.k.a. Roll up) the window, so only its titlebar is visible.
+If the window is already shaded, then Unshade (a.k.a. Roll down) the window.</p>
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-23-1">1</a></span>
+<span class="normal"><a href="#__codelineno-23-2">2</a></span>
+<span class="normal"><a href="#__codelineno-23-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1"></a><span class="nt">&lt;mousebind</span><span class="w"> </span><span class="na">button=</span><span class="s">&quot;Left&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;Click&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;ToggleShade&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3"></a><span class="nt">&lt;/mousebind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="shade">Shade<a class="headerlink" href="#shade" title="Permanent link">🔗</a></h4>
+<h3 id="shade">Shade<a class="headerlink" href="#shade" title="Permanent link">🔗</a></h3>
 <p>Shade (a.k.a. Roll up) the window, so only its titlebar is visible.</p>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;mousebind button=&quot;Up&quot; action=&quot;Click&quot;&gt;
-  &lt;action name=&quot;Shade&quot;/&gt;
-  &lt;action name=&quot;FocusToBottom&quot;/&gt;
-  &lt;action name=&quot;Unfocus&quot;/&gt;
-&lt;/mousebind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-24-1">1</a></span>
+<span class="normal"><a href="#__codelineno-24-2">2</a></span>
+<span class="normal"><a href="#__codelineno-24-3">3</a></span>
+<span class="normal"><a href="#__codelineno-24-4">4</a></span>
+<span class="normal"><a href="#__codelineno-24-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1"></a><span class="nt">&lt;mousebind</span><span class="w"> </span><span class="na">button=</span><span class="s">&quot;Up&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;Click&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Shade&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-24-3" name="__codelineno-24-3"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;FocusToBottom&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-24-4" name="__codelineno-24-4"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Unfocus&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-24-5" name="__codelineno-24-5"></a><span class="nt">&lt;/mousebind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="unshade">Unshade<a class="headerlink" href="#unshade" title="Permanent link">🔗</a></h4>
-<p>Unshade (a.k.a. Roll down) the window, when it has been
-<a href="#Shade">shaded</a>.</p>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;mousebind button=&quot;A-Left&quot; action=&quot;Click&quot;&gt;
-  &lt;action name=&quot;Unshade&quot;/&gt;
-&lt;/mousebind&gt;
+<h3 id="unshade">Unshade<a class="headerlink" href="#unshade" title="Permanent link">🔗</a></h3>
+<p>Unshade (a.k.a. Roll down) the window, when it has been <a href="#shade">shaded</a>.</p>
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-25-1">1</a></span>
+<span class="normal"><a href="#__codelineno-25-2">2</a></span>
+<span class="normal"><a href="#__codelineno-25-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1"></a><span class="nt">&lt;mousebind</span><span class="w"> </span><span class="na">button=</span><span class="s">&quot;A-Left&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;Click&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Unshade&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3"></a><span class="nt">&lt;/mousebind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="toggleomnipresent">ToggleOmnipresent<a class="headerlink" href="#toggleomnipresent" title="Permanent link">🔗</a></h4>
+<h3 id="toggleomnipresent">ToggleOmnipresent<a class="headerlink" href="#toggleomnipresent" title="Permanent link">🔗</a></h3>
 <p>Make the window visible on all desktops, if it is not already.
 Otherwise, make it visible only on the current desktop.</p>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;mousebind button=&quot;Left&quot; action=&quot;Click&quot;&gt;
-  &lt;action name=&quot;ToggleOmnipresent&quot;/&gt;
-&lt;/mousebind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-26-1">1</a></span>
+<span class="normal"><a href="#__codelineno-26-2">2</a></span>
+<span class="normal"><a href="#__codelineno-26-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1"></a><span class="nt">&lt;mousebind</span><span class="w"> </span><span class="na">button=</span><span class="s">&quot;Left&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;Click&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;ToggleOmnipresent&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-26-3" name="__codelineno-26-3"></a><span class="nt">&lt;/mousebind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="togglemaximize">ToggleMaximize<a class="headerlink" href="#togglemaximize" title="Permanent link">🔗</a></h4>
-<p>Maximize the window to fill the entire screen in the directions
-specified. If it is already maximized, return it to its original
-dimensions.</p>
+<h3 id="togglemaximize">ToggleMaximize<a class="headerlink" href="#togglemaximize" title="Permanent link">🔗</a></h3>
+<p>Maximize the window to fill the entire screen in the directions specified.
+If it is already maximized, return it to its original dimensions.</p>
 <table>
 <thead>
 <tr>
@@ -3712,27 +3786,26 @@ dimensions.</p>
 </thead>
 <tbody>
 <tr>
-<td><direction></td>
+<td><code>&lt;direction&gt;</code></td>
 <td>both</td>
-<td>The direction to maximize the window, can be "both", "horizontal" or "vertical".</td>
+<td>The direction to maximize the window, can be <code>both</code>, <code>horizontal</code> or <code>vertical</code>.</td>
 </tr>
 </tbody>
 </table>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;mousebind button=&quot;Left&quot; action=&quot;Click&quot;&gt;
-  &lt;action name=&quot;ToggleMaximize&quot;/&gt;
-&lt;/mousebind&gt;
-&lt;mousebind button=&quot;Middle&quot; action=&quot;DoubleClick&quot;&gt;
-  &lt;action name=&quot;ToggleMaximize&quot;&gt;&lt;direction&gt;horizontal&lt;/direction&gt;&lt;/action&gt;
-&lt;/mousebind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-27-1">1</a></span>
+<span class="normal"><a href="#__codelineno-27-2">2</a></span>
+<span class="normal"><a href="#__codelineno-27-3">3</a></span>
+<span class="normal"><a href="#__codelineno-27-4">4</a></span>
+<span class="normal"><a href="#__codelineno-27-5">5</a></span>
+<span class="normal"><a href="#__codelineno-27-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1"></a><span class="nt">&lt;mousebind</span><span class="w"> </span><span class="na">button=</span><span class="s">&quot;Left&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;Click&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;ToggleMaximize&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-27-3" name="__codelineno-27-3"></a><span class="nt">&lt;/mousebind&gt;</span>
+<a id="__codelineno-27-4" name="__codelineno-27-4"></a><span class="nt">&lt;mousebind</span><span class="w"> </span><span class="na">button=</span><span class="s">&quot;Middle&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;DoubleClick&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-27-5" name="__codelineno-27-5"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;ToggleMaximize&quot;</span><span class="nt">&gt;&lt;direction&gt;</span>horizontal<span class="nt">&lt;/direction&gt;&lt;/action&gt;</span>
+<a id="__codelineno-27-6" name="__codelineno-27-6"></a><span class="nt">&lt;/mousebind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="maximize">Maximize<a class="headerlink" href="#maximize" title="Permanent link">🔗</a></h4>
+<h3 id="maximize">Maximize<a class="headerlink" href="#maximize" title="Permanent link">🔗</a></h3>
 <p>Maximize the window to fill the entire screen in the directions
 specifed.</p>
 <table>
@@ -3745,21 +3818,20 @@ specifed.</p>
 </thead>
 <tbody>
 <tr>
-<td><direction></td>
+<td><code>&lt;direction&gt;</code></td>
 <td>both</td>
-<td>The direction to maximize the window, can be "both", "horizontal" or "vertical".</td>
+<td>The direction to maximize the window, can be <code>both</code>, <code>horizontal</code> or <code>vertical</code>.</td>
 </tr>
 </tbody>
 </table>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;A-F6&quot;&gt;
-  &lt;action name=&quot;Maximize&quot;/&gt;
-&lt;/keybind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-28-1">1</a></span>
+<span class="normal"><a href="#__codelineno-28-2">2</a></span>
+<span class="normal"><a href="#__codelineno-28-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;A-F6&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Maximize&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-28-3" name="__codelineno-28-3"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="unmaximize">Unmaximize<a class="headerlink" href="#unmaximize" title="Permanent link">🔗</a></h4>
+<h3 id="unmaximize">Unmaximize<a class="headerlink" href="#unmaximize" title="Permanent link">🔗</a></h3>
 <p>Unmaximizes the window in the directions specified, and return it to its
 pre-maximized dimensions.</p>
 <table>
@@ -3772,68 +3844,62 @@ pre-maximized dimensions.</p>
 </thead>
 <tbody>
 <tr>
-<td><direction></td>
+<td><code>&lt;direction&gt;</code></td>
 <td>both</td>
-<td>The direction to maximize the window, can be "both", "horizontal" or "vertical".</td>
+<td>The direction to maximize the window, can be <code>both</code>, <code>horizontal</code> or <code>vertical</code>.</td>
 </tr>
 </tbody>
 </table>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;A-F7&quot;&gt;
-  &lt;action name=&quot;Unmaximize&quot;/&gt;
-&lt;/keybind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-29-1">1</a></span>
+<span class="normal"><a href="#__codelineno-29-2">2</a></span>
+<span class="normal"><a href="#__codelineno-29-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;A-F7&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Unmaximize&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-29-3" name="__codelineno-29-3"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="togglefullscreen">ToggleFullscreen<a class="headerlink" href="#togglefullscreen" title="Permanent link">🔗</a></h4>
-<p>Makes the window fullscreen, filling the entire monitor, without any
-decorations. If the window is already fullscreened, then it returns it
-to its pre-fullscreen dimensions.</p>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;A-F12&quot;&gt;
-  &lt;action name=&quot;ToggleFullscreen&quot;/&gt;
-&lt;/keybind&gt;
+<h3 id="togglefullscreen">ToggleFullscreen<a class="headerlink" href="#togglefullscreen" title="Permanent link">🔗</a></h3>
+<p>Makes the window fullscreen, filling the entire monitor, without any decorations.
+If the window is already fullscreened, then it returns it to its pre-fullscreen dimensions.</p>
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-30-1">1</a></span>
+<span class="normal"><a href="#__codelineno-30-2">2</a></span>
+<span class="normal"><a href="#__codelineno-30-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;A-F12&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-30-2" name="__codelineno-30-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;ToggleFullscreen&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-30-3" name="__codelineno-30-3"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="toggledecorations">ToggleDecorations<a class="headerlink" href="#toggledecorations" title="Permanent link">🔗</a></h4>
-<p>Removes the window's decorations. If the <keepBorder> configuration
+<h3 id="toggledecorations">ToggleDecorations<a class="headerlink" href="#toggledecorations" title="Permanent link">🔗</a></h3>
+<p>Removes the window's decorations. If the <code>&lt;keepBorder&gt;</code> configuration
 option is enabled (as in the default configuraton), then a border will
 be left as the only decorations around the window. If the window has
 already had its decorations removed, then this will restore them.</p>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;A-S-d&quot;&gt;
-  &lt;action name=&quot;ToggleDecorations&quot;/&gt;
-&lt;/keybind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-31-1">1</a></span>
+<span class="normal"><a href="#__codelineno-31-2">2</a></span>
+<span class="normal"><a href="#__codelineno-31-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;A-S-d&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-31-2" name="__codelineno-31-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;ToggleDecorations&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-31-3" name="__codelineno-31-3"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="decorate">Decorate<a class="headerlink" href="#decorate" title="Permanent link">🔗</a></h4>
+<h3 id="decorate">Decorate<a class="headerlink" href="#decorate" title="Permanent link">🔗</a></h3>
 <p>Gives a window its normal decorations.</p>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;C-S-d&quot;&gt;
-  &lt;action name=&quot;Decorate&quot;/&gt;
-&lt;/keybind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-32-1">1</a></span>
+<span class="normal"><a href="#__codelineno-32-2">2</a></span>
+<span class="normal"><a href="#__codelineno-32-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;C-S-d&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-32-2" name="__codelineno-32-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Decorate&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-32-3" name="__codelineno-32-3"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="undecorate">Undecorate<a class="headerlink" href="#undecorate" title="Permanent link">🔗</a></h4>
-<p>Removes decorations from a window. If the <keepBorder> configuration
+<h3 id="undecorate">Undecorate<a class="headerlink" href="#undecorate" title="Permanent link">🔗</a></h3>
+<p>Removes decorations from a window. If the <code>&lt;keepBorder&gt;</code> configuration
 option is enabled (as in the default configuraton), then a border will
 be left as the only decorations around the window.</p>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;C-S-d&quot;&gt;
-  &lt;action name=&quot;Undecorate&quot;/&gt;
-&lt;/keybind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-33-1">1</a></span>
+<span class="normal"><a href="#__codelineno-33-2">2</a></span>
+<span class="normal"><a href="#__codelineno-33-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;C-S-d&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-33-2" name="__codelineno-33-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Undecorate&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-33-3" name="__codelineno-33-3"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="sendtodesktop">SendToDesktop<a class="headerlink" href="#sendtodesktop" title="Permanent link">🔗</a></h4>
+<h3 id="sendtodesktop">SendToDesktop<a class="headerlink" href="#sendtodesktop" title="Permanent link">🔗</a></h3>
 <p>Moves the window to another desktop.</p>
 <table>
 <thead>
@@ -3845,81 +3911,78 @@ be left as the only decorations around the window.</p>
 </thead>
 <tbody>
 <tr>
-<td><to></td>
+<td><code>&lt;to&gt;</code></td>
 <td>current</td>
-<td>The desktop to send the window to, starting from 1, or one of the following special values: "current", "next", "previous", "last", "north" or "up", "south" or "down", "west" or "left", "east" or "right".</td>
+<td>The desktop to send the window to, starting from 1, or one of the following special values: <code>current</code>, <code>next</code>, <code>previous</code>, <code>last</code>, <code>north</code> or <code>up</code>, <code>south</code> or <code>down</code>, <code>west</code> or <code>left</code>, <code>east</code> or <code>right</code>.</td>
 </tr>
 <tr>
-<td><wrap></td>
+<td><code>&lt;wrap&gt;</code></td>
 <td>yes</td>
 <td>A boolean (yes/no) which when enabled lets you wrap around from the last desktop to the first, west to east, north to south, etc, and vice versa.</td>
 </tr>
 <tr>
-<td><follow></td>
+<td><code>&lt;follow&gt;</code></td>
 <td>yes</td>
 <td>A boolean (yes/no) which when enabled will also switch to the specified desktop.</td>
 </tr>
 </tbody>
 </table>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;W-S-F1&quot;&gt;
-  &lt;action name=&quot;SendToDesktop&quot;&gt;&lt;to&gt;1&lt;/to&gt;&lt;/action&gt;
-&lt;/keybind&gt;
-&lt;keybind key=&quot;W-S-BackSpace&quot;&gt;
-  &lt;action name=&quot;SendToDesktop&quot;&gt;&lt;to&gt;last&lt;/to&gt;&lt;/action&gt;
-&lt;/keybind&gt;
-&lt;!-- Cycle through all windows and focus the selected one on the current desktop --&gt;
-&lt;keybind key=&quot;W-S-Tab&quot;&gt;
-  &lt;action name=&quot;NextWindow&quot;&gt;
-    &lt;allDesktops&gt;yes&lt;/allDesktops&gt;
-    &lt;finalactions&gt;
-      &lt;action name=&quot;SendToDesktop&quot;&gt;&lt;to&gt;current&lt;/to&gt;&lt;/action&gt;
-      &lt;action name=&quot;focus&quot;/&gt;
-      &lt;action name=&quot;raise&quot;/&gt;
-    &lt;/finalactions&gt;
-  &lt;/action
-&lt;/keybind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-34-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-34-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-34-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-34-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-34-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-34-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-34-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-34-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-34-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-34-10">10</a></span>
+<span class="normal"><a href="#__codelineno-34-11">11</a></span>
+<span class="normal"><a href="#__codelineno-34-12">12</a></span>
+<span class="normal"><a href="#__codelineno-34-13">13</a></span>
+<span class="normal"><a href="#__codelineno-34-14">14</a></span>
+<span class="normal"><a href="#__codelineno-34-15">15</a></span>
+<span class="normal"><a href="#__codelineno-34-16">16</a></span>
+<span class="normal"><a href="#__codelineno-34-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-S-F1&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-34-2" name="__codelineno-34-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;SendToDesktop&quot;</span><span class="nt">&gt;&lt;to&gt;</span>1<span class="nt">&lt;/to&gt;&lt;/action&gt;</span>
+<a id="__codelineno-34-3" name="__codelineno-34-3"></a><span class="nt">&lt;/keybind&gt;</span>
+<a id="__codelineno-34-4" name="__codelineno-34-4"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-S-BackSpace&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-34-5" name="__codelineno-34-5"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;SendToDesktop&quot;</span><span class="nt">&gt;&lt;to&gt;</span>last<span class="nt">&lt;/to&gt;&lt;/action&gt;</span>
+<a id="__codelineno-34-6" name="__codelineno-34-6"></a><span class="nt">&lt;/keybind&gt;</span>
+<a id="__codelineno-34-7" name="__codelineno-34-7"></a><span class="cm">&lt;!-- Cycle through all windows and focus the selected one on the current desktop --&gt;</span>
+<a id="__codelineno-34-8" name="__codelineno-34-8"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-S-Tab&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-34-9" name="__codelineno-34-9"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;NextWindow&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-34-10" name="__codelineno-34-10"></a><span class="w">    </span><span class="nt">&lt;allDesktops&gt;</span>yes<span class="nt">&lt;/allDesktops&gt;</span>
+<a id="__codelineno-34-11" name="__codelineno-34-11"></a><span class="w">    </span><span class="nt">&lt;finalactions&gt;</span>
+<a id="__codelineno-34-12" name="__codelineno-34-12"></a><span class="w">      </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;SendToDesktop&quot;</span><span class="nt">&gt;&lt;to&gt;</span>current<span class="nt">&lt;/to&gt;&lt;/action&gt;</span>
+<a id="__codelineno-34-13" name="__codelineno-34-13"></a><span class="w">      </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;focus&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-34-14" name="__codelineno-34-14"></a><span class="w">      </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;raise&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-34-15" name="__codelineno-34-15"></a><span class="w">    </span><span class="nt">&lt;/finalactions&gt;</span>
+<a id="__codelineno-34-16" name="__codelineno-34-16"></a><span class="w">  </span><span class="nt">&lt;/action&gt;</span>
+<a id="__codelineno-34-17" name="__codelineno-34-17"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<p>See also <a href="#GoToDesktop">GoToDesktop</a>.</p>
-<h4 id="move">Move<a class="headerlink" href="#move" title="Permanent link">🔗</a></h4>
-<p>Begin interactively moving the window. Once a move has begun, you can
-move the window either by moving the mouse pointer, or by using the
-arrow keys. The move will complete when you release a mouse button, or
-press the Enter key. Pressing Escape will cancel the move.</p>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;mousebind button=&quot;A-Left&quot; action=&quot;Drag&quot;&gt;
-  &lt;action name=&quot;Move&quot;/&gt;
-&lt;/mousebind&gt;
+<p>See also <a href="#gotodesktop">GoToDesktop</a>.</p>
+<h3 id="move">Move<a class="headerlink" href="#move" title="Permanent link">🔗</a></h3>
+<p>Begin interactively moving the window. Once a move has begun, you can move
+the window either by moving the mouse pointer, or by using the arrow keys.
+The move will complete when you release a mouse button, or press the Enter key.
+Pressing Escape will cancel the move.</p>
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-35-1">1</a></span>
+<span class="normal"><a href="#__codelineno-35-2">2</a></span>
+<span class="normal"><a href="#__codelineno-35-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1"></a><span class="nt">&lt;mousebind</span><span class="w"> </span><span class="na">button=</span><span class="s">&quot;A-Left&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;Drag&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-35-2" name="__codelineno-35-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Move&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-35-3" name="__codelineno-35-3"></a><span class="nt">&lt;/mousebind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="resize">Resize<a class="headerlink" href="#resize" title="Permanent link">🔗</a></h4>
-<p>Begin interactively resizing the window. Once a resize has begun, you
-can resize the window either by moving the mouse pointer, or by using
-the arrow keys. The move will complete when you release a mouse button,
-or press the Enter key. Pressing Escape will cancel the move.</p>
-<p>If the resize is bound to a mouse button, then the corner/edge of the
-window that is resized is chosen by which is nearest to the mouse
-pointer. You can use the <edge> option to override this and specify
-which corner/edge should be resized.</p>
+<h3 id="resize">Resize<a class="headerlink" href="#resize" title="Permanent link">🔗</a></h3>
+<p>Begin interactively resizing the window. Once a resize has begun, you can resize
+the window either by moving the mouse pointer, or by using the arrow keys.
+The move will complete when you release a mouse button, or press the Enter key.
+Pressing Escape will cancel the move.</p>
+<p>If the resize is bound to a mouse button, then the corner/edge of the window
+that is resized is chosen by which is nearest to the mouse pointer. You can use
+the <code>&lt;edge&gt;</code> option to override this and specify which corner/edge should be resized.</p>
 <table>
 <thead>
 <tr>
@@ -3930,21 +3993,20 @@ which corner/edge should be resized.</p>
 </thead>
 <tbody>
 <tr>
-<td><edge></td>
+<td><code>&lt;edge&gt;</code></td>
 <td>none</td>
-<td>One of: "top", "left", "right", "bottom", "topleft", "topright", "bottomleft", "bottomright". This specifies which corner/edge should be resized, and overrides having the edge determined dynamically by which is closest to the mouse pointer.</td>
+<td>One of: <code>top</code>, <code>left</code>, <code>right</code>, <code>bottom</code>, <code>topleft</code>, <code>topright</code>, <code>bottomleft</code>, <code>bottomright</code>. This specifies which corner/edge should be resized, and overrides having the edge determined dynamically by which is closest to the mouse pointer.</td>
 </tr>
 </tbody>
 </table>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;mousebind button=&quot;A-Right&quot; action=&quot;Drag&quot;&gt;
-  &lt;action name=&quot;Resize&quot;/&gt;
-&lt;/mousebind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-36-1">1</a></span>
+<span class="normal"><a href="#__codelineno-36-2">2</a></span>
+<span class="normal"><a href="#__codelineno-36-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1"></a><span class="nt">&lt;mousebind</span><span class="w"> </span><span class="na">button=</span><span class="s">&quot;A-Right&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;Drag&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-36-2" name="__codelineno-36-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Resize&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-36-3" name="__codelineno-36-3"></a><span class="nt">&lt;/mousebind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="moveresizeto">MoveResizeTo<a class="headerlink" href="#moveresizeto" title="Permanent link">🔗</a></h4>
+<h3 id="moveresizeto">MoveResizeTo<a class="headerlink" href="#moveresizeto" title="Permanent link">🔗</a></h3>
 <p>Move and/or resize a window.</p>
 <table>
 <thead>
@@ -3956,91 +4018,90 @@ which corner/edge should be resized.</p>
 </thead>
 <tbody>
 <tr>
-<td><x></td>
+<td><code>&lt;x&gt;</code></td>
 <td>current</td>
-<td>The position to move the window to. <strong>current</strong> specifies the window's current x-position. <strong>center</strong> moves the window to the center of the screen, horizontally. A number gives the absolute position to move the window to. A negative value specifies the distance from the right edge of the screen (e.g. -2 is 2 pixels in from the right edge). Use +- to specify a negative position relative to the left edge (e.g. +-10 is 10 pixels off the screen on the left side), and -- to specify a negative position relative to the right edge (e.g. --5 is 5 pixels off the screen on the right side).</td>
+<td>The position to move the window to. <code>current</code> specifies the window's current x-position. <code>center</code> moves the window to the center of the screen, horizontally. A number gives the absolute position to move the window to. A negative value specifies the distance from the right edge of the screen (e.g. <code>-2</code> is 2 pixels in from the right edge). Use <code>+-</code> to specify a negative position relative to the left edge (e.g. <code>+-10</code> is 10 pixels off the screen on the left side), and <code>--</code> to specify a negative position relative to the right edge (e.g. <code>--5</code> is 5 pixels off the screen on the right side).</td>
 </tr>
 <tr>
-<td><y></td>
+<td><code>&lt;y&gt;</code></td>
 <td>current</td>
-<td>The position to move the window to. <strong>current</strong> specifies the window's current y-position. <strong>center</strong> moves the window to the center of the screen, vertically. A number gives the absolute position to move the window to. A negative value specifies the distance from the bottom edge of the screen (e.g. -2 is 2 pixels in from the bottom edge). Use +- to specify a negative position relative to the top edge (e.g. +-10 is 10 pixels off the top of the screen), and -- to specify a negative position relative to the bottom edge (e.g. --5 is 5 pixels off the bottom of the screen).</td>
+<td>The position to move the window to. <code>current</code> specifies the window's current y-position. <code>center</code> moves the window to the center of the screen, vertically. A number gives the absolute position to move the window to. A negative value specifies the distance from the bottom edge of the screen (e.g. <code>-2</code> is 2 pixels in from the bottom edge). Use <code>+-</code> to specify a negative position relative to the top edge (e.g. <code>+-10</code> is 10 pixels off the top of the screen), and <code>--</code> to specify a negative position relative to the bottom edge (e.g. <code>--5</code> is 5 pixels off the bottom of the screen).</td>
 </tr>
 <tr>
-<td><width></td>
+<td><code>&lt;width&gt;</code></td>
 <td>current</td>
-<td>The width to resize the window to. <strong>current</strong> specifies the window's current width. A number specifies the desired width of the window. You may also specify the width as a fraction or a percentage, eg <strong>50%</strong> or <strong>7/8</strong>. If <strong>client="yes"</strong> is specified as an attribute, then the size determines the size of the application window inside the decorations. The default includes the decorations in the size.</td>
+<td>The width to resize the window to. <code>current</code> specifies the window's current width. A number specifies the desired width of the window. You may also specify the width as a fraction or a percentage, eg <code>50%</code> or <code>7/8</code>. If <code>client="yes"</code> is specified as an attribute, then the size determines the size of the application window inside the decorations. The default includes the decorations in the size.</td>
 </tr>
 <tr>
-<td><height></td>
+<td><code>&lt;height&gt;</code></td>
 <td>current</td>
-<td>The height to resize the window to. <strong>current</strong> specifies the window's current height. A number specifies the desired height of the window. You may also specify the width as a fraction or a percentage, eg <strong>50%</strong> or <strong>7/8</strong>. If <strong>client="yes"</strong> is specified as an attribute, then the size determines the size of the application window inside the decorations. The default includes the decorations in the size.</td>
+<td>The height to resize the window to. <code>current</code> specifies the window's current height. A number specifies the desired height of the window. You may also specify the width as a fraction or a percentage, eg <code>50%</code> or <code>7/8</code>. If <code>client="yes"</code> is specified as an attribute, then the size determines the size of the application window inside the decorations. The default includes the decorations in the size.</td>
 </tr>
 <tr>
-<td><monitor></td>
+<td><code>&lt;monitor&gt;</code></td>
 <td>current</td>
-<td>The monitor to move the window to (in Xinerama/TwinView setups with multiple monitors). <strong>current</strong> specifies the window's current monitor. <strong>all</strong> specifies to use all monitors together. <strong>next</strong> specifies to move the window to the next monitor relative to the one it is currently on. <strong>prev</strong> specifies to move the window to the previous monitor relative to the one it is currently on. A number specifies the desired monitor (starting from 1).</td>
+<td>The monitor to move the window to (in Xinerama/TwinView setups with multiple monitors). <code>current</code> specifies the window's current monitor. <code>all</code> specifies to use all monitors together. <code>next</code> specifies to move the window to the next monitor relative to the one it is currently on. <code>prev</code> specifies to move the window to the previous monitor relative to the one it is currently on. A number specifies the desired monitor (starting from 1).</td>
 </tr>
 </tbody>
 </table>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;W-2&quot;&gt;
-  &lt;action name=&quot;MoveResizeTo&quot;&gt;
-    &lt;!-- move the window to the second monitor --&gt;
-    &lt;monitor&gt;2&lt;/monitor&gt;
-  &lt;/action&gt;
-&lt;/keybind&gt;
-&lt;keybind key=&quot;W-F10&quot;&gt;
-  &lt;action name=&quot;MoveResizeTo&quot;&gt;
-    &lt;!-- put the window in the bottom right corner --&gt;
-    &lt;x&gt;-0&lt;/x&gt;
-    &lt;y&gt;-0&lt;/y&gt;
-  &lt;/action&gt;
-&lt;/keybind&gt;
-&lt;keybind key=&quot;W-c&quot;&gt;
-  &lt;action name=&quot;MoveResizeTo&quot;&gt;
-    &lt;!-- center the window on the first monitor --&gt;
-    &lt;x&gt;center&lt;/x&gt;
-    &lt;y&gt;center&lt;/y&gt;
-    &lt;monitor&gt;1&lt;/monitor&gt;
-  &lt;/action&gt;
-&lt;/keybind&gt;
-&lt;keybind key=&quot;C-A-1&quot;&gt;
-  &lt;action name=&quot;MoveResizeTo&quot;&gt;
-    &lt;!-- adjust a window&#39;s height --&gt;
-    &lt;width client=&quot;yes&quot;&gt;1/2&lt;/width&gt;
-    &lt;height&gt;300&lt;/height&gt;
-  &lt;/action&gt;
-&lt;/keybind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-37-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-37-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-37-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-37-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-37-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-37-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-37-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-37-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-37-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-37-10">10</a></span>
+<span class="normal"><a href="#__codelineno-37-11">11</a></span>
+<span class="normal"><a href="#__codelineno-37-12">12</a></span>
+<span class="normal"><a href="#__codelineno-37-13">13</a></span>
+<span class="normal"><a href="#__codelineno-37-14">14</a></span>
+<span class="normal"><a href="#__codelineno-37-15">15</a></span>
+<span class="normal"><a href="#__codelineno-37-16">16</a></span>
+<span class="normal"><a href="#__codelineno-37-17">17</a></span>
+<span class="normal"><a href="#__codelineno-37-18">18</a></span>
+<span class="normal"><a href="#__codelineno-37-19">19</a></span>
+<span class="normal"><a href="#__codelineno-37-20">20</a></span>
+<span class="normal"><a href="#__codelineno-37-21">21</a></span>
+<span class="normal"><a href="#__codelineno-37-22">22</a></span>
+<span class="normal"><a href="#__codelineno-37-23">23</a></span>
+<span class="normal"><a href="#__codelineno-37-24">24</a></span>
+<span class="normal"><a href="#__codelineno-37-25">25</a></span>
+<span class="normal"><a href="#__codelineno-37-26">26</a></span>
+<span class="normal"><a href="#__codelineno-37-27">27</a></span>
+<span class="normal"><a href="#__codelineno-37-28">28</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-2&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-37-2" name="__codelineno-37-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;MoveResizeTo&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-37-3" name="__codelineno-37-3"></a><span class="w">    </span><span class="cm">&lt;!-- move the window to the second monitor --&gt;</span>
+<a id="__codelineno-37-4" name="__codelineno-37-4"></a><span class="w">    </span><span class="nt">&lt;monitor&gt;</span>2<span class="nt">&lt;/monitor&gt;</span>
+<a id="__codelineno-37-5" name="__codelineno-37-5"></a><span class="w">  </span><span class="nt">&lt;/action&gt;</span>
+<a id="__codelineno-37-6" name="__codelineno-37-6"></a><span class="nt">&lt;/keybind&gt;</span>
+<a id="__codelineno-37-7" name="__codelineno-37-7"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-F10&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-37-8" name="__codelineno-37-8"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;MoveResizeTo&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-37-9" name="__codelineno-37-9"></a><span class="w">    </span><span class="cm">&lt;!-- put the window in the bottom right corner --&gt;</span>
+<a id="__codelineno-37-10" name="__codelineno-37-10"></a><span class="w">    </span><span class="nt">&lt;x&gt;</span>-0<span class="nt">&lt;/x&gt;</span>
+<a id="__codelineno-37-11" name="__codelineno-37-11"></a><span class="w">    </span><span class="nt">&lt;y&gt;</span>-0<span class="nt">&lt;/y&gt;</span>
+<a id="__codelineno-37-12" name="__codelineno-37-12"></a><span class="w">  </span><span class="nt">&lt;/action&gt;</span>
+<a id="__codelineno-37-13" name="__codelineno-37-13"></a><span class="nt">&lt;/keybind&gt;</span>
+<a id="__codelineno-37-14" name="__codelineno-37-14"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-c&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-37-15" name="__codelineno-37-15"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;MoveResizeTo&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-37-16" name="__codelineno-37-16"></a><span class="w">    </span><span class="cm">&lt;!-- center the window on the first monitor --&gt;</span>
+<a id="__codelineno-37-17" name="__codelineno-37-17"></a><span class="w">    </span><span class="nt">&lt;x&gt;</span>center<span class="nt">&lt;/x&gt;</span>
+<a id="__codelineno-37-18" name="__codelineno-37-18"></a><span class="w">    </span><span class="nt">&lt;y&gt;</span>center<span class="nt">&lt;/y&gt;</span>
+<a id="__codelineno-37-19" name="__codelineno-37-19"></a><span class="w">    </span><span class="nt">&lt;monitor&gt;</span>1<span class="nt">&lt;/monitor&gt;</span>
+<a id="__codelineno-37-20" name="__codelineno-37-20"></a><span class="w">  </span><span class="nt">&lt;/action&gt;</span>
+<a id="__codelineno-37-21" name="__codelineno-37-21"></a><span class="nt">&lt;/keybind&gt;</span>
+<a id="__codelineno-37-22" name="__codelineno-37-22"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;C-A-1&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-37-23" name="__codelineno-37-23"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;MoveResizeTo&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-37-24" name="__codelineno-37-24"></a><span class="w">    </span><span class="cm">&lt;!-- adjust a window&#39;s height --&gt;</span>
+<a id="__codelineno-37-25" name="__codelineno-37-25"></a><span class="w">    </span><span class="nt">&lt;width</span><span class="w"> </span><span class="na">client=</span><span class="s">&quot;yes&quot;</span><span class="nt">&gt;</span>1/2<span class="nt">&lt;/width&gt;</span>
+<a id="__codelineno-37-26" name="__codelineno-37-26"></a><span class="w">    </span><span class="nt">&lt;height&gt;</span>300<span class="nt">&lt;/height&gt;</span>
+<a id="__codelineno-37-27" name="__codelineno-37-27"></a><span class="w">  </span><span class="nt">&lt;/action&gt;</span>
+<a id="__codelineno-37-28" name="__codelineno-37-28"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="moverelative">MoveRelative<a class="headerlink" href="#moverelative" title="Permanent link">🔗</a></h4>
+<h3 id="moverelative">MoveRelative<a class="headerlink" href="#moverelative" title="Permanent link">🔗</a></h3>
 <p>Move the window by an incremental amount, relative to its current
 position</p>
 <table>
@@ -4053,44 +4114,43 @@ position</p>
 </thead>
 <tbody>
 <tr>
-<td><x></td>
+<td><code>&lt;x&gt;</code></td>
 <td>0</td>
 <td>The amount to move the window in the horizontal direction. A positive value moves it to the right, and a negative value moves it to the left.</td>
 </tr>
 <tr>
-<td><y></td>
+<td><code>&lt;y&gt;</code></td>
 <td>0</td>
-<td>The amount to move the window in the vertial direction. A positive value moves it down, and a negative value moves it up.</td>
+<td>The amount to move the window in the vertical direction. A positive value moves it down, and a negative value moves it up.</td>
 </tr>
 </tbody>
 </table>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;W-Right&quot;&gt;
-  &lt;action name=&quot;MoveRelative&quot;&gt;
-    &lt;x&gt;5&lt;/x&gt;
-    &lt;y&gt;0&lt;/y&gt;
-  &lt;/action&gt;
-&lt;/keybind&gt;
-&lt;keybind key=&quot;W-Up&quot;&gt;
-  &lt;action name=&quot;MoveRelative&quot;&gt;
-    &lt;x&gt;0&lt;/x&gt;
-    &lt;y&gt;-5&lt;/y&gt;
-  &lt;/action&gt;
-&lt;/keybind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-38-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-38-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-38-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-38-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-38-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-38-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-38-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-38-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-38-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-38-10">10</a></span>
+<span class="normal"><a href="#__codelineno-38-11">11</a></span>
+<span class="normal"><a href="#__codelineno-38-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-Right&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-38-2" name="__codelineno-38-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;MoveRelative&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-38-3" name="__codelineno-38-3"></a><span class="w">    </span><span class="nt">&lt;x&gt;</span>5<span class="nt">&lt;/x&gt;</span>
+<a id="__codelineno-38-4" name="__codelineno-38-4"></a><span class="w">    </span><span class="nt">&lt;y&gt;</span>0<span class="nt">&lt;/y&gt;</span>
+<a id="__codelineno-38-5" name="__codelineno-38-5"></a><span class="w">  </span><span class="nt">&lt;/action&gt;</span>
+<a id="__codelineno-38-6" name="__codelineno-38-6"></a><span class="nt">&lt;/keybind&gt;</span>
+<a id="__codelineno-38-7" name="__codelineno-38-7"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-Up&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-38-8" name="__codelineno-38-8"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;MoveRelative&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-38-9" name="__codelineno-38-9"></a><span class="w">    </span><span class="nt">&lt;x&gt;</span>0<span class="nt">&lt;/x&gt;</span>
+<a id="__codelineno-38-10" name="__codelineno-38-10"></a><span class="w">    </span><span class="nt">&lt;y&gt;</span>-5<span class="nt">&lt;/y&gt;</span>
+<a id="__codelineno-38-11" name="__codelineno-38-11"></a><span class="w">  </span><span class="nt">&lt;/action&gt;</span>
+<a id="__codelineno-38-12" name="__codelineno-38-12"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="resizerelative">ResizeRelative<a class="headerlink" href="#resizerelative" title="Permanent link">🔗</a></h4>
+<h3 id="resizerelative">ResizeRelative<a class="headerlink" href="#resizerelative" title="Permanent link">🔗</a></h3>
 <p>Resize the window by an incremental amount, relative to its current
 size.</p>
 <table>
@@ -4103,53 +4163,52 @@ size.</p>
 </thead>
 <tbody>
 <tr>
-<td><left></td>
+<td><code>&lt;left&gt;</code></td>
 <td>0</td>
 <td>The amount to resize the left edge of the window by. A positive value moves the left edge to the left, growing the window. A negative value moves the edge to the right, shrinking the window.</td>
 </tr>
 <tr>
-<td><right></td>
+<td><code>&lt;right&gt;</code></td>
 <td>0</td>
 <td>The amount to resize the right edge of the window by. A positive value moves the right edge to the right, growing the window. A negative value moves the edge to the left, shrinking the window.</td>
 </tr>
 <tr>
-<td><top></td>
+<td><code>&lt;top&gt;</code></td>
 <td>0</td>
 <td>The amount to resize the top edge of the window by. A positive value moves the top edge up, growing the window. A negative value moves the edge down, shrinking the window.</td>
 </tr>
 <tr>
-<td><bottom></td>
+<td><code>&lt;bottom&gt;</code></td>
 <td>0</td>
 <td>The amount to resize the bottom edge of the window by. A positive value moves the bottom edge down, growing the window. A negative value moves the edge up, shrinking the window.</td>
 </tr>
 </tbody>
 </table>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;W-Down&quot;&gt;
-  &lt;action name=&quot;ResizeRelative&quot;&gt;
-    &lt;bottom&gt;5&lt;/bottom&gt;
-  &lt;/action&gt;
-&lt;/keybind&gt;
-&lt;keybind key=&quot;W-S-Down&quot;&gt;
-  &lt;action name=&quot;ResizeRelative&quot;&gt;
-    &lt;bottom&gt;-5&lt;/bottom&gt;
-  &lt;/action&gt;
-&lt;/keybind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-39-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-39-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-39-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-39-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-39-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-39-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-39-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-39-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-39-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-39-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-Down&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-39-2" name="__codelineno-39-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;ResizeRelative&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-39-3" name="__codelineno-39-3"></a><span class="w">    </span><span class="nt">&lt;bottom&gt;</span>5<span class="nt">&lt;/bottom&gt;</span>
+<a id="__codelineno-39-4" name="__codelineno-39-4"></a><span class="w">  </span><span class="nt">&lt;/action&gt;</span>
+<a id="__codelineno-39-5" name="__codelineno-39-5"></a><span class="nt">&lt;/keybind&gt;</span>
+<a id="__codelineno-39-6" name="__codelineno-39-6"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-S-Down&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-39-7" name="__codelineno-39-7"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;ResizeRelative&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-39-8" name="__codelineno-39-8"></a><span class="w">    </span><span class="nt">&lt;bottom&gt;</span>-5<span class="nt">&lt;/bottom&gt;</span>
+<a id="__codelineno-39-9" name="__codelineno-39-9"></a><span class="w">  </span><span class="nt">&lt;/action&gt;</span>
+<a id="__codelineno-39-10" name="__codelineno-39-10"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="movetoedge">MoveToEdge<a class="headerlink" href="#movetoedge" title="Permanent link">🔗</a></h4>
-<p>Moves the window to the nearest edge in the direction specified. Edges
-are the outer edges of other windows, monitor edges in multi-monitor
-setups, or the desktop boundaries.</p>
+<h3 id="movetoedge">MoveToEdge<a class="headerlink" href="#movetoedge" title="Permanent link">🔗</a></h3>
+<p>Moves the window to the nearest edge in the direction specified.
+Edges are the outer edges of other windows, monitor edges in multi-monitor setups,
+or the desktop boundaries.</p>
 <table>
 <thead>
 <tr>
@@ -4160,26 +4219,24 @@ setups, or the desktop boundaries.</p>
 </thead>
 <tbody>
 <tr>
-<td><direction></td>
+<td><code>&lt;direction&gt;</code></td>
 <td>north</td>
-<td>The direction to move the window, can be "north", "south", "west" or "east".</td>
+<td>The direction to move the window, can be <code>north</code>, <code>south</code>, <code>west</code> or <code>east</code>.</td>
 </tr>
 </tbody>
 </table>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;W-Left&quot;&gt;
-  &lt;action name=&quot;MoveToEdge&quot;&gt;&lt;direction&gt;west&lt;/direction&gt;&lt;/action&gt;
-&lt;/keybind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-40-1">1</a></span>
+<span class="normal"><a href="#__codelineno-40-2">2</a></span>
+<span class="normal"><a href="#__codelineno-40-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-Left&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-40-2" name="__codelineno-40-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;MoveToEdge&quot;</span><span class="nt">&gt;&lt;direction&gt;</span>west<span class="nt">&lt;/direction&gt;&lt;/action&gt;</span>
+<a id="__codelineno-40-3" name="__codelineno-40-3"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="growtoedge">GrowToEdge<a class="headerlink" href="#growtoedge" title="Permanent link">🔗</a></h4>
+<h3 id="growtoedge">GrowToEdge<a class="headerlink" href="#growtoedge" title="Permanent link">🔗</a></h3>
 <p>Grows the window until it touches the nearest edge in the direction
 specified. Edges are the outer edges of other windows, monitor edges in
 multi-monitor setups, or the desktop boundaries. If the window edge is
-at the screen edge already, it is <a href="#ShrinkToEdge">shrunk</a>
-instead.</p>
+at the screen edge already, it is <a href="#shrinktoedge">shrunk</a> instead.</p>
 <table>
 <thead>
 <tr>
@@ -4190,24 +4247,23 @@ instead.</p>
 </thead>
 <tbody>
 <tr>
-<td><direction></td>
+<td><code>&lt;direction&gt;</code></td>
 <td>north</td>
-<td>The direction to grow the window, can be "north", "south", "west" or "east".</td>
+<td>The direction to grow the window, can be <code>north</code>, <code>south</code>, <code>west</code> or <code>east</code>.</td>
 </tr>
 </tbody>
 </table>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;C-Right&quot;&gt;
-  &lt;action name=&quot;GrowToEdge&quot;&gt;&lt;direction&gt;west&lt;/direction&gt;&lt;/action&gt;
-&lt;/keybind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-41-1">1</a></span>
+<span class="normal"><a href="#__codelineno-41-2">2</a></span>
+<span class="normal"><a href="#__codelineno-41-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;C-Right&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-41-2" name="__codelineno-41-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;GrowToEdge&quot;</span><span class="nt">&gt;&lt;direction&gt;</span>west<span class="nt">&lt;/direction&gt;&lt;/action&gt;</span>
+<a id="__codelineno-41-3" name="__codelineno-41-3"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="growtofill">GrowToFill<a class="headerlink" href="#growtofill" title="Permanent link">🔗</a></h4>
+<h3 id="growtofill">GrowToFill<a class="headerlink" href="#growtofill" title="Permanent link">🔗</a></h3>
 <p>Grows the window in every direction but doesn't go across any edges
 until all edges touch something else.</p>
-<h4 id="shrinktoedge">ShrinkToEdge<a class="headerlink" href="#shrinktoedge" title="Permanent link">🔗</a></h4>
+<h3 id="shrinktoedge">ShrinkToEdge<a class="headerlink" href="#shrinktoedge" title="Permanent link">🔗</a></h3>
 <p>Shrinks the window until it touches the nearest edge in the direction
 specified. Edges are the outer edges of other windows, monitor edges in
 multi-monitor setups, or the desktop boundaries. If no edge is found,
@@ -4222,242 +4278,222 @@ the window is halved in size.</p>
 </thead>
 <tbody>
 <tr>
-<td><direction></td>
+<td><code>&lt;direction&gt;</code></td>
 <td>north</td>
-<td>The direction to shrink the window, can be "north", "south", "west" or "east".</td>
+<td>The direction to shrink the window, can be <code>north</code>, <code>south</code>, <code>west</code> or <code>east</code>.</td>
 </tr>
 </tbody>
 </table>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;C-Right&quot;&gt;
-  &lt;action name=&quot;GrowToEdge&quot;&gt;&lt;direction&gt;west&lt;/direction&gt;&lt;/action&gt;
-&lt;/keybind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-42-1">1</a></span>
+<span class="normal"><a href="#__codelineno-42-2">2</a></span>
+<span class="normal"><a href="#__codelineno-42-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;C-Right&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-42-2" name="__codelineno-42-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;GrowToEdge&quot;</span><span class="nt">&gt;&lt;direction&gt;</span>west<span class="nt">&lt;/direction&gt;&lt;/action&gt;</span>
+<a id="__codelineno-42-3" name="__codelineno-42-3"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="if">If<a class="headerlink" href="#if" title="Permanent link">🔗</a></h4>
+<h3 id="if">If<a class="headerlink" href="#if" title="Permanent link">🔗</a></h3>
 <p>This action allows you to do different things depending on various
-conditions. The basic structure is: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;action name=&quot;If&quot;&gt;
-  &lt;query target=&quot;default&quot;&gt;
-    &lt;somecondition&gt;value of condition&lt;/somecondition&gt;
-    &lt;someothercondition&gt;value of condition&lt;/someothercondition&gt;
-  &lt;/query&gt;
-  &lt;then&gt;
-    ... list of &lt;action&gt;s to run when true
-  &lt;/then&gt;
-  &lt;else&gt;
-    ... list of &lt;action&gt;s to run when false
-  &lt;/else&gt;
-&lt;/action&gt;
+conditions. The basic structure is:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-43-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-43-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-43-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-43-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-43-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-43-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-43-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-43-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-43-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-43-10">10</a></span>
+<span class="normal"><a href="#__codelineno-43-11">11</a></span>
+<span class="normal"><a href="#__codelineno-43-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1"></a><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;If&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-43-2" name="__codelineno-43-2"></a><span class="w">  </span><span class="nt">&lt;query</span><span class="w"> </span><span class="na">target=</span><span class="s">&quot;default&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-43-3" name="__codelineno-43-3"></a><span class="w">    </span><span class="nt">&lt;somecondition&gt;</span>value<span class="w"> </span>of<span class="w"> </span>condition<span class="nt">&lt;/somecondition&gt;</span>
+<a id="__codelineno-43-4" name="__codelineno-43-4"></a><span class="w">    </span><span class="nt">&lt;someothercondition&gt;</span>value<span class="w"> </span>of<span class="w"> </span>condition<span class="nt">&lt;/someothercondition&gt;</span>
+<a id="__codelineno-43-5" name="__codelineno-43-5"></a><span class="w">  </span><span class="nt">&lt;/query&gt;</span>
+<a id="__codelineno-43-6" name="__codelineno-43-6"></a><span class="w">  </span><span class="nt">&lt;then&gt;</span>
+<a id="__codelineno-43-7" name="__codelineno-43-7"></a><span class="w">    </span>...<span class="w"> </span>list<span class="w"> </span>of<span class="w"> </span><span class="nt">&lt;action&gt;</span>s<span class="w"> </span>to<span class="w"> </span>run<span class="w"> </span>when<span class="w"> </span>true
+<a id="__codelineno-43-8" name="__codelineno-43-8"></a><span class="w">  </span><span class="nt">&lt;/then&gt;</span>
+<a id="__codelineno-43-9" name="__codelineno-43-9"></a><span class="w">  </span><span class="nt">&lt;else&gt;</span>
+<a id="__codelineno-43-10" name="__codelineno-43-10"></a><span class="w">    </span>...<span class="w"> </span>list<span class="w"> </span>of<span class="w"> </span><span class="nt">&lt;action&gt;</span>s<span class="w"> </span>to<span class="w"> </span>run<span class="w"> </span>when<span class="w"> </span>false
+<a id="__codelineno-43-11" name="__codelineno-43-11"></a><span class="w">  </span><span class="nt">&lt;/else&gt;</span>
+<a id="__codelineno-43-12" name="__codelineno-43-12"></a><span class="nt">&lt;/action&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<p>The query tag's target can be either "default" or "focus", and multiple
-query tags can be present in one If action. "default" means to check the
+<p>The query tag's target can be either <code>default</code> or <code>focus</code>, and multiple
+query tags can be present in one If action. <code>default</code> means to check the
 conditions against whatever window the actions would normally act on,
-while "focus" always checks against the window that currently has focus.
+while <code>focus</code> always checks against the window that currently has focus.
 These differ for example during focus cycling actions, or when the
-ForEach action is being used.</p>
+<code>ForEach</code> action is being used.</p>
 <p>The list of conditions is:</p>
 <table>
 <thead>
-<tr class="header">
-<th><p>Condition</p></th>
-<th><p>Description</p></th>
+<tr>
+<th>Condition</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p><shaded></p></td>
-<td><p>yes/no: if the window is rolled up or not.</p></td>
+<tr>
+<td><code>&lt;shaded&gt;</code></td>
+<td>yes/no: if the window is rolled up or not.</td>
 </tr>
-<tr class="even">
-<td><p><maximized></p></td>
-<td><p>yes/no</p></td>
+<tr>
+<td><code>&lt;maximized&gt;</code></td>
+<td>yes/no</td>
 </tr>
-<tr class="odd">
-<td><p><maximizedhorizontal></p></td>
-<td><p>yes/no</p></td>
+<tr>
+<td><code>&lt;maximizedhorizontal&gt;</code></td>
+<td>yes/no</td>
 </tr>
-<tr class="even">
-<td><p><maximizedvertical></p></td>
-<td><p>yes/no</p></td>
+<tr>
+<td><code>&lt;maximizedvertical&gt;</code></td>
+<td>yes/no</td>
 </tr>
-<tr class="odd">
-<td><p><iconified></p></td>
-<td><p>yes/no: if the window is minimized or not.</p></td>
+<tr>
+<td><code>&lt;iconified&gt;</code></td>
+<td>yes/no: if the window is minimized or not.</td>
 </tr>
-<tr class="even">
-<td><p><focused></p></td>
-<td><p>yes/no: the window is the focused window. This may not be true
-while focus cycling or in the finalactions of focus cycling.</p></td>
+<tr>
+<td><code>&lt;focused&gt;</code></td>
+<td>yes/no: the window is the focused window. This may not be true while focus cycling or in the finalactions of focus cycling.</td>
 </tr>
-<tr class="odd">
-<td><p><urgent></p></td>
-<td><p>yes/no: the window has the urgent flag set (also known as
-DEMANDS_ATTENTION).</p></td>
+<tr>
+<td><code>&lt;urgent&gt;</code></td>
+<td>yes/no: the window has the urgent flag set (also known as <code>DEMANDS_ATTENTION</code>).</td>
 </tr>
-<tr class="even">
-<td><p><undecorated></p></td>
-<td><p>yes/no: if the window decorations are hidden or not.</p></td>
+<tr>
+<td><code>&lt;undecorated&gt;</code></td>
+<td>yes/no: if the window decorations are hidden or not.</td>
 </tr>
-<tr class="odd">
-<td><p><omnipresent></p></td>
-<td><p>yes/no: if the window is visible on all desktops or not</p></td>
+<tr>
+<td><code>&lt;omnipresent&gt;</code></td>
+<td>yes/no: if the window is visible on all desktops or not</td>
 </tr>
-<tr class="even">
-<td><p><activedesktop></p></td>
-<td><p>The desktop that is currently active. This can only be a
-number.</p></td>
+<tr>
+<td><code>&lt;activedesktop&gt;</code></td>
+<td>The desktop that is currently active. This can only be a number.</td>
 </tr>
-<tr class="odd">
-<td><p><desktop></p></td>
-<td><p>The desktop the client is currently on. This can be the number of
-a desktop or the special values "current" or "other".</p></td>
+<tr>
+<td><code>&lt;desktop&gt;</code></td>
+<td>The desktop the client is currently on. This can be the number of a desktop or the special values <code>current</code> or <code>other</code>.</td>
 </tr>
-<tr class="even">
-<td><p><monitor></p></td>
-<td><p>Matches the monitor the client is currently on (most area wins if
-spanning several).</p></td>
+<tr>
+<td><code>&lt;monitor&gt;</code></td>
+<td>Matches the monitor the client is currently on (most area wins if spanning several).</td>
 </tr>
-<tr class="odd">
-<td><title>
-<p>or</p>
-<title type="pattern"></td>
-<td><p>A wildcard pattern to match against the window title, like "* -
-Mozilla Firefox".</p></td>
+<tr>
+<td><code>&lt;title&gt;</code> or <code>&lt;title type="pattern"&gt;</code></td>
+<td>A wildcard pattern to match against the window title, like <code>* - Mozilla Firefox</code>.</td>
 </tr>
-<tr class="even">
-<td><title type="regex"></td>
-<td><p>As above, but use regex instead of wildcard pattern, eg "-
-Mozilla Firefox$".</p></td>
+<tr>
+<td><code>&lt;title type="regex"&gt;</code></td>
+<td>As above, but use regex instead of wildcard pattern, e.g.: <code>- Mozilla Firefox$</code>.</td>
 </tr>
-<tr class="odd">
-<td><title type="exact"></td>
-<td><p>As above, but the string must match exactly (case
-sensitive).</p></td>
+<tr>
+<td><code>&lt;title type="exact"&gt;</code></td>
+<td>As above, but the string must match exactly (case sensitive).</td>
 </tr>
-<tr class="even">
-<td><p><class>, <name>, <role>, <type></p></td>
-<td><p>Works like the</p>
-<title>
-<p>tag and takes the type parameter, but matches against the window
-class, name, role and type respectively.</p></td>
+<tr>
+<td><code>&lt;class&gt;</code>, <code>&lt;name&gt;</code>, <code>&lt;role&gt;</code>, <code>&lt;type&gt;</code></td>
+<td>Works like the <code>&lt;title&gt;</code> tag and takes the type parameter, but matches against the window class, name, role and type respectively.</td>
 </tr>
 </tbody>
 </table>
-
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;!-- this corresponds to the ShadeLower and UnshadeRaise actions from 3.4 --&gt;
-&lt;mousebind button=&quot;Up&quot; action=&quot;Click&quot;&gt;
-  &lt;action name=&quot;If&quot;&gt;
-    &lt;query&gt;
-      &lt;shaded&gt;yes&lt;/shaded&gt;
-    &lt;/query&gt;
-    &lt;then&gt;
-      &lt;action name=&quot;Lower&quot;/&gt;
-    &lt;/then&gt;
-    &lt;else&gt;
-      &lt;action name=&quot;Shade&quot;/&gt;
-    &lt;/else&gt;
-  &lt;/action&gt;
-&lt;/mousebind&gt;
-&lt;mousebind button=&quot;Down&quot; action=&quot;Click&quot;&gt;
-  &lt;action name=&quot;If&quot;&gt;
-    &lt;query&gt;
-      &lt;shaded&gt;no&lt;/shaded&gt;
-    &lt;/query&gt;
-    &lt;then&gt;
-      &lt;action name=&quot;Raise&quot;/&gt;
-    &lt;/then&gt;
-    &lt;else&gt;
-      &lt;action name=&quot;Unshade&quot;/&gt;
-    &lt;/else&gt;
-  &lt;/action&gt;
-&lt;/mousebind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-44-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-44-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-44-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-44-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-44-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-44-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-44-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-44-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-44-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-44-10">10</a></span>
+<span class="normal"><a href="#__codelineno-44-11">11</a></span>
+<span class="normal"><a href="#__codelineno-44-12">12</a></span>
+<span class="normal"><a href="#__codelineno-44-13">13</a></span>
+<span class="normal"><a href="#__codelineno-44-14">14</a></span>
+<span class="normal"><a href="#__codelineno-44-15">15</a></span>
+<span class="normal"><a href="#__codelineno-44-16">16</a></span>
+<span class="normal"><a href="#__codelineno-44-17">17</a></span>
+<span class="normal"><a href="#__codelineno-44-18">18</a></span>
+<span class="normal"><a href="#__codelineno-44-19">19</a></span>
+<span class="normal"><a href="#__codelineno-44-20">20</a></span>
+<span class="normal"><a href="#__codelineno-44-21">21</a></span>
+<span class="normal"><a href="#__codelineno-44-22">22</a></span>
+<span class="normal"><a href="#__codelineno-44-23">23</a></span>
+<span class="normal"><a href="#__codelineno-44-24">24</a></span>
+<span class="normal"><a href="#__codelineno-44-25">25</a></span>
+<span class="normal"><a href="#__codelineno-44-26">26</a></span>
+<span class="normal"><a href="#__codelineno-44-27">27</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1"></a><span class="cm">&lt;!-- this corresponds to the ShadeLower and UnshadeRaise actions from 3.4 --&gt;</span>
+<a id="__codelineno-44-2" name="__codelineno-44-2"></a><span class="nt">&lt;mousebind</span><span class="w"> </span><span class="na">button=</span><span class="s">&quot;Up&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;Click&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-44-3" name="__codelineno-44-3"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;If&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-44-4" name="__codelineno-44-4"></a><span class="w">    </span><span class="nt">&lt;query&gt;</span>
+<a id="__codelineno-44-5" name="__codelineno-44-5"></a><span class="w">      </span><span class="nt">&lt;shaded&gt;</span>yes<span class="nt">&lt;/shaded&gt;</span>
+<a id="__codelineno-44-6" name="__codelineno-44-6"></a><span class="w">    </span><span class="nt">&lt;/query&gt;</span>
+<a id="__codelineno-44-7" name="__codelineno-44-7"></a><span class="w">    </span><span class="nt">&lt;then&gt;</span>
+<a id="__codelineno-44-8" name="__codelineno-44-8"></a><span class="w">      </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Lower&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-44-9" name="__codelineno-44-9"></a><span class="w">    </span><span class="nt">&lt;/then&gt;</span>
+<a id="__codelineno-44-10" name="__codelineno-44-10"></a><span class="w">    </span><span class="nt">&lt;else&gt;</span>
+<a id="__codelineno-44-11" name="__codelineno-44-11"></a><span class="w">      </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Shade&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-44-12" name="__codelineno-44-12"></a><span class="w">    </span><span class="nt">&lt;/else&gt;</span>
+<a id="__codelineno-44-13" name="__codelineno-44-13"></a><span class="w">  </span><span class="nt">&lt;/action&gt;</span>
+<a id="__codelineno-44-14" name="__codelineno-44-14"></a><span class="nt">&lt;/mousebind&gt;</span>
+<a id="__codelineno-44-15" name="__codelineno-44-15"></a><span class="nt">&lt;mousebind</span><span class="w"> </span><span class="na">button=</span><span class="s">&quot;Down&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;Click&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-44-16" name="__codelineno-44-16"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;If&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-44-17" name="__codelineno-44-17"></a><span class="w">    </span><span class="nt">&lt;query&gt;</span>
+<a id="__codelineno-44-18" name="__codelineno-44-18"></a><span class="w">      </span><span class="nt">&lt;shaded&gt;</span>no<span class="nt">&lt;/shaded&gt;</span>
+<a id="__codelineno-44-19" name="__codelineno-44-19"></a><span class="w">    </span><span class="nt">&lt;/query&gt;</span>
+<a id="__codelineno-44-20" name="__codelineno-44-20"></a><span class="w">    </span><span class="nt">&lt;then&gt;</span>
+<a id="__codelineno-44-21" name="__codelineno-44-21"></a><span class="w">      </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Raise&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-44-22" name="__codelineno-44-22"></a><span class="w">    </span><span class="nt">&lt;/then&gt;</span>
+<a id="__codelineno-44-23" name="__codelineno-44-23"></a><span class="w">    </span><span class="nt">&lt;else&gt;</span>
+<a id="__codelineno-44-24" name="__codelineno-44-24"></a><span class="w">      </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Unshade&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-44-25" name="__codelineno-44-25"></a><span class="w">    </span><span class="nt">&lt;/else&gt;</span>
+<a id="__codelineno-44-26" name="__codelineno-44-26"></a><span class="w">  </span><span class="nt">&lt;/action&gt;</span>
+<a id="__codelineno-44-27" name="__codelineno-44-27"></a><span class="nt">&lt;/mousebind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="foreach">ForEach<a class="headerlink" href="#foreach" title="Permanent link">🔗</a></h4>
-<p>This action has the same syntax as the If action, but runs for every
-client window on every desktop, not just the current window.</p>
-<h4 id="stop">Stop<a class="headerlink" href="#stop" title="Permanent link">🔗</a></h4>
-<p>As of Openbox 3.6.1: Stop will end execution only of the parent element
-that directly contains the Stop. If a grandparent element exists (via
-hierarchical nesting via If or ForEach), execution of that grandparent
-element will (surprisingly!) continue. Additionally, if a ForEach
-contains an If (or several nested Ifs), and if one of those Ifs contains
-a Stop, then that Stop will cause that ForEach to exit once the current
+<h3 id="foreach">ForEach<a class="headerlink" href="#foreach" title="Permanent link">🔗</a></h3>
+<p>This action has the same syntax as the <code>If</code> action,
+but runs for every client window on every desktop, not just the current window.</p>
+<h3 id="stop">Stop<a class="headerlink" href="#stop" title="Permanent link">🔗</a></h3>
+<p>As of Openbox 3.6.1: <code>Stop</code> will end execution only of the parent element
+that directly contains the <code>Stop</code>. If a grandparent element exists (via
+hierarchical nesting via <code>If</code> or <code>ForEach</code>), execution of that grandparent
+element will (surprisingly!) continue. Additionally, if a <code>ForEach</code>
+contains an <code>If</code> (or several nested Ifs), and if one of those Ifs contains
+a <code>Stop</code>, then that <code>Stop</code> will cause that <code>ForEach</code> to exit once the current
 iteration completes.</p>
-<p>As of Openbox 3.6.1: If a parent ForEach contains a child ForEach that
-contains a Stop, Openbox may permanently lock up and freeze. This is a
-bug.</p>
-<p>Stop takes no arguments.</p>
-<p>One pattern is to use a Stop at the end of a ForEach. In this pattern,
-the actions in the ForEach will be applied only to the first client that
-matches the ForEach's query.</p>
-<h4 id="togglealwaysontop">ToggleAlwaysOnTop<a class="headerlink" href="#togglealwaysontop" title="Permanent link">🔗</a></h4>
+<p>As of Openbox 3.6.1: If a parent <code>ForEach</code> contains a child <code>ForEach</code> that
+contains a <code>Stop</code>, Openbox may permanently lock up and freeze. This is a bug.</p>
+<p><code>Stop</code> takes no arguments.</p>
+<p>One pattern is to use a <code>Stop</code> at the end of a <code>ForEach</code>. In this pattern,
+the actions in the <code>ForEach</code> will be applied only to the first client that
+matches the <code>ForEach</code>'s query.</p>
+<h3 id="togglealwaysontop">ToggleAlwaysOnTop<a class="headerlink" href="#togglealwaysontop" title="Permanent link">🔗</a></h3>
 <p>Makes the window always above other windows, in the "always on top"
 layer. If the window is already set to be above other windows, this puts
 the window back in the stacking order with normal windows.</p>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;W-F8&quot;&gt;
-  &lt;action name=&quot;ToggleAlwaysOnTop&quot;/&gt;
-&lt;/keybind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-45-1">1</a></span>
+<span class="normal"><a href="#__codelineno-45-2">2</a></span>
+<span class="normal"><a href="#__codelineno-45-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-F8&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-45-2" name="__codelineno-45-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;ToggleAlwaysOnTop&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-45-3" name="__codelineno-45-3"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="togglealwaysonbottom">ToggleAlwaysOnBottom<a class="headerlink" href="#togglealwaysonbottom" title="Permanent link">🔗</a></h4>
+<h3 id="togglealwaysonbottom">ToggleAlwaysOnBottom<a class="headerlink" href="#togglealwaysonbottom" title="Permanent link">🔗</a></h3>
 <p>Makes the window always below other windows, in the "always on bottom"
 layer. If the window is already set to be below other windows, this puts
 the window back in the stacking order with normal windows.</p>
-<p>Example: <code></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;keybind key=&quot;W-F5&quot;&gt;
-  &lt;action name=&quot;ToggleAlwaysOnBottom&quot;/&gt;
-&lt;/keybind&gt;
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-46-1">1</a></span>
+<span class="normal"><a href="#__codelineno-46-2">2</a></span>
+<span class="normal"><a href="#__codelineno-46-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-F5&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-46-2" name="__codelineno-46-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;ToggleAlwaysOnBottom&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-46-3" name="__codelineno-46-3"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p></code></p>
-<h4 id="sendtolayer">SendToLayer<a class="headerlink" href="#sendtolayer" title="Permanent link">🔗</a></h4>
+<h3 id="sendtolayer">SendToLayer<a class="headerlink" href="#sendtolayer" title="Permanent link">🔗</a></h3>
 <p>Moves the window to the specified layer.</p>
 <table>
 <thead>
@@ -4469,17 +4505,17 @@ the window back in the stacking order with normal windows.</p>
 </thead>
 <tbody>
 <tr>
-<td><layer></td>
+<td><code>&lt;layer&gt;</code></td>
 <td>normal</td>
-<td>The layer to put the window in. It can be the "top" layer, which appears over all other windows except fullscreen windows, the "normal" layer, or the "bottom" layer, which appears below all other windows.</td>
+<td>The layer to put the window in. It can be the <code>top</code> layer, which appears over all other windows except fullscreen windows, the <code>normal</code> layer, or the <code>bottom</code> layer, which appears below all other windows.</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-F7&quot;</span><span class="nt">&gt;</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;SendToLayer&quot;</span><span class="nt">&gt;&lt;layer&gt;</span>top<span class="nt">&lt;/layer&gt;&lt;/action&gt;</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="nt">&lt;/keybind&gt;</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-47-1">1</a></span>
+<span class="normal"><a href="#__codelineno-47-2">2</a></span>
+<span class="normal"><a href="#__codelineno-47-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1"></a><span class="nt">&lt;keybind</span><span class="w"> </span><span class="na">key=</span><span class="s">&quot;W-F7&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-47-2" name="__codelineno-47-2"></a><span class="w">  </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;SendToLayer&quot;</span><span class="nt">&gt;&lt;layer&gt;</span>top<span class="nt">&lt;/layer&gt;&lt;/action&gt;</span>
+<a id="__codelineno-47-3" name="__codelineno-47-3"></a><span class="nt">&lt;/keybind&gt;</span>
 </code></pre></div></td></tr></table></div>
 
 
@@ -4551,18 +4587,6 @@ the window back in the stacking order with normal windows.</p>
       Made with Material for MkDocs
     </div>
   
-  
-</div>
-      
-        <div class="md-social">
-  
-    
-    
-    
-    
-    <a href="https://github.com/redtide/openbox-wiki" target="_blank" rel="noopener" title="Openbox Wiki on GitHub" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-    </a>
   
 </div>
       
